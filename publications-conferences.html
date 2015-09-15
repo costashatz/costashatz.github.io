@@ -6,7 +6,7 @@
 	<meta name="description" content="">
 	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
 	
-	<title>Konstantinos Chatzilygeroudis | Home</title>
+	<title>Konstantinos Chatzilygeroudis | Publications - Conferences</title>
 
 	<link rel="shortcut icon" href="assets/images/favicon.gif">
 	
@@ -21,7 +21,42 @@
 
 	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
 </head>
-<body class="home">
+<body>
+
+<textarea id="bibtex_input" style="display:none;">
+@inproceedings{koustoumpardis2015human,
+  title={Human robot collaboration for folding fabrics based on force/RGB-D feedback},
+  author={Koustoumpardis, Panagiotis and Chatzilygeroudis, Konstantinos and Synodinos, Aris and Aspragathos, Nikos},
+  booktitle={24rd International Conference on Robotics in Alpe-Adria-Danube Region (RAAD)},
+  abstract={In this paper, the human-robot collaboration for executing complicated handling tasks for folding non-rigid objects is investigated. A hierarchical control system is developed for the co-manipulation task of folding sheets like fabrics/cloths. The system is based on force and RGB-D feedback in both higher and lower control levels of the process. In the higher level, the perception of the human's intention is used for deciding the robot's action; in the lower level the robot reacts to the force/RGB-D feedback to follow human guidance. The proposed approach is tested in folding a rectangular piece of fabric. Experiments showed that the developed robotic system is able to track the human's movement in order to help her/him to accomplish the folding co-manipulation task.},
+  url={http://dx.doi.org/10.1007/978-3-319-21290-6_24},
+  year={2015},
+  organization={IEEE}
+}
+</textarea>
+
+<div class="bibtex_template" style="display:none;">
+<li>
+<div class="if author" style="font-weight: bold;">
+  <span class="if year">
+    <span class="year"></span>, 
+  </span>
+  <span class="author"></span>.
+  <span class="if booktitle">
+    <span class="booktitle"></span>
+  </span>
+  <span class="if url" style="margin-left: 20px">
+    <a class="url" style="color:black; font-size:10px" target="_blank">(view online)</a>
+  </span>
+</div>
+<div style="margin-left: 10px; margin-bottom:5px;">
+  <span class="title"></span>
+</div>
+<div class="if abstract" style="font-style: italic;">
+  <span class="abstract"></span>
+</div>
+</li>
+</div>
 
 <header id="header">
 	<div id="head" class="parallax" parallax-speed="2">
@@ -68,39 +103,12 @@
 
 	<div class="container">
 		
-		<div class="row section topspace">
-			<div class="col-md-12">
-				<p class="lead text-center text-muted">"The question of whether a computer can think is no more interesting than the question of whether a submarine can swim" - Edsger W. Dijkstra</p>
-			</div>
-		</div> <!-- / section -->
-
 		<div class="row section recentworks topspace">
 			
-			<h2 class="section-title"><span>Profile</span></h2>
-			<!-- Article main content -->
-			<article class="col-sm-14 maincontent">
-				<p>I recently graduated from the <b>Computer Engineering and Informatics Department</b> of University of Patras with <b>8.25/10 GPA (5% of my class)</b>. My academic interests lie in the areas of <i>Robotics, Robot Locomotion, Artificial Intelligence, Machine Learning, 2D/3D Computer Graphics, Computer Vision, and Software Engineering</i>. In addition, I was reviewer in the <b>3rd IEEE/IFToMM International Conference on Reconfigurable Mechanisms and Robots (ReMAR 2015)</b>.</p>
-			</article>
-			<!-- /Article -->
+			<h2 class="section-title"><span>Conference Publications</span></h2>
 
-		</div> <!-- /section -->
-		
-		<div class="row section featured topspace">
-			<h2 class="section-title"><span>Education</span></h2>
-			<div class="row">
-				<div class="col-sm-6 col-md-4">
-					<h3 class="text-center">Computer Science and Engineering</h3>
-					<p><b>Diploma of Computer Science and Engineering</b> from <i>University of Patras, Greece</i> with <b>GPA 8.25/10</b> on <i>November 20th, 2014</i>. It is a five year program that leads to Master's equivalent degree <b>(300 ECTS)</b>. Specialized in <i>Artificial Intelligence, Robotics, Software Engineering and Computer Graphics</i>. <b>Graduated in the top 5% of my class</b>.</p>
-				</div>
-				<div class="col-sm-6 col-md-4">
-					<h3 class="text-center">Online Courses</h3>
-					<p><br/>I have attended and completed over <b>15 online courses</b> covering a very broad range of topics, including <i>Software Engineering, Artificial Intelligence, Robotics, Control Theory, Machine Learning, Game Theory, Digital Signal Processing, e.t.c.</i></p>
-				</div>
-				<div class="col-sm-6 col-md-4">
-					<h3 class="text-center">High School</h3>
-					<p><br/>Finished high school at <i>G.E.L. Kato Kastritsiou, Patras, Greece</i> with <b>GPA 19.3/20</b>. Specialized in <i>Mathematics/Physics</i>.</p>
-				</div>
-			</div>
+			<ul><div id="bibtex_display"></div></ul>
+
 		</div> <!-- / section -->
 
 	</div>	<!-- /container -->
@@ -160,5 +168,6 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="assets/js/template.js"></script>
+<script src="assets/js/bibtex_js.js"></script>
 </body>
 </html>
