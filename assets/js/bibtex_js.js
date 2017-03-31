@@ -17,12 +17,12 @@
 function BibtexParser() {
   this.pos = 0;
   this.input = "";
-  
+
   this.entries = {};
   this.strings = {
       JAN: "January",
       FEB: "February",
-      MAR: "March",      
+      MAR: "March",
       APR: "April",
       MAY: "May",
       JUN: "June",
@@ -35,12 +35,12 @@ function BibtexParser() {
   };
   this.currentKey = "";
   this.currentEntry = "";
-  
+
 
   this.setInput = function(t) {
     this.input = t;
   }
-  
+
   this.getEntries = function() {
       return this.entries;
   }
@@ -117,7 +117,7 @@ function BibtexParser() {
       this.pos++;
     }
   }
-  
+
   this.single_value = function() {
     var start = this.pos;
     if (this.tryMatch("{")) {
@@ -135,7 +135,7 @@ function BibtexParser() {
       }
     }
   }
-  
+
   this.value = function() {
     var values = [];
     values.push(this.single_value());
@@ -152,7 +152,7 @@ function BibtexParser() {
       if (this.pos == this.input.length) {
         throw "Runaway key";
       }
-    
+
       if (this.input[this.pos].match("[a-zA-Z0-9_:\\./-]")) {
         this.pos++
       } else {
@@ -188,7 +188,7 @@ function BibtexParser() {
 
   this.entry_body = function() {
     this.currentEntry = this.key();
-    this.entries[this.currentEntry] = new Object();    
+    this.entries[this.currentEntry] = new Object();
     this.match(",");
     this.key_value_list();
   }
@@ -250,7 +250,7 @@ function BibtexDisplay() {
     value = value.replace(/\{(.*?)\}/g, '$1');
     return value;
   }
-  
+
   this.displayBibtex2 = function(i, o) {
     var b = new BibtexParser();
     b.setInput(i);
@@ -258,13 +258,13 @@ function BibtexDisplay() {
 
     var e = b.getEntries();
     var old = o.find("*");
-  
+
     for (var item in e) {
       var tpl = $(".bibtex_template").clone().removeClass('bibtex_template');
       tpl.addClass("unused");
-      
+
       for (var key in e[item]) {
-      
+
         var fields = tpl.find("." + key.toLowerCase());
         for (var i = 0; i < fields.size(); i++) {
           var f = $(fields[i]);
@@ -284,18 +284,18 @@ function BibtexDisplay() {
           }
         }
       }
-    
+
       var emptyFields = tpl.find("span .unused");
       emptyFields.each(function (key,f) {
         if (f.innerHTML.match("%")) {
           f.innerHTML = "";
         }
       });
-    
+
       o.append(tpl);
       tpl.show();
     }
-    
+
     old.remove();
   }
 
@@ -305,24 +305,24 @@ function BibtexDisplay() {
     var b = new BibtexParser();
     b.setInput(input);
     b.bibtex();
-    
+
     // save old entries to remove them later
-    var old = output.find("*");    
+    var old = output.find("*");
 
     // iterate over bibTeX entries
     var entries = b.getEntries();
     for (var entryKey in entries) {
       var entry = entries[entryKey];
-      
+
       // find template
       var tpl = $(".bibtex_template").clone().removeClass('bibtex_template');
-      
+
       // find all keys in the entry
       var keys = [];
       for (var key in entry) {
         keys.push(key.toUpperCase());
       }
-      
+
       // find all ifs and check them
       var removed = false;
       do {
@@ -331,7 +331,7 @@ function BibtexDisplay() {
         if (conds.size() == 0) {
           break;
         }
-        
+
         // check if
         var cond = conds.first();
         cond.removeClass("if");
@@ -343,25 +343,25 @@ function BibtexDisplay() {
           }
           cond.removeClass(cls);
         });
-        
+
         // remove false ifs
         if (!ifTrue) {
           cond.remove();
         }
       } while (true);
-      
-      // fill in remaining fields 
+
+      // fill in remaining fields
       for (var index in keys) {
         var key = keys[index];
         var value = entry[key] || "";
         tpl.find("span:not(a)." + key.toLowerCase()).html(this.fixValue(value));
         tpl.find("a." + key.toLowerCase()).attr('href', this.fixValue(value));
       }
-      
+
       output.append(tpl);
       tpl.show();
     }
-    
+
     // remove old entries
     old.remove();
   }
@@ -370,11 +370,14 @@ function BibtexDisplay() {
 
 function bibtex_js_draw() {
   $(".bibtex_template").hide();
-  (new BibtexDisplay()).displayBibtex($("#bibtex_input").val(), $("#bibtex_display"));
+  // (new BibtexDisplay()).displayBibtex($("#bibtex_input").val(), $("#bibtex_display"));
+  (new BibtexDisplay()).displayBibtex($("#bibtex_input_preprint").val(), $("#bibtex_display_preprint"));
+  (new BibtexDisplay()).displayBibtex($("#bibtex_input_conf").val(), $("#bibtex_display_conf"));
+  (new BibtexDisplay()).displayBibtex($("#bibtex_input_workshops").val(), $("#bibtex_display_workshops"));
 }
 
 // check whether or not jquery is present
-if (typeof jQuery == 'undefined') {  
+if (typeof jQuery == 'undefined') {
   // an interesting idea is loading jquery here. this might be added
   // in the future.
   alert("Please include jquery in all pages using bibtex_js!");

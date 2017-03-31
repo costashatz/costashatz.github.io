@@ -1,48 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+  <meta charset="utf-8">
+  <meta name="viewport"    content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
 
-	<title>Konstantinos Chatzilygeroudis | Publications - All</title>
+  <title>Konstantinos Chatzilygeroudis | Publications - All</title>
 
-	<link rel="shortcut icon" href="assets/images/favicon.gif">
+  <link rel="shortcut icon" href="assets/images/favicon.gif">
 
-	<!-- Bootstrap -->
-	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
-	<!-- Icons -->
-	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-	<!-- Fonts -->
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
-	<!-- Custom styles -->
-	<link rel="stylesheet" href="assets/css/styles.css">
-	<link rel="stylesheet" href="assets/css/academicons.css">
+  <!-- Bootstrap -->
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+  <!-- Icons -->
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/academicons.css">
 
-	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
+  <!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
 </head>
 <body>
 
-<textarea id="bibtex_input" style="display:none;">
-@inproceedings{papaspyros2016safety,
-  title={Safety-Aware Robot Damage Recovery Using Constrained Bayesian Optimization and Simulated Priors},
-  author={Papaspyros, Vaios and Chatzilygeroudis, Konstantinos and Vassiliades, Vassilis and Mouret, Jean-Baptiste},
-  booktitle={BayesOpt '16: Proceedings of the International Workshop "Bayesian Optimization: Black-box Optimization and Beyond" at NIPS 2016},
-  abstract={The recently introduced Intelligent Trial-and-Error (IT&E) algorithm showed that robots can adapt to damage in a matter of a few trials. The success of this algorithm relies on two components: prior knowledge acquired through simulation with an intact robot, and Bayesian optimization (BO) that operates on-line, on the damaged robot. While IT&E leads to fast damage recovery, it does not incorporate any safety constraints that prevent the robot from attempting harmful behaviors. In this work, we address this limitation by replacing the BO component with a constrained BO procedure. We evaluate our approach on a simulated damaged humanoid robot that needs to crawl as fast as possible, while performing as few unsafe trials as possible. We compare our new "safety-aware IT&E" algorithm to IT&E and a multi-objective version of IT&E in which the safety constraints are dealt as separate objectives. Our results show that our algorithm outperforms the other approaches, both in crawling speed within the safe regions and number of unsafe trials.},
-  url={https://arxiv.org/abs/1611.09419},
-  year={2016}
+<textarea id="bibtex_input_preprint" style="display:none;">
+@article{chatzilygeroudis2017black,
+  title={Black-Box Data-efficient Policy Search for Robotics},
+  author={Chatzilygeroudis, Konstantinos and Rama, Roberto and Kaushik, Rituraj and Goepp, Dorian and Vassiliades, Vassilis and Mouret, Jean-Baptiste},
+  journal={arXiv:1703.07261},
+  url={https://arxiv.org/abs/1703.07261},
+  year={2017},
+  video={https://www.youtube.com/watch?v=kTEyYiIFGPM},
+  abstract={The most data-efficient algorithms for reinforcement learning (RL) in robotics are based on uncertain dynamical models: after each episode, they first learn a dynamical model of the robot, then they use an optimization algorithm to find a policy that maximizes the expected return given the model and its uncertainties. It is often believed that this optimization can be tractable only if analytical, gradient-based algorithms are used; however, these algorithms require using specific families of reward functions and policies, which greatly limits the flexibility of the overall approach. In this paper, we introduce a novel model-based RL algorithm, called Black-DROPS (Black-box Data-efficient RObot Policy Search) that: (1) does not impose any constraint on the reward function or the policy (they are treated as black-boxes), (2) is as data-efficient as the state-of-the-art algorithm for data-efficient RL in robotics, and (3) is as fast (or faster) than analytical approaches when several cores are available. The key idea is to replace the gradient-based optimization algorithm with a parallel, black-box algorithm that takes into account the model uncertainties. We demonstrate the performance of our new algorithm on two standard control benchmark problems (in simulation) and a low-cost robotic manipulator (with a real robot).}
 }
-@inproceedings{chatzilygeroudis2016semi-episodic,
-  title={Towards semi-episodic learning for robot damage recovery},
-  author={Chatzilygeroudis, Konstantinos and Cully, Antoine and Mouret, Jean-Baptiste},
-  booktitle={AILTA '16: Proceedings of the International Workshop "AI for Long-term Autonomy" at ICRA 2016},
-  abstract={The recently introduced Intelligent Trial and Error algorithm (IT&E) enables robots to creatively adapt to damage in a matter of minutes by combining an off-line evolutionary algorithm and an on-line learning algorithm based on Bayesian Optimization. We extend the IT&E algorithm to allow for robots to learn to compensate for damages while executing their task(s). This leads to a semi-episodic learning scheme that increases the robot’s life-time autonomy and adaptivity. Preliminary experiments on a toy simulation and a 6-legged robot locomotion task show promising results.},
-  url={https://drive.google.com/file/d/0B-aGFh9eKlsIVTZTSkVqSWJPNE0/view},
+@article{supratik2017aloq,
+  title={{Alternating Optimisation and Quadrature for Robust Reinforcement Learning}},
+  author={Supratik, Paul and Chatzilygeroudis, Konstantinos and Ciosek, Kamil and Mouret, Jean-Baptiste and Osborne, Michael and Whiteson, Shimon},
+  journal={arXiv:1605.07496},
+  url={https://arxiv.org/abs/1605.07496},
+  year={2017},
+  abstract={Bayesian optimisation has been successfully applied to a variety of reinforcement learning problems. However, the traditional approach for learning optimal policies in simulators does not utilise the opportunity to improve learning by adjusting certain environment variables – state features that are randomly determined by the environment in a physical setting but are controllable in a simulator. This paper considers the problem of finding an optimal policy while taking into account the impact of environment variables. We present alternating optimisation and quadrature (ALOQ), which uses Bayesian optimisation and Bayesian quadrature to address such settings. ALOQ is robust to the presence of significant rare events, which may not be observable under random sampling, but have a considerable impact on determining the optimal policy. Experimental results in numerous domains, including those drawn from robotics, show that ALOQ can learn much more efficiently than existing methods.}
+}
+@article{chatzilygeroudis2016resetfree,
+  title={{Reset-free Trial-and-Error Learning for Data-Efficient Robot Damage Recovery}},
+  author={Chatzilygeroudis, Konstantinos and Vassiliades, Vassilis and Mouret, Jean-Baptiste},
+  journal={arXiv:1610.04213},
+  url={https://arxiv.org/abs/1610.04213},
   year={2016},
-  organization={IEEE}
+  video={https://www.youtube.com/watch?v=XIETxEpnwSs},
+  abstract={The high probability of hardware failures prevents many advanced robots (e.g. legged robots) to be confidently deployed in real-world situations (e.g post-disaster rescue). Instead of attempting to diagnose the failure(s), robots could adapt by trial-and-error in order to be able to complete their tasks. However, the best trial-and-error algorithms for robotics are all episodic: between each trial, the robot needs to be put back in the same state, that is, the robot is not learning autonomously. In this paper, we introduce a novel learning algorithm called "Reset-free Trial-and-Error" (RTE) that allows robots to recover from damage while completing their tasks. We evaluate it on a hexapod robot that is damaged in several ways (e.g. a missing leg, a shortened leg, etc.) and whose objective is to reach a sequence of targets in an arena. Our experiments show that the robot can recover most of its locomotion abilities in a few minutes, in an environment with obstacles, and without any human intervention. Overall, this new algorithm makes it possible to contemplate sending robots to places that are truly too dangerous for humans and in which robots cannot be rescued.}
 }
+@article{vassiliades2016scaling,
+  title={Scaling Up MAP-Elites Using Centroidal Voronoi Tessellations},
+  author={Vassiliades, Vassilis and Chatzilygeroudis, Konstantinos and Mouret, Jean-Baptiste},
+  journal={arXiv:1610.05729},
+  year={2016},
+  url={https://arxiv.org/abs/1610.05729},
+  abstract={The recently introduced Multi-dimensional Archive of Phenotypic Elites (MAP-Elites) is an evolutionary algorithm capable of producing a large archive of diverse, high-performing solutions in a single run. It works by discretizing a continuous feature space into unique regions according to the desired discretization per dimension. While simple, this algorithm has a main drawback: it cannot scale to high-dimensional feature spaces since the number of regions increase exponentially with the number of dimensions. In this paper, we address this limitation by introducing a simple extension of MAP-Elites that has a constant, pre-defined number of regions irrespective of the dimensionality of the feature space. Our main insight is that methods from computational geometry could partition a high-dimensional space into well-spread geometric regions. In particular, our algorithm uses a centroidal Voronoi tessellation (CVT) to divide the feature space into a desired number of regions; it then places every generated individual in its closest region, replacing a less fit one if the region is already occupied. We demonstrate the effectiveness of the new "CVT-MAP-Elites" algorithm in high-dimensional feature spaces through comparisons against MAP-Elites in a hexapod locomotion task.}
+}
+@article{cully2016limbo,
+    title={Limbo: A Fast and Flexible Library for Bayesian Optimization},
+    author={Cully, Antoine and Chatzilygeroudis, Konstantinos and Allocati, Federico  and Mouret, Jean-Baptiste},
+    year={2016},
+    journal={arxiv:1611.07343},
+    url={https://arxiv.org/abs/1611.07343},
+    abstract={Limbo is an open-source C++11 library for Bayesian optimization which is designed to be both highly flexible and very fast. It can be used to optimize functions for which the gradient is unknown, evaluations are expensive, and runtime cost matters (e.g., on embedded systems or robots). Benchmarks on standard functions show that Limbo is about 2 times faster than BayesOpt (another C++ library) for a similar accuracy.}
+}
+</textarea>
 
+<textarea id="bibtex_input_conf" style="display:none;">
 @inproceedings{koustoumpardis2015human,
   title={Human robot collaboration for folding fabrics based on force/RGB-D feedback},
   author={Koustoumpardis, Panagiotis and Chatzilygeroudis, Konstantinos and Synodinos, Aris and Aspragathos, Nikos},
@@ -54,9 +81,35 @@
 }
 </textarea>
 
+<textarea id="bibtex_input_workshops" style="display:none;">
+@inproceedings{papaspyros2016safety,
+  title={Safety-Aware Robot Damage Recovery Using Constrained Bayesian Optimization and Simulated Priors},
+  author={Papaspyros, Vaios and Chatzilygeroudis, Konstantinos and Vassiliades, Vassilis and Mouret, Jean-Baptiste},
+  booktitle={BayesOpt '16: Proceedings of the International Workshop "Bayesian Optimization: Black-box Optimization and Beyond" at NIPS},
+  abstract={The recently introduced Intelligent Trial-and-Error (IT&E) algorithm showed that robots can adapt to damage in a matter of a few trials. The success of this algorithm relies on two components: prior knowledge acquired through simulation with an intact robot, and Bayesian optimization (BO) that operates on-line, on the damaged robot. While IT&E leads to fast damage recovery, it does not incorporate any safety constraints that prevent the robot from attempting harmful behaviors. In this work, we address this limitation by replacing the BO component with a constrained BO procedure. We evaluate our approach on a simulated damaged humanoid robot that needs to crawl as fast as possible, while performing as few unsafe trials as possible. We compare our new "safety-aware IT&E" algorithm to IT&E and a multi-objective version of IT&E in which the safety constraints are dealt as separate objectives. Our results show that our algorithm outperforms the other approaches, both in crawling speed within the safe regions and number of unsafe trials.},
+  url={https://arxiv.org/abs/1611.09419},
+  year={2016},
+  video={https://www.youtube.com/watch?v=8esrj-7WhsQ}
+}
+
+@inproceedings{chatzilygeroudis2016semi-episodic,
+  title={Towards semi-episodic learning for robot damage recovery},
+  author={Chatzilygeroudis, Konstantinos and Cully, Antoine and Mouret, Jean-Baptiste},
+  booktitle={AILTA '16: Proceedings of the International Workshop "AI for Long-term Autonomy" at ICRA},
+  abstract={The recently introduced Intelligent Trial and Error algorithm (IT&E) enables robots to creatively adapt to damage in a matter of minutes by combining an off-line evolutionary algorithm and an on-line learning algorithm based on Bayesian Optimization. We extend the IT&E algorithm to allow for robots to learn to compensate for damages while executing their task(s). This leads to a semi-episodic learning scheme that increases the robot’s life-time autonomy and adaptivity. Preliminary experiments on a toy simulation and a 6-legged robot locomotion task show promising results.},
+  url={https://arxiv.org/abs/1610.01407},
+  year={2016},
+  organization={IEEE},
+  video={https://www.youtube.com/watch?v=Gpf5h07pJFA}
+}
+</textarea>
+
 <div class="bibtex_template" style="display:none;">
 <li>
-<div class="if author" style="font-weight: bold;">
+<div style="margin-left: 10px; margin-bottom:5px; font-weight: bold; font-size:24px;">
+  <span class="title"></span>
+</div>
+<div class="if author" style="font-weight: bold; font-style: italic;">
   <span class="if year">
     <span class="year"></span>,
   </span>
@@ -67,135 +120,135 @@
   <span class="if url" style="margin-left: 20px">
     <a class="url" style="color:black; font-size:10px" target="_blank">(view online)</a>
   </span>
-</div>
-<div style="margin-left: 10px; margin-bottom:5px;">
-  <span class="title"></span>
+  <span class="if video" style="margin-left: 20px">
+    <a class="video" style="color:black; font-size:10px" target="_blank">(video)</a>
+  </span>
 </div>
 <div class="if abstract" style="font-style: italic;">
-  <span class="abstract"></span>
+  <b>Abstract:</b><br/><span class="abstract"></span>
 </div>
 </li>
 </div>
 
 <header id="header">
-	<div id="head" class="parallax" parallax-speed="2">
-		<h1 id="logo" class="text-center">
-			<img class="img-circle" src="assets/images/profile.jpg" alt="">
-			<span class="title">Konstantinos Chatzilygeroudis</span>
-			<span class="tagline">PhD Candidate in Robotics and Machine Learning<br>
-				<a href="http://www.inria.fr/en/centre/nancy" target="_blank">Inria Nancy</a> - <a href="https://team.inria.fr/larsen/" target="_blank">LARSEN Team</a><br>
-				<a href="mailto:costashatz@gmail.com">costashatz@gmail.com</a></span>
-		</h1>
-	</div>
+  <div id="head" class="parallax" parallax-speed="2">
+    <h1 id="logo" class="text-center">
+      <img class="img-circle" src="assets/images/profile.jpg" alt="">
+      <span class="title">Konstantinos Chatzilygeroudis</span>
+      <span class="tagline">PhD Candidate in Robotics and Machine Learning<br>
+        <a href="http://www.inria.fr/en/centre/nancy" target="_blank">Inria Nancy</a> - <a href="https://team.inria.fr/larsen/" target="_blank">LARSEN Team</a><br>
+        <a href="mailto:costashatz@gmail.com">costashatz@gmail.com</a></span>
+    </h1>
+  </div>
 
-	<nav class="navbar navbar-default navbar-sticky">
-		<div class="container-fluid">
+  <nav class="navbar navbar-default navbar-sticky">
+    <div class="container-fluid">
 
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-			</div>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      </div>
 
-			<div class="navbar-collapse collapse">
+      <div class="navbar-collapse collapse">
 
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="./index.html">Home</a></li>
-					<li><a href="./research.html">Research</a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Publications<b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="./publications-highlights.html">Highlights</a></li>
-							<li><a href="./publications-conferences.html">Conferences</a></li>
-							<li><a href="./publications-journals.html">Journals</a></li>
-							<li><a href="./publications.html">All</a></li>
-						</ul>
-					</li>
-					<li><a href="./files/Konstantinos_Chatzilygeroudis_CV.pdf" target="_blank">CV</a></li>
-					<li><a href="./videos.html">Videos</a></li>
-					<li><a href="./contact.html">Contact</a></li>
-				</ul>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="./index.html">Home</a></li>
+          <li><a href="./research.html">Research</a></li>
+          <li><a href="./publications.html">Publications</a></li>
+          <li><a href="./files/Konstantinos_Chatzilygeroudis_CV.pdf" target="_blank">CV</a></li>
+          <li><a href="./videos.html">Videos</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
 
-			</div><!--/.nav-collapse -->
-		</div>
-	</nav>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
 </header>
 
 <main id="main">
 
-	<div class="container">
+  <div class="container">
 
-		<div class="row section recentworks topspace">
+    <div class="row section recentworks topspace">
 
-			<h2 class="section-title"><span>Publications</span></h2>
+      <h2 class="section-title"><span>Pre-prints (under review)</span></h2>
 
-			<ul><div id="bibtex_display"></div></ul>
+      <ul><div id="bibtex_display_preprint"></div></ul>
 
-		</div> <!-- / section -->
+      <h2 class="section-title"><span>Peer-reviewed Conferences</span></h2>
 
-	</div>	<!-- /container -->
+      <ul><div id="bibtex_display_conf"></div></ul>
+
+      <h2 class="section-title"><span>Peer-reviewed Workshops</span></h2>
+
+      <ul><div id="bibtex_display_workshops"></div></ul>
+
+    </div> <!-- / section -->
+
+  </div>  <!-- /container -->
 
 </main>
 
 <footer id="footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4 widget">
-				<h3 class="widget-title">Contact</h3>
-				<div class="widget-body">
-					<p>+33 610466287<br>
-						<a href="mailto:konstantinos.chatzilygeroudis@inria.fr">konstantinos.chatzilygeroudis@inria.fr</a><br>
-						<a href="mailto:costashatz@gmail.com">costashatz@gmail.com</a><br>
-						<br>
-						<a href="http://www.inria.fr/en/centre/nancy" target="_blank">Inria Nancy - Grand Est</a><br>
-						<a href="https://team.inria.fr/larsen/" target="_blank">LARSEN Team</a><br>
-						Room C121<br>
-						615 rue du Jardin Botanique,<br>
-						54600 Villers-lès-Nancy, France
-					</p>
-				</div>
-			</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 widget">
+        <h3 class="widget-title">Contact</h3>
+        <div class="widget-body">
+          <p>+33 610466287<br>
+            <a href="mailto:konstantinos.chatzilygeroudis@inria.fr">konstantinos.chatzilygeroudis@inria.fr</a><br>
+            <a href="mailto:costashatz@gmail.com">costashatz@gmail.com</a><br>
+            <br>
+            <a href="http://www.inria.fr/en/centre/nancy" target="_blank">Inria Nancy - Grand Est</a><br>
+            <a href="https://team.inria.fr/larsen/" target="_blank">LARSEN Team</a><br>
+            Room C121<br>
+            615 rue du Jardin Botanique,<br>
+            54600 Villers-lès-Nancy, France
+          </p>
+        </div>
+      </div>
 
-			<div class="col-md-4 widget">
-				<h3 class="widget-title">Research</h3>
-				<div class="widget-body">
-					<p class="follow-me-icons">
-						<a href="https://scholar.google.gr/citations?user=tnf6B-EAAAAJ&hl=en" class="ai ai-google-scholar" style="text-decoration: none;" target="_blank"></a>
-						<a href="https://www.researchgate.net/profile/Konstantinos_Chatzilygeroudis" class="ai ai-researchgate" style="text-decoration: none;" target="_blank"></a>
-						<a href="https://www.zotero.org/costashatz" class="ai ai-zotero" style="text-decoration: none;" target="_blank"></a>
-					</p>
-				</div>
-			</div>
+      <div class="col-md-4 widget">
+        <h3 class="widget-title">Research</h3>
+        <div class="widget-body">
+          <p class="follow-me-icons">
+            <a href="https://scholar.google.gr/citations?user=tnf6B-EAAAAJ&hl=en" class="ai ai-google-scholar" style="text-decoration: none;" target="_blank"></a>
+            <a href="https://www.researchgate.net/profile/Konstantinos_Chatzilygeroudis" class="ai ai-researchgate" style="text-decoration: none;" target="_blank"></a>
+            <a href="https://www.zotero.org/costashatz" class="ai ai-zotero" style="text-decoration: none;" target="_blank"></a>
+          </p>
+        </div>
+      </div>
 
-			<div class="col-md-4 widget">
-				<h3 class="widget-title">Follow me</h3>
-				<div class="widget-body">
-					<p class="follow-me-icons">
-						<a href="https://github.com/costashatz" target="_blank"><i class="fa fa-github fa-2"></i></a>
-						<a href="https://bitbucket.org/costashatz" target="_blank"><i class="fa fa-bitbucket fa-2"></i></a>
-						<a href="https://gr.linkedin.com/in/konstantinoschatzilygeroudis" target="_blank"><i class="fa fa-linkedin fa-2"></i></a>
-						<a href="https://www.facebook.com/CostasHatz" target="_blank"><i class="fa fa-facebook fa-2"></i></a>
-						<a href="https://plus.google.com/+KonstantinosChatzilygeroudis" target="_blank"><i class="fa fa-google-plus fa-2"></i></a>
-						<a href="https://twitter.com/chatzilyge" target="_blank"><i class="fa fa-twitter fa-2"></i></a>
-					</p>
-				</div>
-			</div>
+      <div class="col-md-4 widget">
+        <h3 class="widget-title">Follow me</h3>
+        <div class="widget-body">
+          <p class="follow-me-icons">
+            <a href="https://github.com/costashatz" target="_blank"><i class="fa fa-github fa-2"></i></a>
+            <a href="https://bitbucket.org/costashatz" target="_blank"><i class="fa fa-bitbucket fa-2"></i></a>
+            <a href="https://gr.linkedin.com/in/konstantinoschatzilygeroudis" target="_blank"><i class="fa fa-linkedin fa-2"></i></a>
+            <a href="https://www.facebook.com/CostasHatz" target="_blank"><i class="fa fa-facebook fa-2"></i></a>
+            <a href="https://plus.google.com/+KonstantinosChatzilygeroudis" target="_blank"><i class="fa fa-google-plus fa-2"></i></a>
+            <a href="https://twitter.com/chatzilyge" target="_blank"><i class="fa fa-twitter fa-2"></i></a>
+          </p>
+        </div>
+      </div>
 
-		</div> <!-- /row of widgets -->
-	</div>
+    </div> <!-- /row of widgets -->
+  </div>
 </footer>
 
 <footer id="underfooter">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 widget">
-				<div class="widget-body">
-					<p class="text-right">
-						Copyright &copy; 2015, Konstantinos Chatzilygeroudis<br>
-						Design: <a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a> </p>
-				</div>
-			</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 widget">
+        <div class="widget-body">
+          <p class="text-right">
+            Copyright &copy; 2015, Konstantinos Chatzilygeroudis<br>
+            Design: <a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a> </p>
+        </div>
+      </div>
 
-		</div> <!-- /row of widgets -->
-	</div>
+    </div> <!-- /row of widgets -->
+  </div>
 </footer>
 
 
