@@ -63,6 +63,33 @@
   <div class="container">
 
     <div class="row topspace">
+      <h2 class="section-title"><span>IROS 2017</span></h2>
+      <div class="col-sm-8 col-sm-offset-2">
+
+        <article class="post">
+          <header class="entry-header">
+             <div class="entry-meta">
+               <span class="posted-on"><time class="entry-date published" date="2017-07-25">July 25, 2017</time></span>
+             </div>
+             <h1 class="entry-content"><center>Black-Box Data-efficient Policy Search for Robotics</center></h1>
+          </header>
+          <div class="entry-content">
+            <p><center><iframe width="560" height="315" src="https://www.youtube.com/embed/kTEyYiIFGPM" frameborder="0" allowfullscreen></iframe></center></p>
+            <p>
+            <b>"Black-Box Data-efficient Policy Search for Robotics"</b><br/>
+            <i>Konstantinos Chatzilygeroudis, Roberto Rama, Rituraj Kaushik, Dorian Goepp, Vassilis Vassiliades</i> and <i>Jean-Baptiste Mouret</i><br/>
+            Paper to be presented at International Conference on Intelligent Robots and Systems <b>(IROS)</b> 2017.<br/><br/></p>
+            <p><b>Abstract:</b></br/><br/>
+              The most data-efficient algorithms for reinforcement learning (RL) in robotics are based on uncertain dynamical models: after each episode, they first learn a dynamical model of the robot, then they use an optimization algorithm to find a policy that maximizes the expected return given the model and its uncertainties. It is often believed that this optimization can be tractable only if analytical, gradient-based algorithms are used; however, these algorithms require using specific families of reward functions and policies, which greatly limits the flexibility of the overall approach. In this paper, we introduce a novel model-based RL algorithm, called Black-DROPS (Black-box Data-efficient RObot Policy Search) that: (1) does not impose any constraint on the reward function or the policy (they are treated as black-boxes), (2) is as data-efficient as the state-of-the-art algorithm for data-efficient RL in robotics, and (3) is as fast (or faster) than analytical approaches when several cores are available. The key idea is to replace the gradient-based optimization algorithm with a parallel, black-box algorithm that takes into account the model uncertainties. We demonstrate the performance of our new algorithm on two standard control benchmark problems (in simulation) and a low-cost robotic manipulator (with a real robot).<br/><br/>
+
+              This work was supported by the ERC project <a href="http://www.resibots.eu">“ResiBots”</a> (grant agreement No 637972), funded by the European Research Council.
+            </p>
+          </div>
+        </article><!-- #post-## -->
+      </div>
+    </div>
+
+    <div class="row topspace">
       <h2 class="section-title"><span>NIPS 2016 Bayesian Optimization Workshop</span></h2>
       <div class="col-sm-8 col-sm-offset-2">
 
@@ -78,7 +105,7 @@
             <p>
             <b>"Safety-Aware Robot Damage Recovery Using Constrained Bayesian Optimization and Simulated Priors"</b><br/>
             <i>Vaios Papaspyros, Konstantinos Chatzilygeroudis, Vassilis Vassiliades</i> and <i>Jean-Baptiste Mouret</i><br/>
-            Paper to be presented at "Bayesian Optimization: Black-box Optimization and Beyond" (BayesOpt) workshop in NIPS 2016.<br/><br/></p>
+            Paper presented at "Bayesian Optimization: Black-box Optimization and Beyond" (BayesOpt) workshop in NIPS 2016.<br/><br/></p>
             <p><b>Abstract:</b></br/><br/>
               The recently introduced Intelligent Trial-and-Error (IT&E) algorithm showed that robots can adapt to damage in a matter of a few trials. The success of this algorithm relies on two components: prior knowledge acquired through simulation with an intact robot, and Bayesian optimization (BO) that operates on-line, on the damaged robot. While IT&E leads to fast damage recovery, it does not incorporate any safety constraints that prevent the robot from attempting harmful behaviors. In this work, we address this limitation by replacing the BO component with a constrained BO procedure. We evaluate our approach on a simulated damaged humanoid robot that needs to crawl as fast as possible, while performing as few unsafe trials as possible. We compare our new "safety-aware IT&E" algorithm to IT&E and a multi-objective version of IT&E in which the safety constraints are dealt as separate objectives. Our results show that our algorithm outperforms the other approaches, both in crawling speed within the safe regions and number of unsafe trials.<br/><br/>
               This video shows a damaged simulated iCub robot safely compensating for damage.<br/><br/>
@@ -108,7 +135,7 @@
             <p>
             <b>"Towards semi-episodic learning for robot damage recovery"</b><br/>
             <i>Konstantinos Chatzilygeroudis, Antoine Cully</i> and <i>Jean-Baptiste Mouret</i><br/>
-            Paper to be presented (20 min talk) at "Artificial Intelligence for Long-Term Autonomy" (AILTA) workshop in ICRA 2016.<br/><br/></p>
+            Paper presented (20 min talk) at "Artificial Intelligence for Long-Term Autonomy" (AILTA) workshop in ICRA 2016.<br/><br/></p>
             <p><b>Abstract:</b></br/><br/>
               The recently introduced Intelligent Trial and Error algorithm (IT&E) enables robots to creatively adapt to damage in a matter of minutes by combining an off-line evolutionary algorithm and an on-line learning algorithm based on Bayesian Optimization. We extend the IT&E algorithm to allow for robots to learn to compensate for damages while executing their task(s). This leads to a semi-episodic learning scheme that increases the robot’s life-time autonomy and adaptivity. Preliminary experiments on a toy simulation and a 6-legged robot locomotion task show promising results.<br/><br/>
               This video shows a 6-legged robot performing locomotion tasks despite the left middle leg being removed using our technique.<br/><br/>
