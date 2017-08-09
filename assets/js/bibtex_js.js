@@ -373,6 +373,7 @@ function bibtex_js_draw() {
   // (new BibtexDisplay()).displayBibtex($("#bibtex_input").val(), $("#bibtex_display"));
   (new BibtexDisplay()).displayBibtex($("#bibtex_input_preprint").val(), $("#bibtex_display_preprint"));
   (new BibtexDisplay()).displayBibtex($("#bibtex_input_conf").val(), $("#bibtex_display_conf"));
+  (new BibtexDisplay()).displayBibtex($("#bibtex_input_journals").val(), $("#bibtex_display_journals"));
   (new BibtexDisplay()).displayBibtex($("#bibtex_input_workshops").val(), $("#bibtex_display_workshops"));
 }
 

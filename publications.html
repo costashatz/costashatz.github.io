@@ -28,7 +28,6 @@
 @article{supratik2017aloq,
   title={{Alternating Optimisation and Quadrature for Robust Reinforcement Learning}},
   author={Paul Supratik, Konstantinos Chatzilygeroudis, Kamil Ciosek, Jean-Baptiste Mouret, Michael A. Osborne and Shimon Whiteson},
-  journal={arXiv:1605.07496},
   url={https://arxiv.org/abs/1605.07496},
   year={2017},
   abstract={Bayesian optimisation has been successfully applied to a variety of reinforcement learning problems. However, the traditional approach for learning optimal policies in simulators does not utilise the opportunity to improve learning by adjusting certain environment variables – state features that are randomly determined by the environment in a physical setting but are controllable in a simulator. This paper considers the problem of finding an optimal policy while taking into account the impact of environment variables. We present alternating optimisation and quadrature (ALOQ), which uses Bayesian optimisation and Bayesian quadrature to address such settings. ALOQ is robust to the presence of significant rare events, which may not be observable under random sampling, but have a considerable impact on determining the optimal policy. Experimental results in numerous domains, including those drawn from robotics, show that ALOQ can learn much more efficiently than existing methods.}
@@ -36,27 +35,30 @@
 @article{chatzilygeroudis2016resetfree,
   title={{Reset-free Trial-and-Error Learning for Robot Damage Recovery}},
   author={Konstantinos Chatzilygeroudis, Vassilis Vassiliades and Jean-Baptiste Mouret},
-  journal={arXiv:1610.04213},
   url={https://arxiv.org/abs/1610.04213},
   year={2016},
   video={https://youtu.be/IqtyHFrb3BU},
   abstract={The high probability of hardware failures prevents many advanced robots (e.g., legged robots) from being confidently deployed in real-world situations (e.g., post-disaster rescue). Instead of attempting to diagnose the failures, robots could adapt by trial-and-error in order to be able to complete their tasks. In that case, damage recovery can be seen as a Reinforcement Learning (RL) problem. However, the best RL algorithms for robotics require resetting the robot and the environment to an initial state after each episode, that is, the robot is not learning autonomously. In addition, most of the RL methods for robotics do not scale well with complex robots (e.g., walking robots) and either cannot be used at all or take too long to converge to a solution (e.g., hours of learning). In this paper, we introduce a novel learning algorithm called "Reset-free Trial and-Error" (RTE) that (1) breaks the complexity by pre-generating hundreds of possible behaviors with a dynamics simulator of the intact robot, and (2) allows complex robots to quickly recover from damage while completing their tasks and taking the environment into account. We evaluate our algorithm on a simulated wheeled robot, a simulated six-legged robot, and a real six-legged walking robot that are damaged in several ways (e.g., a missing leg, a shortened leg, faulty motor, etc.) and whose objective is to reach a sequence of targets in an arena. Our experiments show that the robots can recover most of their locomotion abilities in an environment with obstacles, and without any human intervention. Overall, this new algorithm makes it possible to contemplate sending robots to places that are truly too dangerous for humans and from which robots cannot be rescued.}
 }
-@article{vassiliades2016scaling,
-  title={Scaling Up MAP-Elites Using Centroidal Voronoi Tessellations},
-  author={Vassilis Vassiliades, Konstantinos Chatzilygeroudis and Jean-Baptiste Mouret},
-  journal={arXiv:1610.05729},
-  year={2016},
-  url={https://arxiv.org/abs/1610.05729},
-  abstract={The recently introduced Multi-dimensional Archive of Phenotypic Elites (MAP-Elites) is an evolutionary algorithm capable of producing a large archive of diverse, high-performing solutions in a single run. It works by discretizing a continuous feature space into unique regions according to the desired discretization per dimension. While simple, this algorithm has a main drawback: it cannot scale to high-dimensional feature spaces since the number of regions increase exponentially with the number of dimensions. In this paper, we address this limitation by introducing a simple extension of MAP-Elites that has a constant, pre-defined number of regions irrespective of the dimensionality of the feature space. Our main insight is that methods from computational geometry could partition a high-dimensional space into well-spread geometric regions. In particular, our algorithm uses a centroidal Voronoi tessellation (CVT) to divide the feature space into a desired number of regions; it then places every generated individual in its closest region, replacing a less fit one if the region is already occupied. We demonstrate the effectiveness of the new "CVT-MAP-Elites" algorithm in high-dimensional feature spaces through comparisons against MAP-Elites in a hexapod locomotion task.}
-}
 @article{cully2016limbo,
     title={Limbo: A Fast and Flexible Library for Bayesian Optimization},
     author={Antoine Cully, Konstantinos Chatzilygeroudis, Federico Allocati and Jean-Baptiste Mouret},
     year={2016},
-    journal={arxiv:1611.07343},
     url={https://arxiv.org/abs/1611.07343},
+    code={https://github.com/resibots/limbo},
     abstract={Limbo is an open-source C++11 library for Bayesian optimization which is designed to be both highly flexible and very fast. It can be used to optimize functions for which the gradient is unknown, evaluations are expensive, and runtime cost matters (e.g., on embedded systems or robots). Benchmarks on standard functions show that Limbo is about 2 times faster than BayesOpt (another C++ library) for a similar accuracy.}
+}
+</textarea>
+
+<textarea id="bibtex_input_journals" style="display:none;">
+@article{vassiliades2017scaling,
+  title={Using Centroidal Voronoi Tessellations to Scale Up the Multi-dimensional Archive of Phenotypic Elites Algorithm},
+  author={Vassilis Vassiliades, Konstantinos Chatzilygeroudis and Jean-Baptiste Mouret},
+  journal={To appear in IEEE Transactions on Evolutionary Computation},
+  year={2017},
+  url={https://arxiv.org/abs/1610.05729},
+  code={https://github.com/resibots/vassiliades_2017_cvt_map_elites},
+  abstract={The recently introduced Multi-dimensional Archive of Phenotypic Elites (MAP-Elites) is an evolutionary algorithm capable of producing a large archive of diverse, high-performing solutions in a single run. It works by discretizing a continuous feature space into unique regions according to the desired discretization per dimension. While simple, this algorithm has a main drawback: it cannot scale to high-dimensional feature spaces since the number of regions increase exponentially with the number of dimensions. In this paper, we address this limitation by introducing a simple extension of MAP-Elites that has a constant, pre-defined number of regions irrespective of the dimensionality of the feature space. Our main insight is that methods from computational geometry could partition a high-dimensional space into well-spread geometric regions. In particular, our algorithm uses a centroidal Voronoi tessellation (CVT) to divide the feature space into a desired number of regions; it then places every generated individual in its closest region, replacing a less fit one if the region is already occupied. We demonstrate the effectiveness of the new "CVT-MAP-Elites" algorithm in high-dimensional feature spaces through comparisons against MAP-Elites in maze navigation and hexapod locomotion tasks.}
 }
 </textarea>
 
@@ -67,6 +69,7 @@
   booktitle={International Conference on Intelligent Robots and Systems (IROS)},
   abstract={The most data-efficient algorithms for reinforcement learning (RL) in robotics are based on uncertain dynamical models: after each episode, they first learn a dynamical model of the robot, then they use an optimization algorithm to find a policy that maximizes the expected return given the model and its uncertainties. It is often believed that this optimization can be tractable only if analytical, gradient-based algorithms are used; however, these algorithms require using specific families of reward functions and policies, which greatly limits the flexibility of the overall approach. In this paper, we introduce a novel model-based RL algorithm, called Black-DROPS (Black-box Data-efficient RObot Policy Search) that: (1) does not impose any constraint on the reward function or the policy (they are treated as black-boxes), (2) is as data-efficient as the state-of-the-art algorithm for data-efficient RL in robotics, and (3) is as fast (or faster) than analytical approaches when several cores are available. The key idea is to replace the gradient-based optimization algorithm with a parallel, black-box algorithm that takes into account the model uncertainties. We demonstrate the performance of our new algorithm on two standard control benchmark problems (in simulation) and a low-cost robotic manipulator (with a real robot).},
   url={https://arxiv.org/abs/1703.07261},
+  code={https://github.com/resibots/blackdrops},
   year={2017},
   video={https://www.youtube.com/watch?v=kTEyYiIFGPM},
   organization={IEEE}
@@ -142,8 +145,14 @@
   <span class="if booktitle">
     <span class="booktitle"></span>
   </span>
+  <span class="if journal">
+    <span class="journal"></span>
+  </span>
   <span class="if url" style="margin-left: 20px">
     <a class="url" style="color:black; font-size:10px" target="_blank">(view online)</a>
+  </span>
+  <span class="if code" style="margin-left: 20px">
+    <a class="code" style="color:black; font-size:10px" target="_blank">(code)</a>
   </span>
   <span class="if video" style="margin-left: 20px">
     <a class="video" style="color:black; font-size:10px" target="_blank">(video)</a>
@@ -199,6 +208,10 @@
       <h2 class="section-title"><span>Pre-prints (under review)</span></h2>
 
       <ul><div id="bibtex_display_preprint"></div></ul>
+
+      <h2 class="section-title"><span>Peer-reviewed Journals</span></h2>
+
+      <ul><div id="bibtex_display_journals"></div></ul>
 
       <h2 class="section-title"><span>Peer-reviewed Conferences</span></h2>
 
