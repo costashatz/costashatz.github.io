@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <meta name="viewport"    content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+  <meta name="author" content="Sergey Pozhilov (GetTemplate.com)">
 
   <title>Konstantinos Chatzilygeroudis | Publications - All</title>
 
@@ -22,280 +23,364 @@
 
   <!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
 </head>
+
 <body>
 
-<textarea id="bibtex_input_preprint" style="display:none;">
-@article{supratik2017aloq,
-  title={{Alternating Optimisation and Quadrature for Robust Reinforcement Learning}},
-  author={Paul Supratik, Konstantinos Chatzilygeroudis, Kamil Ciosek, Jean-Baptiste Mouret, Michael A. Osborne and Shimon Whiteson},
-  url={https://arxiv.org/abs/1605.07496},
-  year={2017},
-  abstract={Bayesian optimisation has been successfully applied to a variety of reinforcement learning problems. However, the traditional approach for learning optimal policies in simulators does not utilise the opportunity to improve learning by adjusting certain environment variables – state features that are randomly determined by the environment in a physical setting but are controllable in a simulator. This paper considers the problem of finding an optimal policy while taking into account the impact of environment variables. We present alternating optimisation and quadrature (ALOQ), which uses Bayesian optimisation and Bayesian quadrature to address such settings. ALOQ is robust to the presence of significant rare events, which may not be observable under random sampling, but have a considerable impact on determining the optimal policy. Experimental results in numerous domains, including those drawn from robotics, show that ALOQ can learn much more efficiently than existing methods.}
-}
-@article{chatzilygeroudis2016resetfree,
-  title={{Reset-free Trial-and-Error Learning for Robot Damage Recovery}},
-  author={Konstantinos Chatzilygeroudis, Vassilis Vassiliades and Jean-Baptiste Mouret},
-  url={https://arxiv.org/abs/1610.04213},
-  year={2016},
-  video={https://youtu.be/IqtyHFrb3BU},
-  abstract={The high probability of hardware failures prevents many advanced robots (e.g., legged robots) from being confidently deployed in real-world situations (e.g., post-disaster rescue). Instead of attempting to diagnose the failures, robots could adapt by trial-and-error in order to be able to complete their tasks. In that case, damage recovery can be seen as a Reinforcement Learning (RL) problem. However, the best RL algorithms for robotics require resetting the robot and the environment to an initial state after each episode, that is, the robot is not learning autonomously. In addition, most of the RL methods for robotics do not scale well with complex robots (e.g., walking robots) and either cannot be used at all or take too long to converge to a solution (e.g., hours of learning). In this paper, we introduce a novel learning algorithm called "Reset-free Trial and-Error" (RTE) that (1) breaks the complexity by pre-generating hundreds of possible behaviors with a dynamics simulator of the intact robot, and (2) allows complex robots to quickly recover from damage while completing their tasks and taking the environment into account. We evaluate our algorithm on a simulated wheeled robot, a simulated six-legged robot, and a real six-legged walking robot that are damaged in several ways (e.g., a missing leg, a shortened leg, faulty motor, etc.) and whose objective is to reach a sequence of targets in an arena. Our experiments show that the robots can recover most of their locomotion abilities in an environment with obstacles, and without any human intervention. Overall, this new algorithm makes it possible to contemplate sending robots to places that are truly too dangerous for humans and from which robots cannot be rescued.}
-}
-@article{cully2016limbo,
-    title={Limbo: A Fast and Flexible Library for Bayesian Optimization},
-    author={Antoine Cully, Konstantinos Chatzilygeroudis, Federico Allocati and Jean-Baptiste Mouret},
-    year={2016},
-    url={https://arxiv.org/abs/1611.07343},
-    code={https://github.com/resibots/limbo},
-    abstract={Limbo is an open-source C++11 library for Bayesian optimization which is designed to be both highly flexible and very fast. It can be used to optimize functions for which the gradient is unknown, evaluations are expensive, and runtime cost matters (e.g., on embedded systems or robots). Benchmarks on standard functions show that Limbo is about 2 times faster than BayesOpt (another C++ library) for a similar accuracy.}
-}
-</textarea>
+  <textarea id="bibtex_input_preprint" style="display:none;">
+    @article{chatzilygeroudis2017using,
+      title={Using Parameterized Black-Box Priors to Scale Up Model-Based Policy Search for Robotics},
+      author={Konstantinos Chatzilygeroudis and Jean-Baptiste Mouret},
+      url={https://arxiv.org/abs/1709.06917},
+      year={2017},
+      video={https://youtu.be/HFkZkhGGzTo},
+      code={https://github.com/resibots/blackdrops},
+      abstract={The most data-efficient algorithms for reinforcement learning in robotics are model-based policy search algorithms, which alternate between learning a dynamical model of the robot and optimizing a policy to maximize the expected return given the model and its uncertainties. Among the few proposed approaches, the recently introduced Black-DROPS algorithm exploits a black-box optimization algorithm to achieve both high data-efficiency and good computation times when several cores are used; nevertheless, like all model-based policy search approaches, Black-DROPS does not scale to high dimensional state/action spaces. In this paper, we introduce a new model learning procedure in Black-DROPS that leverages parameterized black-box priors to (1) scale up to high-dimensional systems, and (2) be robust to large inaccuracies of the prior information. We demonstrate the effectiveness of our approach with the "pendubot" swing-up task in simulation and with a physical hexapod robot (48D state space, 18D action space) that has to walk forward as fast as possible. The results show that our new algorithm is more data-efficient than previous model-based policy search algorithms (with and without priors) and that it can allow a physical 6-legged robot to learn new gaits in only 16 to 30 seconds of interaction time.}
+    }
+    @article{pautrat2017bayesian,
+      title={Bayesian Optimization with Automatic Prior Selection for Data-Efficient Direct Policy Search},
+      author={Rémi Pautrat, Konstantinos Chatzilygeroudis and Jean-Baptiste Mouret},
+      url={https://arxiv.org/abs/1709.06919},
+      year={2017},
+      video={https://youtu.be/xo8mUIZTvNE},
+      code={https://github.com/resibots/pautrat_2018_mlei},
+      journal={A short version of the paper was accepted at the 1st Conference on Robot Learning (CoRL) 2017 (non-archival papers)},
+      abstract={One of the most interesting features of Bayesian optimization for direct policy search is that it can leverage priors (e.g., from simulation or from previous tasks) to accelerate learning on a robot. In this paper, we are interested in situations for which several priors exist but we do not know in advance which one fits best the current situation. We tackle this problem by introducing a novel acquisition function, called Most Likely Expected Improvement (MLEI), that combines the likelihood of the priors and the expected improvement. We evaluate this new acquisition function on a transfer learning task for a 5-DOF planar arm and on a possibly damaged, 6-legged robot that has to learn to walk on flat ground and on stairs, with priors corresponding to different stairs and different kinds of damages. Our results show that MLEI effectively identifies and exploits the priors, even when there is no obvious match between the current situations and the priors.}
+    }
+    @article{chatzilygeroudis2016resetfree,
+      title={{Reset-free Trial-and-Error Learning for Robot Damage Recovery}},
+      author={Konstantinos Chatzilygeroudis, Vassilis Vassiliades and Jean-Baptiste Mouret},
+      url={https://arxiv.org/abs/1610.04213},
+      year={2016},
+      video={https://youtu.be/IqtyHFrb3BU},
+      abstract={The high probability of hardware failures prevents many advanced robots (e.g., legged robots) from being confidently deployed in real-world situations (e.g., post-disaster rescue). Instead of attempting to diagnose the failures, robots could adapt by trial-and-error in order to be able to complete their tasks. In that case, damage recovery can be seen as a Reinforcement Learning (RL) problem. However, the best RL algorithms for robotics require resetting the robot and the environment to an initial state after each episode, that is, the robot is not learning autonomously. In addition, most of the RL methods for robotics do not scale well with complex robots (e.g., walking robots) and either cannot be used at all or take too long to converge to a solution (e.g., hours of learning). In this paper, we introduce a novel learning algorithm called "Reset-free Trial and-Error" (RTE) that (1) breaks the complexity by pre-generating hundreds of possible behaviors with a dynamics simulator of the intact robot, and (2) allows complex robots to quickly recover from damage while completing their tasks and taking the environment into account. We evaluate our algorithm on a simulated wheeled robot, a simulated six-legged robot, and a real six-legged walking robot that are damaged in several ways (e.g., a missing leg, a shortened leg, faulty motor, etc.) and whose objective is to reach a sequence of targets in an arena. Our experiments show that the robots can recover most of their locomotion abilities in an environment with obstacles, and without any human intervention. Overall, this new algorithm makes it possible to contemplate sending robots to places that are truly too dangerous for humans and from which robots cannot be rescued.}
+    }
+    @article{cully2016limbo,
+        title={Limbo: A Fast and Flexible Library for Bayesian Optimization},
+        author={Antoine Cully, Konstantinos Chatzilygeroudis, Federico Allocati and Jean-Baptiste Mouret},
+        year={2016},
+        url={https://arxiv.org/abs/1611.07343},
+        code={https://github.com/resibots/limbo},
+        abstract={Limbo is an open-source C++11 library for Bayesian optimization which is designed to be both highly flexible and very fast. It can be used to optimize functions for which the gradient is unknown, evaluations are expensive, and runtime cost matters (e.g., on embedded systems or robots). Benchmarks on standard functions show that Limbo is about 2 times faster than BayesOpt (another C++ library) for a similar accuracy.}
+    }
+  </textarea>
 
-<textarea id="bibtex_input_journals" style="display:none;">
-@article{vassiliades2017scaling,
-  title={Using Centroidal Voronoi Tessellations to Scale Up the Multi-dimensional Archive of Phenotypic Elites Algorithm},
-  author={Vassilis Vassiliades, Konstantinos Chatzilygeroudis and Jean-Baptiste Mouret},
-  journal={To appear in IEEE Transactions on Evolutionary Computation},
-  year={2017},
-  url={https://arxiv.org/abs/1610.05729},
-  code={https://github.com/resibots/vassiliades_2017_cvt_map_elites},
-  abstract={The recently introduced Multi-dimensional Archive of Phenotypic Elites (MAP-Elites) is an evolutionary algorithm capable of producing a large archive of diverse, high-performing solutions in a single run. It works by discretizing a continuous feature space into unique regions according to the desired discretization per dimension. While simple, this algorithm has a main drawback: it cannot scale to high-dimensional feature spaces since the number of regions increase exponentially with the number of dimensions. In this paper, we address this limitation by introducing a simple extension of MAP-Elites that has a constant, pre-defined number of regions irrespective of the dimensionality of the feature space. Our main insight is that methods from computational geometry could partition a high-dimensional space into well-spread geometric regions. In particular, our algorithm uses a centroidal Voronoi tessellation (CVT) to divide the feature space into a desired number of regions; it then places every generated individual in its closest region, replacing a less fit one if the region is already occupied. We demonstrate the effectiveness of the new "CVT-MAP-Elites" algorithm in high-dimensional feature spaces through comparisons against MAP-Elites in maze navigation and hexapod locomotion tasks.}
-}
-</textarea>
+  <textarea id="bibtex_input_journals" style="display:none;">
+    @article{vassiliades2017scaling,
+      title={Using Centroidal Voronoi Tessellations to Scale Up the Multi-dimensional Archive of Phenotypic Elites Algorithm},
+      author={Vassilis Vassiliades, Konstantinos Chatzilygeroudis and Jean-Baptiste Mouret},
+      journal={IEEE Transactions on Evolutionary Computation},
+      year={2017},
+      url={https://arxiv.org/abs/1610.05729},
+      code={https://github.com/resibots/vassiliades_2017_cvt_map_elites},
+      abstract={The recently introduced Multi-dimensional Archive of Phenotypic Elites (MAP-Elites) is an evolutionary algorithm capable of producing a large archive of diverse, high-performing solutions in a single run. It works by discretizing a continuous feature space into unique regions according to the desired discretization per dimension. While simple, this algorithm has a main drawback: it cannot scale to high-dimensional feature spaces since the number of regions increase exponentially with the number of dimensions. In this paper, we address this limitation by introducing a simple extension of MAP-Elites that has a constant, pre-defined number of regions irrespective of the dimensionality of the feature space. Our main insight is that methods from computational geometry could partition a high-dimensional space into well-spread geometric regions. In particular, our algorithm uses a centroidal Voronoi tessellation (CVT) to divide the feature space into a desired number of regions; it then places every generated individual in its closest region, replacing a less fit one if the region is already occupied. We demonstrate the effectiveness of the new "CVT-MAP-Elites" algorithm in high-dimensional feature spaces through comparisons against MAP-Elites in maze navigation and hexapod locomotion tasks.}
+    }
+  </textarea>
 
-<textarea id="bibtex_input_conf" style="display:none;">
-@inproceedings{chatzilygeroudis2017black,
-  title={{Black-Box Data-efficient Policy Search for Robotics}},
-  author={Konstantinos Chatzilygeroudis, Roberto Rama, Rituraj Kaushik, Dorian Goepp, Vassilis Vassiliades and Jean-Baptiste Mouret},
-  booktitle={International Conference on Intelligent Robots and Systems (IROS)},
-  abstract={The most data-efficient algorithms for reinforcement learning (RL) in robotics are based on uncertain dynamical models: after each episode, they first learn a dynamical model of the robot, then they use an optimization algorithm to find a policy that maximizes the expected return given the model and its uncertainties. It is often believed that this optimization can be tractable only if analytical, gradient-based algorithms are used; however, these algorithms require using specific families of reward functions and policies, which greatly limits the flexibility of the overall approach. In this paper, we introduce a novel model-based RL algorithm, called Black-DROPS (Black-box Data-efficient RObot Policy Search) that: (1) does not impose any constraint on the reward function or the policy (they are treated as black-boxes), (2) is as data-efficient as the state-of-the-art algorithm for data-efficient RL in robotics, and (3) is as fast (or faster) than analytical approaches when several cores are available. The key idea is to replace the gradient-based optimization algorithm with a parallel, black-box algorithm that takes into account the model uncertainties. We demonstrate the performance of our new algorithm on two standard control benchmark problems (in simulation) and a low-cost robotic manipulator (with a real robot).},
-  url={https://arxiv.org/abs/1703.07261},
-  code={https://github.com/resibots/blackdrops},
-  year={2017},
-  video={https://www.youtube.com/watch?v=kTEyYiIFGPM},
-  organization={IEEE}
-}
-@inproceedings{vassiliades2017comparing,
-  title={Comparing multimodal optimization and illumination},
-  author={Vassilis Vassiliades, Konstantinos Chatzilygeroudis and Jean-Baptiste Mouret},
-  booktitle={Genetic and Evolutionary Computation Conference (GECCO) (Poster-only papers)},
-  abstract={Illumination algorithms are a recent addition to the evolutionary computation toolbox that allows the generation of many diverse and high-performing solutions in a single run. Nevertheless, traditional multimodal optimization algorithms also search for diverse and high-performing solutions: could some multimodal optimization algorithms be better at illumination than illumination algorithms? In this study, we compare two illumination algorithms (Novelty Search with Local Competition (NSLC), MAP-Elites) with two multimodal optimization ones (Clearing, Restricted Tournament Selection) in a maze navigation task. The results show that Clearing can have comparable performance to MAP-Elites and NSLC.},
-  url={https://hal.inria.fr/hal-01518802/},
-  year={2017}
-}
-@inproceedings{koustoumpardis2015human,
-  title={Human robot collaboration for folding fabrics based on force/RGB-D feedback},
-  author={Panagiotis Koustoumpardis, Konstantinos Chatzilygeroudis, Aris Synodinos and Nikos Aspragathos},
-  booktitle={24rd International Conference on Robotics in Alpe-Adria-Danube Region (RAAD)},
-  abstract={In this paper, the human-robot collaboration for executing complicated handling tasks for folding non-rigid objects is investigated. A hierarchical control system is developed for the co-manipulation task of folding sheets like fabrics/cloths. The system is based on force and RGB-D feedback in both higher and lower control levels of the process. In the higher level, the perception of the human's intention is used for deciding the robot's action; in the lower level the robot reacts to the force/RGB-D feedback to follow human guidance. The proposed approach is tested in folding a rectangular piece of fabric. Experiments showed that the developed robotic system is able to track the human's movement in order to help her/him to accomplish the folding co-manipulation task.},
-  url={http://dx.doi.org/10.1007/978-3-319-21290-6_24},
-  year={2015},
-  organization={IEEE}
-}
-</textarea>
+  <textarea id="bibtex_input_conf" style="display:none;">
+    @inproceedings{supratik2018aloq,
+      title={{Alternating Optimisation and Quadrature for Robust Control}},
+      author={Paul Supratik, Konstantinos Chatzilygeroudis, Kamil Ciosek, Jean-Baptiste Mouret, Michael A. Osborne and Shimon Whiteson},
+      booktitle={Thirty-Second AAAI Conference on Artificial Intelligence (AAAI 2018)},
+      url={https://arxiv.org/abs/1605.07496},
+      year={2018},
+      abstract={Bayesian optimisation has been successfully applied to a variety of reinforcement learning problems. However, the traditional approach for learning optimal policies in simulators does not utilise the opportunity to improve learning by adjusting certain environment variables: state features that are unobservable and randomly determined by the environment in a physical setting but are controllable in a simulator. This paper considers the problem of finding a robust policy while taking into account the impact of environment variables. We present Alternating Optimisation and Quadrature (ALOQ), which uses Bayesian optimisation and Bayesian quadrature to address such settings. ALOQ is robust to the presence of significant rare events, which may not be observable under random sampling, but play a substantial role in determining the optimal policy. Experimental results across different domains show that ALOQ can learn more efficiently and robustly than existing methods.},
+      organization={AAAI}
+    }
+    @inproceedings{chatzilygeroudis2017black,
+      title={{Black-Box Data-efficient Policy Search for Robotics}},
+      author={Konstantinos Chatzilygeroudis, Roberto Rama, Rituraj Kaushik, Dorian Goepp, Vassilis Vassiliades and Jean-Baptiste Mouret},
+      booktitle={International Conference on Intelligent Robots and Systems (IROS)},
+      abstract={The most data-efficient algorithms for reinforcement learning (RL) in robotics are based on uncertain dynamical models: after each episode, they first learn a dynamical model of the robot, then they use an optimization algorithm to find a policy that maximizes the expected return given the model and its uncertainties. It is often believed that this optimization can be tractable only if analytical, gradient-based algorithms are used; however, these algorithms require using specific families of reward functions and policies, which greatly limits the flexibility of the overall approach. In this paper, we introduce a novel model-based RL algorithm, called Black-DROPS (Black-box Data-efficient RObot Policy Search) that: (1) does not impose any constraint on the reward function or the policy (they are treated as black-boxes), (2) is as data-efficient as the state-of-the-art algorithm for data-efficient RL in robotics, and (3) is as fast (or faster) than analytical approaches when several cores are available. The key idea is to replace the gradient-based optimization algorithm with a parallel, black-box algorithm that takes into account the model uncertainties. We demonstrate the performance of our new algorithm on two standard control benchmark problems (in simulation) and a low-cost robotic manipulator (with a real robot).},
+      url={https://arxiv.org/abs/1703.07261},
+      code={https://github.com/resibots/blackdrops},
+      year={2017},
+      video={https://www.youtube.com/watch?v=kTEyYiIFGPM},
+      organization={IEEE}
+    }
+    @inproceedings{vassiliades2017comparing,
+      title={Comparing multimodal optimization and illumination},
+      author={Vassilis Vassiliades, Konstantinos Chatzilygeroudis and Jean-Baptiste Mouret},
+      booktitle={Genetic and Evolutionary Computation Conference (GECCO) (Poster-only papers)},
+      abstract={Illumination algorithms are a recent addition to the evolutionary computation toolbox that allows the generation of many diverse and high-performing solutions in a single run. Nevertheless, traditional multimodal optimization algorithms also search for diverse and high-performing solutions: could some multimodal optimization algorithms be better at illumination than illumination algorithms? In this study, we compare two illumination algorithms (Novelty Search with Local Competition (NSLC), MAP-Elites) with two multimodal optimization ones (Clearing, Restricted Tournament Selection) in a maze navigation task. The results show that Clearing can have comparable performance to MAP-Elites and NSLC.},
+      url={https://hal.inria.fr/hal-01518802/},
+      year={2017}
+    }
+    @inproceedings{koustoumpardis2015human,
+      title={Human robot collaboration for folding fabrics based on force/RGB-D feedback},
+      author={Panagiotis Koustoumpardis, Konstantinos Chatzilygeroudis, Aris Synodinos and Nikos Aspragathos},
+      booktitle={24th International Conference on Robotics in Alpe-Adria-Danube Region (RAAD)},
+      abstract={In this paper, the human-robot collaboration for executing complicated handling tasks for folding non-rigid objects is investigated. A hierarchical control system is developed for the co-manipulation task of folding sheets like fabrics/cloths. The system is based on force and RGB-D feedback in both higher and lower control levels of the process. In the higher level, the perception of the human's intention is used for deciding the robot's action; in the lower level the robot reacts to the force/RGB-D feedback to follow human guidance. The proposed approach is tested in folding a rectangular piece of fabric. Experiments showed that the developed robotic system is able to track the human's movement in order to help her/him to accomplish the folding co-manipulation task.},
+      url={http://dx.doi.org/10.1007/978-3-319-21290-6_24},
+      year={2015},
+      organization={IEEE}
+    }
+  </textarea>
 
-<textarea id="bibtex_input_workshops" style="display:none;">
-@inproceedings{mouret201720,
-  title={20 Years of Reality Gap: a few Thoughts about Simulators in Evolutionary Robotics},
-  author={Jean-Baptiste Mouret and Konstantinos Chatzilygeroudis},
-  booktitle={Proceedings of the International Workshop "Simulation in Evolutionary Robotics" at the Genetic and Evolutionary Computation Conference (GECCO)},
-  abstract={Simulators in Evolutionary Robotics (ER) are often considered as a "temporary evil" until experiments can be conducted on real robots. Yet, after more than 20 years of ER, most experiments still happen in simulation and nothing suggests that this situation will change in the next few years. In this short paper, we describe the requirements of ER from simulators, what we tried, and how we successfully crossed the "reality gap" in many experiments. We argue that future simulators need to be able to estimate their confidence when they predict a fitness value, so that behaviors that are not accurately simulated can be avoided.},
-  url={https://hal.inria.fr/hal-01518764/},
-  year={2017}
-}
-@inproceedings{vassiliades2017comparison,
-  title={A comparison of illumination algorithms in unbounded spaces},
-  author={Vassilis Vassiliades, Konstantinos Chatzilygeroudis and Jean-Baptiste Mouret},
-  booktitle={Proceedings of the International Workshop "Measuring and Promoting Diversity in Evolutionary Algorithms" at the Genetic and Evolutionary Computation Conference (GECCO)},
-  abstract={Illumination algorithms are a new class of evolutionary algorithms capable of producing large archives of diverse and high-performing solutions. Examples of such algorithms include Novelty Search with Local Competition (NSLC), the Multi-dimensional Archive of Phenotypic Elites (MAP-Elites) and the newly introduced Centroidal Voronoi Tessellation (CVT) MAP-Elites. While NSLC can be used in unbounded behavioral spaces, MAP-Elites and CVT-MAP-Elites require the user to manually specify the bounds. In this study, we introduce variants of these algorithms that expand their bounds based on the discovered solutions. In addition, we introduce a novel algorithm called "Cluster-Elites" that can adapt its bounds to non-convex spaces. We compare all algorithms in a maze navigation problem and illustrate that Cluster-Elites and the expansive variants of MAP-Elites and CVT-MAP-Elites have comparable or better performance than NSLC, MAP-Elites and CVT-MAP-Elites.},
-  url={https://hal.inria.fr/hal-01518814/},
-  year={2017}
-}
-@inproceedings{papaspyros2016safety,
-  title={Safety-Aware Robot Damage Recovery Using Constrained Bayesian Optimization and Simulated Priors},
-  author={Vaios Papaspyros, Konstantinos Chatzilygeroudis, Vassilis Vassiliades and Jean-Baptiste Mouret},
-  booktitle={BayesOpt '16: Proceedings of the International Workshop "Bayesian Optimization: Black-box Optimization and Beyond" at NIPS},
-  abstract={The recently introduced Intelligent Trial-and-Error (IT&E) algorithm showed that robots can adapt to damage in a matter of a few trials. The success of this algorithm relies on two components: prior knowledge acquired through simulation with an intact robot, and Bayesian optimization (BO) that operates on-line, on the damaged robot. While IT&E leads to fast damage recovery, it does not incorporate any safety constraints that prevent the robot from attempting harmful behaviors. In this work, we address this limitation by replacing the BO component with a constrained BO procedure. We evaluate our approach on a simulated damaged humanoid robot that needs to crawl as fast as possible, while performing as few unsafe trials as possible. We compare our new "safety-aware IT&E" algorithm to IT&E and a multi-objective version of IT&E in which the safety constraints are dealt as separate objectives. Our results show that our algorithm outperforms the other approaches, both in crawling speed within the safe regions and number of unsafe trials.},
-  url={https://arxiv.org/abs/1611.09419},
-  year={2016},
-  video={https://www.youtube.com/watch?v=8esrj-7WhsQ}
-}
+  <textarea id="bibtex_input_workshops" style="display:none;">
+    @inproceedings{mouret201720,
+      title={20 Years of Reality Gap: a few Thoughts about Simulators in Evolutionary Robotics},
+      author={Jean-Baptiste Mouret and Konstantinos Chatzilygeroudis},
+      booktitle={Proceedings of the International Workshop "Simulation in Evolutionary Robotics" at the Genetic and Evolutionary Computation Conference (GECCO)},
+      abstract={Simulators in Evolutionary Robotics (ER) are often considered as a "temporary evil" until experiments can be conducted on real robots. Yet, after more than 20 years of ER, most experiments still happen in simulation and nothing suggests that this situation will change in the next few years. In this short paper, we describe the requirements of ER from simulators, what we tried, and how we successfully crossed the "reality gap" in many experiments. We argue that future simulators need to be able to estimate their confidence when they predict a fitness value, so that behaviors that are not accurately simulated can be avoided.},
+      url={https://hal.inria.fr/hal-01518764/},
+      year={2017}
+    }
+    @inproceedings{vassiliades2017comparison,
+      title={A comparison of illumination algorithms in unbounded spaces},
+      author={Vassilis Vassiliades, Konstantinos Chatzilygeroudis and Jean-Baptiste Mouret},
+      booktitle={Proceedings of the International Workshop "Measuring and Promoting Diversity in Evolutionary Algorithms" at the Genetic and Evolutionary Computation Conference (GECCO)},
+      abstract={Illumination algorithms are a new class of evolutionary algorithms capable of producing large archives of diverse and high-performing solutions. Examples of such algorithms include Novelty Search with Local Competition (NSLC), the Multi-dimensional Archive of Phenotypic Elites (MAP-Elites) and the newly introduced Centroidal Voronoi Tessellation (CVT) MAP-Elites. While NSLC can be used in unbounded behavioral spaces, MAP-Elites and CVT-MAP-Elites require the user to manually specify the bounds. In this study, we introduce variants of these algorithms that expand their bounds based on the discovered solutions. In addition, we introduce a novel algorithm called "Cluster-Elites" that can adapt its bounds to non-convex spaces. We compare all algorithms in a maze navigation problem and illustrate that Cluster-Elites and the expansive variants of MAP-Elites and CVT-MAP-Elites have comparable or better performance than NSLC, MAP-Elites and CVT-MAP-Elites.},
+      url={https://hal.inria.fr/hal-01518814/},
+      year={2017}
+    }
+    @inproceedings{papaspyros2016safety,
+      title={Safety-Aware Robot Damage Recovery Using Constrained Bayesian Optimization and Simulated Priors},
+      author={Vaios Papaspyros, Konstantinos Chatzilygeroudis, Vassilis Vassiliades and Jean-Baptiste Mouret},
+      booktitle={BayesOpt '16: Proceedings of the International Workshop "Bayesian Optimization: Black-box Optimization and Beyond" at NIPS},
+      abstract={The recently introduced Intelligent Trial-and-Error (IT&E) algorithm showed that robots can adapt to damage in a matter of a few trials. The success of this algorithm relies on two components: prior knowledge acquired through simulation with an intact robot, and Bayesian optimization (BO) that operates on-line, on the damaged robot. While IT&E leads to fast damage recovery, it does not incorporate any safety constraints that prevent the robot from attempting harmful behaviors. In this work, we address this limitation by replacing the BO component with a constrained BO procedure. We evaluate our approach on a simulated damaged humanoid robot that needs to crawl as fast as possible, while performing as few unsafe trials as possible. We compare our new "safety-aware IT&E" algorithm to IT&E and a multi-objective version of IT&E in which the safety constraints are dealt as separate objectives. Our results show that our algorithm outperforms the other approaches, both in crawling speed within the safe regions and number of unsafe trials.},
+      url={https://arxiv.org/abs/1611.09419},
+      year={2016},
+      video={https://www.youtube.com/watch?v=8esrj-7WhsQ}
+    }
+    @inproceedings{chatzilygeroudis2016semi-episodic,
+      title={Towards semi-episodic learning for robot damage recovery},
+      author={Konstantinos Chatzilygeroudis, Antoine Cully and Jean-Baptiste Mouret},
+      booktitle={AILTA '16: Proceedings of the International Workshop "AI for Long-term Autonomy" at ICRA},
+      abstract={The recently introduced Intelligent Trial and Error algorithm (IT&E) enables robots to creatively adapt to damage in a matter of minutes by combining an off-line evolutionary algorithm and an on-line learning algorithm based on Bayesian Optimization. We extend the IT&E algorithm to allow for robots to learn to compensate for damages while executing their task(s). This leads to a semi-episodic learning scheme that increases the robot’s life-time autonomy and adaptivity. Preliminary experiments on a toy simulation and a 6-legged robot locomotion task show promising results.},
+      url={https://arxiv.org/abs/1610.01407},
+      year={2016},
+      organization={IEEE},
+      video={https://www.youtube.com/watch?v=Gpf5h07pJFA}
+    }
+  </textarea>
 
-@inproceedings{chatzilygeroudis2016semi-episodic,
-  title={Towards semi-episodic learning for robot damage recovery},
-  author={Konstantinos Chatzilygeroudis, Antoine Cully and Jean-Baptiste Mouret},
-  booktitle={AILTA '16: Proceedings of the International Workshop "AI for Long-term Autonomy" at ICRA},
-  abstract={The recently introduced Intelligent Trial and Error algorithm (IT&E) enables robots to creatively adapt to damage in a matter of minutes by combining an off-line evolutionary algorithm and an on-line learning algorithm based on Bayesian Optimization. We extend the IT&E algorithm to allow for robots to learn to compensate for damages while executing their task(s). This leads to a semi-episodic learning scheme that increases the robot’s life-time autonomy and adaptivity. Preliminary experiments on a toy simulation and a 6-legged robot locomotion task show promising results.},
-  url={https://arxiv.org/abs/1610.01407},
-  year={2016},
-  organization={IEEE},
-  video={https://www.youtube.com/watch?v=Gpf5h07pJFA}
-}
-</textarea>
-
-<div class="bibtex_template" style="display:none;">
-<li>
-<div style="margin-left: 10px; margin-bottom:5px; font-weight: bold; font-size:24px;">
-  <span class="title"></span>,
-  <span class="if year">
-    <span class="year"></span>
-  </span>
-</div>
-<div class="if author" style="font-weight: bold; font-style: italic;">
-  <span class="author"></span>.
-  <span class="if booktitle">
-    <span class="booktitle"></span>
-  </span>
-  <span class="if journal">
-    <span class="journal"></span>
-  </span>
-  <span class="if url" style="margin-left: 20px">
-    <a class="url" style="color:black; font-size:10px" target="_blank">(view online)</a>
-  </span>
-  <span class="if code" style="margin-left: 20px">
-    <a class="code" style="color:black; font-size:10px" target="_blank">(code)</a>
-  </span>
-  <span class="if video" style="margin-left: 20px">
-    <a class="video" style="color:black; font-size:10px" target="_blank">(video)</a>
-  </span>
-</div>
-<div class="if abstract" style="font-style: italic;">
-  <b>Abstract:</b><br/><span class="abstract"></span>
-</div>
-<br/>
-</li>
-</div>
-
-<header id="header">
-  <div id="head" class="parallax" parallax-speed="2">
-    <h1 id="logo" class="text-center">
-      <img class="img-circle" src="assets/images/profile.jpg" alt="">
-      <span class="title">Konstantinos Chatzilygeroudis</span>
-      <span class="tagline">PhD Candidate in Robotics and Machine Learning<br>
-        <a href="http://www.inria.fr/en/centre/nancy" target="_blank">Inria Nancy</a> - <a href="https://team.inria.fr/larsen/" target="_blank">LARSEN Team</a><br>
-        <a href="mailto:costashatz@gmail.com">costashatz@gmail.com</a></span>
-    </h1>
+  <div class="bibtex_template" style="display:none;">
+    <li>
+      <div style="margin-left: 10px; margin-bottom:5px; font-weight: normal; font-size:20px;">
+        <span class="if year">
+          <span style="font-weight: bold;" class="year"></span>,
+        </span>
+        <span class="title"></span>
+      </div>
+      <div class="if author" style="font-weight: bold; font-style: italic;">
+        <span class="author"></span>.
+        <span class="if booktitle">
+          <span style="font-weight: normal;" class="booktitle"></span>
+        </span>
+        <span class="if journal">
+          <span style="font-weight: normal;" class="journal"></span>
+        </span>
+        <span class="if url" style="margin-left: 20px">
+          <a class="url" style="color:black; font-size:10px" target="_blank">(view online)</a>
+        </span>
+        <span class="if code" style="margin-left: 20px">
+          <a class="code" style="color:black; font-size:10px" target="_blank">(code)</a>
+        </span>
+        <span class="if video" style="margin-left: 20px">
+          <a class="video" style="color:black; font-size:10px" target="_blank">(video)</a>
+        </span>
+      </div>
+      <!-- <div class="if abstract" style="font-style: italic; font-size:14px">
+        <b>Abstract:</b>
+        <br/>
+        <span class="abstract"></span>
+      </div> -->
+      <br/>
+    </li>
   </div>
 
-  <nav class="navbar navbar-default navbar-sticky">
-    <div class="container-fluid">
+  <header id="header">
+    <div id="head" class="parallax" parallax-speed="2">
+      <h1 id="logo" class="text-center">
+        <img class="img-circle" src="assets/images/profile.jpg" alt="">
+        <span class="title">Konstantinos Chatzilygeroudis</span>
+        <span class="tagline">PhD Candidate in Robotics and Machine Learning
+          <br>
+          <a href="http://www.inria.fr/en/centre/nancy" target="_blank">Inria Nancy</a> -
+          <a href="https://team.inria.fr/larsen/" target="_blank">LARSEN Team</a>
+          <br>
+          <a href="mailto:costashatz@gmail.com">costashatz@gmail.com</a>
+        </span>
+      </h1>
+    </div>
 
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+    <nav class="navbar navbar-default navbar-sticky">
+      <div class="container-fluid">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div class="navbar-collapse collapse">
+
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="./index.html">Home</a>
+            </li>
+            <!-- <li><a href="./research.html">Research</a></li> -->
+            <li>
+              <a href="./publications.html">Publications</a>
+            </li>
+            <li>
+              <a href="./files/Konstantinos_Chatzilygeroudis_CV.pdf" target="_blank">CV</a>
+            </li>
+            <li>
+              <a href="./videos.html">Videos</a>
+            </li>
+            <li>
+              <a href="./contact.html">Contact</a>
+            </li>
+          </ul>
+
+        </div>
+        <!--/.nav-collapse -->
       </div>
+    </nav>
+  </header>
 
-      <div class="navbar-collapse collapse">
+  <main id="main">
 
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="./index.html">Home</a></li>
-          <!-- <li><a href="./research.html">Research</a></li> -->
-          <li><a href="./publications.html">Publications</a></li>
-          <li><a href="./files/Konstantinos_Chatzilygeroudis_CV.pdf" target="_blank">CV</a></li>
-          <li><a href="./videos.html">Videos</a></li>
-          <li><a href="./contact.html">Contact</a></li>
+    <div class="container">
+
+      <div class="row section recentworks topspace">
+
+        <h2 class="section-title">
+          <span>Pre-prints (under review)</span>
+        </h2>
+
+        <ul>
+          <div id="bibtex_display_preprint"></div>
         </ul>
 
-      </div><!--/.nav-collapse -->
+        <h2 class="section-title">
+          <span>Peer-reviewed Journals</span>
+        </h2>
+
+        <ul>
+          <div id="bibtex_display_journals"></div>
+        </ul>
+
+        <h2 class="section-title">
+          <span>Peer-reviewed Conferences</span>
+        </h2>
+
+        <ul>
+          <div id="bibtex_display_conf"></div>
+        </ul>
+
+        <h2 class="section-title">
+          <span>Peer-reviewed Workshops</span>
+        </h2>
+
+        <ul>
+          <div id="bibtex_display_workshops"></div>
+        </ul>
+
+      </div>
+      <!-- / section -->
+
     </div>
-  </nav>
-</header>
+    <!-- /container -->
 
-<main id="main">
+  </main>
 
-  <div class="container">
-
-    <div class="row section recentworks topspace">
-
-      <h2 class="section-title"><span>Pre-prints (under review)</span></h2>
-
-      <ul><div id="bibtex_display_preprint"></div></ul>
-
-      <h2 class="section-title"><span>Peer-reviewed Journals</span></h2>
-
-      <ul><div id="bibtex_display_journals"></div></ul>
-
-      <h2 class="section-title"><span>Peer-reviewed Conferences</span></h2>
-
-      <ul><div id="bibtex_display_conf"></div></ul>
-
-      <h2 class="section-title"><span>Peer-reviewed Workshops</span></h2>
-
-      <ul><div id="bibtex_display_workshops"></div></ul>
-
-    </div> <!-- / section -->
-
-  </div>  <!-- /container -->
-
-</main>
-
-<footer id="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 widget">
-        <h3 class="widget-title">Contact</h3>
-        <div class="widget-body">
-          <p>+33 610466287<br>
-            <a href="mailto:konstantinos.chatzilygeroudis@inria.fr">konstantinos.chatzilygeroudis@inria.fr</a><br>
-            <a href="mailto:costashatz@gmail.com">costashatz@gmail.com</a><br>
-            <br>
-            <a href="http://www.inria.fr/en/centre/nancy" target="_blank">Inria Nancy - Grand Est</a><br>
-            <a href="https://team.inria.fr/larsen/" target="_blank">LARSEN Team</a><br>
-            Room C121<br>
-            615 rue du Jardin Botanique,<br>
-            54600 Villers-lès-Nancy, France
-          </p>
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 widget">
+          <h3 class="widget-title">Contact</h3>
+          <div class="widget-body">
+            <p>+33 610466287
+              <br>
+              <a href="mailto:konstantinos.chatzilygeroudis@inria.fr">konstantinos.chatzilygeroudis@inria.fr</a>
+              <br>
+              <a href="mailto:costashatz@gmail.com">costashatz@gmail.com</a>
+              <br>
+              <br>
+              <a href="http://www.inria.fr/en/centre/nancy" target="_blank">Inria Nancy - Grand Est</a>
+              <br>
+              <a href="https://team.inria.fr/larsen/" target="_blank">LARSEN Team</a>
+              <br> Room C121
+              <br> 615 rue du Jardin Botanique,
+              <br> 54600 Villers-lès-Nancy, France
+            </p>
+          </div>
         </div>
-      </div>
 
-      <div class="col-md-4 widget">
-        <h3 class="widget-title">Research</h3>
-        <div class="widget-body">
-          <p class="follow-me-icons">
-            <a href="https://scholar.google.gr/citations?user=tnf6B-EAAAAJ&hl=en" class="ai ai-google-scholar" style="text-decoration: none;" target="_blank"></a>
-            <a href="https://www.researchgate.net/profile/Konstantinos_Chatzilygeroudis" class="ai ai-researchgate" style="text-decoration: none;" target="_blank"></a>
-            <a href="https://www.zotero.org/costashatz" class="ai ai-zotero" style="text-decoration: none;" target="_blank"></a>
-          </p>
+        <div class="col-md-4 widget">
+          <h3 class="widget-title">Research</h3>
+          <div class="widget-body">
+            <p class="follow-me-icons">
+              <a href="https://scholar.google.gr/citations?user=tnf6B-EAAAAJ&hl=en" class="ai ai-google-scholar" style="text-decoration: none;"
+                target="_blank"></a>
+              <a href="https://www.researchgate.net/profile/Konstantinos_Chatzilygeroudis" class="ai ai-researchgate" style="text-decoration: none;"
+                target="_blank"></a>
+              <a href="https://www.zotero.org/costashatz" class="ai ai-zotero" style="text-decoration: none;" target="_blank"></a>
+            </p>
+          </div>
         </div>
-      </div>
 
-      <div class="col-md-4 widget">
-        <h3 class="widget-title">Follow me</h3>
-        <div class="widget-body">
-          <p class="follow-me-icons">
-            <a href="https://github.com/costashatz" target="_blank"><i class="fa fa-github fa-2"></i></a>
-            <a href="https://bitbucket.org/costashatz" target="_blank"><i class="fa fa-bitbucket fa-2"></i></a>
-            <a href="https://gr.linkedin.com/in/konstantinoschatzilygeroudis" target="_blank"><i class="fa fa-linkedin fa-2"></i></a>
-            <a href="https://www.facebook.com/CostasHatz" target="_blank"><i class="fa fa-facebook fa-2"></i></a>
-            <a href="https://plus.google.com/+KonstantinosChatzilygeroudis" target="_blank"><i class="fa fa-google-plus fa-2"></i></a>
-            <a href="https://twitter.com/chatzilyge" target="_blank"><i class="fa fa-twitter fa-2"></i></a>
-          </p>
+        <div class="col-md-4 widget">
+          <h3 class="widget-title">Follow me</h3>
+          <div class="widget-body">
+            <p class="follow-me-icons">
+              <a href="https://github.com/costashatz" target="_blank">
+                <i class="fa fa-github fa-2"></i>
+              </a>
+              <a href="https://bitbucket.org/costashatz" target="_blank">
+                <i class="fa fa-bitbucket fa-2"></i>
+              </a>
+              <a href="https://gr.linkedin.com/in/konstantinoschatzilygeroudis" target="_blank">
+                <i class="fa fa-linkedin fa-2"></i>
+              </a>
+              <a href="https://www.facebook.com/CostasHatz" target="_blank">
+                <i class="fa fa-facebook fa-2"></i>
+              </a>
+              <a href="https://plus.google.com/+KonstantinosChatzilygeroudis" target="_blank">
+                <i class="fa fa-google-plus fa-2"></i>
+              </a>
+              <a href="https://twitter.com/chatzilyge" target="_blank">
+                <i class="fa fa-twitter fa-2"></i>
+              </a>
+            </p>
+          </div>
         </div>
+
       </div>
+      <!-- /row of widgets -->
+    </div>
+  </footer>
 
-    </div> <!-- /row of widgets -->
-  </div>
-</footer>
-
-<footer id="underfooter">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 widget">
-        <div class="widget-body">
-          <p class="text-right">
-            Copyright &copy; 2015, Konstantinos Chatzilygeroudis<br>
-            Design: <a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a> </p>
+  <footer id="underfooter">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 widget">
+          <div class="widget-body">
+            <p class="text-right">
+              Copyright &copy; 2015, Konstantinos Chatzilygeroudis
+              <br> Design:
+              <a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a>
+            </p>
+          </div>
         </div>
+
       </div>
-
-    </div> <!-- /row of widgets -->
-  </div>
-</footer>
-
+      <!-- /row of widgets -->
+    </div>
+  </footer>
 
 
-<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-<script src="assets/js/template.js"></script>
-<script src="assets/js/bibtex_js.js"></script>
+
+  <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="assets/js/template.js"></script>
+  <script src="assets/js/bibtex_js.js"></script>
 </body>
+
 </html>
