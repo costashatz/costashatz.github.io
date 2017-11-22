@@ -46,14 +46,6 @@
       journal={A short version of the paper was accepted at the 1st Conference on Robot Learning (CoRL) 2017 (non-archival papers)},
       abstract={One of the most interesting features of Bayesian optimization for direct policy search is that it can leverage priors (e.g., from simulation or from previous tasks) to accelerate learning on a robot. In this paper, we are interested in situations for which several priors exist but we do not know in advance which one fits best the current situation. We tackle this problem by introducing a novel acquisition function, called Most Likely Expected Improvement (MLEI), that combines the likelihood of the priors and the expected improvement. We evaluate this new acquisition function on a transfer learning task for a 5-DOF planar arm and on a possibly damaged, 6-legged robot that has to learn to walk on flat ground and on stairs, with priors corresponding to different stairs and different kinds of damages. Our results show that MLEI effectively identifies and exploits the priors, even when there is no obvious match between the current situations and the priors.}
     }
-    @article{chatzilygeroudis2016resetfree,
-      title={{Reset-free Trial-and-Error Learning for Robot Damage Recovery}},
-      author={Konstantinos Chatzilygeroudis, Vassilis Vassiliades and Jean-Baptiste Mouret},
-      url={https://arxiv.org/abs/1610.04213},
-      year={2016},
-      video={https://youtu.be/IqtyHFrb3BU},
-      abstract={The high probability of hardware failures prevents many advanced robots (e.g., legged robots) from being confidently deployed in real-world situations (e.g., post-disaster rescue). Instead of attempting to diagnose the failures, robots could adapt by trial-and-error in order to be able to complete their tasks. In that case, damage recovery can be seen as a Reinforcement Learning (RL) problem. However, the best RL algorithms for robotics require resetting the robot and the environment to an initial state after each episode, that is, the robot is not learning autonomously. In addition, most of the RL methods for robotics do not scale well with complex robots (e.g., walking robots) and either cannot be used at all or take too long to converge to a solution (e.g., hours of learning). In this paper, we introduce a novel learning algorithm called "Reset-free Trial and-Error" (RTE) that (1) breaks the complexity by pre-generating hundreds of possible behaviors with a dynamics simulator of the intact robot, and (2) allows complex robots to quickly recover from damage while completing their tasks and taking the environment into account. We evaluate our algorithm on a simulated wheeled robot, a simulated six-legged robot, and a real six-legged walking robot that are damaged in several ways (e.g., a missing leg, a shortened leg, faulty motor, etc.) and whose objective is to reach a sequence of targets in an arena. Our experiments show that the robots can recover most of their locomotion abilities in an environment with obstacles, and without any human intervention. Overall, this new algorithm makes it possible to contemplate sending robots to places that are truly too dangerous for humans and from which robots cannot be rescued.}
-    }
     @article{cully2016limbo,
         title={Limbo: A Fast and Flexible Library for Bayesian Optimization},
         author={Antoine Cully, Konstantinos Chatzilygeroudis, Federico Allocati and Jean-Baptiste Mouret},
@@ -65,6 +57,15 @@
   </textarea>
 
   <textarea id="bibtex_input_journals" style="display:none;">
+    @article{chatzilygeroudis2016resetfree,
+      title={{Reset-free Trial-and-Error Learning for Robot Damage Recovery}},
+      author={Konstantinos Chatzilygeroudis, Vassilis Vassiliades and Jean-Baptiste Mouret},
+      journal={To appear in Robotics and Autonomous Systems},
+      url={https://arxiv.org/abs/1610.04213},
+      year={2018},
+      video={https://youtu.be/IqtyHFrb3BU},
+      abstract={The high probability of hardware failures prevents many advanced robots (e.g., legged robots) from being confidently deployed in real-world situations (e.g., post-disaster rescue). Instead of attempting to diagnose the failures, robots could adapt by trial-and-error in order to be able to complete their tasks. In this situation, damage recovery can be seen as a Reinforcement Learning (RL) problem. However, the best RL algorithms for robotics require the robot and the environment to be reset to an initial state after each episode, that is, the robot is not learning autonomously. In addition, most of the RL methods for robotics do not scale well with complex robots (e.g., walking robots) and either cannot be used at all or take too long to converge to a solution (e.g., hours of learning). In this paper, we introduce a novel learning algorithm called "Reset-free Trial-and-Error" (RTE) that (1) breaks the complexity by pre-generating hundreds of possible behaviors with a dynamics simulator of the intact robot, and (2) allows complex robots to quickly recover from damage while completing their tasks and taking the environment into account. We evaluate our algorithm on a simulated wheeled robot, a simulated six-legged robot, and a real six-legged walking robot that are damaged in several ways (e.g., a missing leg, a shortened leg, faulty motor, etc.) and whose objective is to reach a sequence of targets in an arena. Our experiments show that the robots can recover most of their locomotion abilities in an environment with obstacles, and without any human intervention.}
+    }
     @article{vassiliades2017scaling,
       title={Using Centroidal Voronoi Tessellations to Scale Up the Multi-dimensional Archive of Phenotypic Elites Algorithm},
       author={Vassilis Vassiliades, Konstantinos Chatzilygeroudis and Jean-Baptiste Mouret},
