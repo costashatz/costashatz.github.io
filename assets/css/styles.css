@@ -242,7 +242,6 @@ a:hover {
   font-family: Alice, Georgia, serif;
   font-size: 49px;
   font-size: 3.0625rem;
-  /*text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;*/
 }
 #head .title a {
   text-decoration: none;
@@ -255,7 +254,6 @@ a:hover {
   line-height: 1.2em;
   color: #7C7C7C;
   margin: 5px 0 0;
-  /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
 }
 #head .tagline b {
   font-weight: normal;
@@ -271,13 +269,9 @@ a:hover {
   font-size: 3.0625rem;
 }
 .home #head .tagline {
-  font-size: 22px;
-  font-size: 1.4rem;
+  font-size: 16px;
+  font-size: 1rem;
   margin: 15px 0 0;
-}
-
-.home #head .tagline a:hover {
-  text-decoration: none;
 }
 /*********************************************************************
 
@@ -510,8 +504,7 @@ img {
   margin: 0px 0 25px;
   text-align: center;
   font-weight: 300;
-  /*TO-DO*/
-  /*text-transform: uppercase;*/
+  /* text-transform: uppercase; */
   font-size: 36px;
   font-size: 2.25rem;
   letter-spacing: 1px;
