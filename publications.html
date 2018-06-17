@@ -29,8 +29,9 @@
   <textarea id="bibtex_input_preprint" style="display:none;">
     @article{cully2016limbo,
         title={Limbo: A Fast and Flexible Library for Bayesian Optimization},
-        author={Antoine Cully, Konstantinos Chatzilygeroudis, Federico Allocati and Jean-Baptiste Mouret},
+        author={Antoine Cully, <b>Konstantinos Chatzilygeroudis</b>, Federico Allocati and Jean-Baptiste Mouret},
         year={2016},
+        booktitle={arXiv:1611.07343},
         url={https://arxiv.org/abs/1611.07343},
         code={https://github.com/resibots/limbo},
         abstract={Limbo is an open-source C++11 library for Bayesian optimization which is designed to be both highly flexible and very fast. It can be used to optimize functions for which the gradient is unknown, evaluations are expensive, and runtime cost matters (e.g., on embedded systems or robots). Benchmarks on standard functions show that Limbo is about 2 times faster than BayesOpt (another C++ library) for a similar accuracy.}
@@ -40,7 +41,7 @@
   <textarea id="bibtex_input_journals" style="display:none;">
     @article{chatzilygeroudis2018resetfree,
       title={{Reset-free Trial-and-Error Learning for Robot Damage Recovery}},
-      author={Konstantinos Chatzilygeroudis, Vassilis Vassiliades and Jean-Baptiste Mouret},
+      author={<b>Konstantinos Chatzilygeroudis</b>, Vassilis Vassiliades and Jean-Baptiste Mouret},
       journal={Robotics and Autonomous Systems},
       url={https://arxiv.org/abs/1610.04213},
       year={2018},
@@ -50,7 +51,7 @@
     }
     @article{vassiliades2017scaling,
       title={Using Centroidal Voronoi Tessellations to Scale Up the Multi-dimensional Archive of Phenotypic Elites Algorithm},
-      author={Vassilis Vassiliades, Konstantinos Chatzilygeroudis and Jean-Baptiste Mouret},
+      author={Vassilis Vassiliades, <b>Konstantinos Chatzilygeroudis</b> and Jean-Baptiste Mouret},
       journal={IEEE Transactions on Evolutionary Computation},
       year={2017},
       url={https://arxiv.org/abs/1610.05729},
@@ -62,7 +63,7 @@
   <textarea id="bibtex_input_conf" style="display:none;">
       @inproceedings{chatzilygeroudis2018using,
         title={Using Parameterized Black-Box Priors to Scale Up Model-Based Policy Search for Robotics},
-        author={Konstantinos Chatzilygeroudis and Jean-Baptiste Mouret},
+        author={<b>Konstantinos Chatzilygeroudis</b> and Jean-Baptiste Mouret},
         url={https://arxiv.org/abs/1709.06917},
         year={2018},
         video={https://youtu.be/HFkZkhGGzTo},
@@ -72,7 +73,7 @@
       }
       @inproceedings{pautrat2018bayesian,
         title={Bayesian Optimization with Automatic Prior Selection for Data-Efficient Direct Policy Search},
-        author={Rémi Pautrat, Konstantinos Chatzilygeroudis and Jean-Baptiste Mouret},
+        author={Rémi Pautrat, <b>Konstantinos Chatzilygeroudis</b> and Jean-Baptiste Mouret},
         url={https://arxiv.org/abs/1709.06919},
         year={2018},
         video={https://youtu.be/xo8mUIZTvNE},
@@ -83,7 +84,7 @@
       }
     @inproceedings{supratik2018aloq,
       title={{Alternating Optimisation and Quadrature for Robust Control}},
-      author={Paul Supratik, Konstantinos Chatzilygeroudis, Kamil Ciosek, Jean-Baptiste Mouret, Michael A. Osborne and Shimon Whiteson},
+      author={Paul Supratik, <b>Konstantinos Chatzilygeroudis</b>, Kamil Ciosek, Jean-Baptiste Mouret, Michael A. Osborne and Shimon Whiteson},
       booktitle={Thirty-Second AAAI Conference on Artificial Intelligence (AAAI 2018)},
       url={http://www.cs.ox.ac.uk/people/shimon.whiteson/pubs/paulaaai18.pdf},
       year={2018},
@@ -92,7 +93,7 @@
     }
     @inproceedings{chatzilygeroudis2017black,
       title={{Black-Box Data-efficient Policy Search for Robotics}},
-      author={Konstantinos Chatzilygeroudis, Roberto Rama, Rituraj Kaushik, Dorian Goepp, Vassilis Vassiliades and Jean-Baptiste Mouret},
+      author={<b>Konstantinos Chatzilygeroudis</b>, Roberto Rama, Rituraj Kaushik, Dorian Goepp, Vassilis Vassiliades and Jean-Baptiste Mouret},
       booktitle={International Conference on Intelligent Robots and Systems (IROS)},
       abstract={The most data-efficient algorithms for reinforcement learning (RL) in robotics are based on uncertain dynamical models: after each episode, they first learn a dynamical model of the robot, then they use an optimization algorithm to find a policy that maximizes the expected return given the model and its uncertainties. It is often believed that this optimization can be tractable only if analytical, gradient-based algorithms are used; however, these algorithms require using specific families of reward functions and policies, which greatly limits the flexibility of the overall approach. In this paper, we introduce a novel model-based RL algorithm, called Black-DROPS (Black-box Data-efficient RObot Policy Search) that: (1) does not impose any constraint on the reward function or the policy (they are treated as black-boxes), (2) is as data-efficient as the state-of-the-art algorithm for data-efficient RL in robotics, and (3) is as fast (or faster) than analytical approaches when several cores are available. The key idea is to replace the gradient-based optimization algorithm with a parallel, black-box algorithm that takes into account the model uncertainties. We demonstrate the performance of our new algorithm on two standard control benchmark problems (in simulation) and a low-cost robotic manipulator (with a real robot).},
       url={https://arxiv.org/abs/1703.07261},
@@ -103,7 +104,7 @@
     }
     @inproceedings{vassiliades2017comparing,
       title={Comparing multimodal optimization and illumination},
-      author={Vassilis Vassiliades, Konstantinos Chatzilygeroudis and Jean-Baptiste Mouret},
+      author={Vassilis Vassiliades, <b>Konstantinos Chatzilygeroudis</b> and Jean-Baptiste Mouret},
       booktitle={Genetic and Evolutionary Computation Conference (GECCO) (Poster-only papers)},
       abstract={Illumination algorithms are a recent addition to the evolutionary computation toolbox that allows the generation of many diverse and high-performing solutions in a single run. Nevertheless, traditional multimodal optimization algorithms also search for diverse and high-performing solutions: could some multimodal optimization algorithms be better at illumination than illumination algorithms? In this study, we compare two illumination algorithms (Novelty Search with Local Competition (NSLC), MAP-Elites) with two multimodal optimization ones (Clearing, Restricted Tournament Selection) in a maze navigation task. The results show that Clearing can have comparable performance to MAP-Elites and NSLC.},
       url={https://hal.inria.fr/hal-01518802/},
@@ -111,7 +112,7 @@
     }
     @inproceedings{koustoumpardis2015human,
       title={Human robot collaboration for folding fabrics based on force/RGB-D feedback},
-      author={Panagiotis Koustoumpardis, Konstantinos Chatzilygeroudis, Aris Synodinos and Nikos Aspragathos},
+      author={Panagiotis Koustoumpardis, <b>Konstantinos Chatzilygeroudis</b>, Aris Synodinos and Nikos Aspragathos},
       booktitle={24th International Conference on Robotics in Alpe-Adria-Danube Region (RAAD)},
       abstract={In this paper, the human-robot collaboration for executing complicated handling tasks for folding non-rigid objects is investigated. A hierarchical control system is developed for the co-manipulation task of folding sheets like fabrics/cloths. The system is based on force and RGB-D feedback in both higher and lower control levels of the process. In the higher level, the perception of the human's intention is used for deciding the robot's action; in the lower level the robot reacts to the force/RGB-D feedback to follow human guidance. The proposed approach is tested in folding a rectangular piece of fabric. Experiments showed that the developed robotic system is able to track the human's movement in order to help her/him to accomplish the folding co-manipulation task.},
       url={http://dx.doi.org/10.1007/978-3-319-21290-6_24},
@@ -123,7 +124,7 @@
   <textarea id="bibtex_input_workshops" style="display:none;">
     @inproceedings{mouret201720,
       title={20 Years of Reality Gap: a few Thoughts about Simulators in Evolutionary Robotics},
-      author={Jean-Baptiste Mouret and Konstantinos Chatzilygeroudis},
+      author={Jean-Baptiste Mouret and <b>Konstantinos Chatzilygeroudis</b>},
       booktitle={Proceedings of the International Workshop "Simulation in Evolutionary Robotics" at the Genetic and Evolutionary Computation Conference (GECCO)},
       abstract={Simulators in Evolutionary Robotics (ER) are often considered as a "temporary evil" until experiments can be conducted on real robots. Yet, after more than 20 years of ER, most experiments still happen in simulation and nothing suggests that this situation will change in the next few years. In this short paper, we describe the requirements of ER from simulators, what we tried, and how we successfully crossed the "reality gap" in many experiments. We argue that future simulators need to be able to estimate their confidence when they predict a fitness value, so that behaviors that are not accurately simulated can be avoided.},
       url={https://hal.inria.fr/hal-01518764/},
@@ -131,7 +132,7 @@
     }
     @inproceedings{vassiliades2017comparison,
       title={A comparison of illumination algorithms in unbounded spaces},
-      author={Vassilis Vassiliades, Konstantinos Chatzilygeroudis and Jean-Baptiste Mouret},
+      author={Vassilis Vassiliades, <b>Konstantinos Chatzilygeroudis</b> and Jean-Baptiste Mouret},
       booktitle={Proceedings of the International Workshop "Measuring and Promoting Diversity in Evolutionary Algorithms" at the Genetic and Evolutionary Computation Conference (GECCO)},
       abstract={Illumination algorithms are a new class of evolutionary algorithms capable of producing large archives of diverse and high-performing solutions. Examples of such algorithms include Novelty Search with Local Competition (NSLC), the Multi-dimensional Archive of Phenotypic Elites (MAP-Elites) and the newly introduced Centroidal Voronoi Tessellation (CVT) MAP-Elites. While NSLC can be used in unbounded behavioral spaces, MAP-Elites and CVT-MAP-Elites require the user to manually specify the bounds. In this study, we introduce variants of these algorithms that expand their bounds based on the discovered solutions. In addition, we introduce a novel algorithm called "Cluster-Elites" that can adapt its bounds to non-convex spaces. We compare all algorithms in a maze navigation problem and illustrate that Cluster-Elites and the expansive variants of MAP-Elites and CVT-MAP-Elites have comparable or better performance than NSLC, MAP-Elites and CVT-MAP-Elites.},
       url={https://hal.inria.fr/hal-01518814/},
@@ -139,7 +140,7 @@
     }
     @inproceedings{papaspyros2016safety,
       title={Safety-Aware Robot Damage Recovery Using Constrained Bayesian Optimization and Simulated Priors},
-      author={Vaios Papaspyros, Konstantinos Chatzilygeroudis, Vassilis Vassiliades and Jean-Baptiste Mouret},
+      author={Vaios Papaspyros, <b>Konstantinos Chatzilygeroudis</b>, Vassilis Vassiliades and Jean-Baptiste Mouret},
       booktitle={BayesOpt '16: Proceedings of the International Workshop "Bayesian Optimization: Black-box Optimization and Beyond" at NIPS},
       abstract={The recently introduced Intelligent Trial-and-Error (IT&E) algorithm showed that robots can adapt to damage in a matter of a few trials. The success of this algorithm relies on two components: prior knowledge acquired through simulation with an intact robot, and Bayesian optimization (BO) that operates on-line, on the damaged robot. While IT&E leads to fast damage recovery, it does not incorporate any safety constraints that prevent the robot from attempting harmful behaviors. In this work, we address this limitation by replacing the BO component with a constrained BO procedure. We evaluate our approach on a simulated damaged humanoid robot that needs to crawl as fast as possible, while performing as few unsafe trials as possible. We compare our new "safety-aware IT&E" algorithm to IT&E and a multi-objective version of IT&E in which the safety constraints are dealt as separate objectives. Our results show that our algorithm outperforms the other approaches, both in crawling speed within the safe regions and number of unsafe trials.},
       url={https://arxiv.org/abs/1611.09419},
@@ -148,7 +149,7 @@
     }
     @inproceedings{chatzilygeroudis2016semi-episodic,
       title={Towards semi-episodic learning for robot damage recovery},
-      author={Konstantinos Chatzilygeroudis, Antoine Cully and Jean-Baptiste Mouret},
+      author={<b>Konstantinos Chatzilygeroudis</b>, Antoine Cully and Jean-Baptiste Mouret},
       booktitle={AILTA '16: Proceedings of the International Workshop "AI for Long-term Autonomy" at ICRA},
       abstract={The recently introduced Intelligent Trial and Error algorithm (IT&E) enables robots to creatively adapt to damage in a matter of minutes by combining an off-line evolutionary algorithm and an on-line learning algorithm based on Bayesian Optimization. We extend the IT&E algorithm to allow for robots to learn to compensate for damages while executing their task(s). This leads to a semi-episodic learning scheme that increases the robot’s life-time autonomy and adaptivity. Preliminary experiments on a toy simulation and a 6-legged robot locomotion task show promising results.},
       url={https://arxiv.org/abs/1610.01407},
@@ -161,27 +162,28 @@
   <div class="bibtex_template" style="display:none;">
     <li>
       <div style="margin-left: 10px; margin-bottom:5px; font-weight: normal; font-size:20px;">
-        <span class="if year">
-          <span style="font-weight: bold;" class="year"></span>,
-        </span>
         <span class="title"></span>
       </div>
-      <div class="if author" style="font-weight: bold; font-style: italic;">
+      <div class="if author" style="font-weight: normal;">
         <span class="author"></span>.
         <span class="if booktitle">
-          <span style="font-weight: normal;" class="booktitle"></span>
+          <span style="font-weight: normal; font-style: italic;" class="booktitle"></span>
         </span>
         <span class="if journal">
-          <span style="font-weight: normal;" class="journal"></span>
+          <span style="font-weight: normal; font-style: italic;" class="journal"></span>
         </span>
+        ,
+        <span class="if year">
+            <span style="font-weight: bold;" class="year"></span>
+          </span>
         <span class="if url" style="margin-left: 20px">
-          <a class="url" style="color:black; font-size:10px" target="_blank">(view online)</a>
+          <a class="url" style="font-weight: bold; color:black; font-size:10px" target="_blank">(view online)</a>
         </span>
         <span class="if code" style="margin-left: 20px">
-          <a class="code" style="color:black; font-size:10px" target="_blank">(code)</a>
+          <a class="code" style="font-weight: bold; color:black; font-size:10px" target="_blank">(code)</a>
         </span>
         <span class="if video" style="margin-left: 20px">
-          <a class="video" style="color:black; font-size:10px" target="_blank">(video)</a>
+          <a class="video" style="font-weight: bold; color:black; font-size:10px" target="_blank">(video)</a>
         </span>
       </div>
       <!-- <div class="if abstract" style="font-style: italic; font-size:14px">
@@ -257,7 +259,7 @@
           <span>Pre-prints (under review)</span>
         </h2>
 
-        <ul>
+        <ul style="list-style-type: none;">
           <div id="bibtex_display_preprint"></div>
         </ul>
 
@@ -265,7 +267,7 @@
           <span>Peer-reviewed Journals</span>
         </h2>
 
-        <ul>
+        <ul style="list-style-type: none;">
           <div id="bibtex_display_journals"></div>
         </ul>
 
@@ -273,7 +275,7 @@
           <span>Peer-reviewed Conferences</span>
         </h2>
 
-        <ul>
+        <ul style="list-style-type: none;">
           <div id="bibtex_display_conf"></div>
         </ul>
 
@@ -281,7 +283,7 @@
           <span>Peer-reviewed Workshops</span>
         </h2>
 
-        <ul>
+        <ul style="list-style-type: none;">
           <div id="bibtex_display_workshops"></div>
         </ul>
 
