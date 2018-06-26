@@ -27,14 +27,13 @@
 <body>
 
   <textarea id="bibtex_input_preprint" style="display:none;">
-    @article{cully2016limbo,
-        title={Limbo: A Fast and Flexible Library for Bayesian Optimization},
-        author={Antoine Cully, <b>Konstantinos Chatzilygeroudis</b>, Federico Allocati and Jean-Baptiste Mouret},
-        year={2016},
-        booktitle={arXiv:1611.07343},
-        url={https://arxiv.org/abs/1611.07343},
-        code={https://github.com/resibots/limbo},
-        abstract={Limbo is an open-source C++11 library for Bayesian optimization which is designed to be both highly flexible and very fast. It can be used to optimize functions for which the gradient is unknown, evaluations are expensive, and runtime cost matters (e.g., on embedded systems or robots). Benchmarks on standard functions show that Limbo is about 2 times faster than BayesOpt (another C++ library) for a similar accuracy.}
+    @article{kaushik2018multi,
+        title={Multi-objective Model-based Policy Search for Data-efficient Learning with Sparse Rewards},
+        author={Rituraj Kaushik, <b>Konstantinos Chatzilygeroudis</b>, and Jean-Baptiste Mouret},
+        year={2018},
+        booktitle={arXiv:1806.09351},
+        url={https://arxiv.org/abs/1806.09351},
+        abstract={The most data-efficient algorithms for reinforcement learning in robotics are model-based policy search algorithms, which alternate between learning a dynamical model of the robot and optimizing a policy to maximize the expected return given the model and its uncertainties. However, the current algorithms lack an effective exploration strategy to deal with sparse or misleading reward scenarios: if they do not experience any state with a positive reward during the initial random exploration, it is very unlikely to solve the problem. Here, we propose a novel model-based policy search algorithm, Multi-DEX, that leverages a learned dynamical model to efficiently explore the task space and solve tasks with sparse rewards in a few episodes. To achieve this, we frame the policy search problem as a multi-objective, model-based policy optimization problem with three objectives: (1) generate maximally novel state trajectories, (2) maximize the expected return and (3) keep the system in state-space regions for which the model is as accurate as possible. We then optimize these objectives using a Pareto-based multi-objective optimization algorithm. The experiments show that Multi-DEX is able to solve sparse reward scenarios (with a simulated robotic arm) in much lower interaction time than VIME, TRPO, GEP-PG, CMA-ES and Black-DROPS.}
     }
   </textarea>
 
@@ -48,6 +47,24 @@
       video={https://youtu.be/IqtyHFrb3BU},
       code={https://github.com/resibots/chatzilygeroudis_2018_rte},
       abstract={The high probability of hardware failures prevents many advanced robots (e.g., legged robots) from being confidently deployed in real-world situations (e.g., post-disaster rescue). Instead of attempting to diagnose the failures, robots could adapt by trial-and-error in order to be able to complete their tasks. In this situation, damage recovery can be seen as a Reinforcement Learning (RL) problem. However, the best RL algorithms for robotics require the robot and the environment to be reset to an initial state after each episode, that is, the robot is not learning autonomously. In addition, most of the RL methods for robotics do not scale well with complex robots (e.g., walking robots) and either cannot be used at all or take too long to converge to a solution (e.g., hours of learning). In this paper, we introduce a novel learning algorithm called "Reset-free Trial-and-Error" (RTE) that (1) breaks the complexity by pre-generating hundreds of possible behaviors with a dynamics simulator of the intact robot, and (2) allows complex robots to quickly recover from damage while completing their tasks and taking the environment into account. We evaluate our algorithm on a simulated wheeled robot, a simulated six-legged robot, and a real six-legged walking robot that are damaged in several ways (e.g., a missing leg, a shortened leg, faulty motor, etc.) and whose objective is to reach a sequence of targets in an arena. Our experiments show that the robots can recover most of their locomotion abilities in an environment with obstacles, and without any human intervention.}
+    }
+    @article{cully2018limbo,
+      title={Limbo: A Flexible High-performance Library for Gaussian Processes modeling and Data-Efficient Optimization},
+      author={Antoine Cully, <b>Konstantinos Chatzilygeroudis</b>, Federico Allocati and Jean-Baptiste Mouret},
+      year={2018},
+      journal={The Journal of Open Source Software},
+      publisher={The Open Journal},
+      url={http://joss.theoj.org/papers/10.21105/joss.00545},
+      code={https://github.com/resibots/limbo},
+      abstract={Limbo (LIbrary for Model-Based Optimization) is an open-source C++11 library for Gaussian Processes and data-efficient optimization (e.g., Bayesian optimization) that is designed to be both highly flexible and very fast. It can be used as a state-of-the-art optimization library or to experiment with novel algorithms with “plugin” components. Limbo is currently mostly used for data-efficient policy search in robot learning and online adaptation because computation time matters when using the low-power embedded computers of robots. For example, Limbo was the key library to develop a new algorithm that allows a legged robot to learn a new gait after a mechanical damage in about 10-15 trials (2 minutes), and a 4-DOF manipulator to learn neural networks policies for goal reaching in about 5 trials.
+
+      The implementation of Limbo follows a policy-based design that leverages C++ templates: this allows it to be highly flexible without the cost induced by classic object-oriented designs (cost of virtual functions). The regression benchmarks show that the query time of Limbo’s Gaussian processes is several orders of magnitude better than the one of GPy (a state-of-the-art Python library for Gaussian processes) for a similar accuracy (the learning time highly depends on the optimization algorithm chosen to optimize the hyper-parameters). The black-box optimization benchmarks demonstrate that Limbo is about 2 times faster than BayesOpt (a C++ library for data-efficient optimization) for a similar accuracy and data-efficiency. In practice, changing one of the components of the algorithms in Limbo (e.g., changing the acquisition function) usually requires changing only a template definition in the source code. This design allows users to rapidly experiment and test new ideas while keeping the software as fast as specialized code.
+
+      Limbo takes advantage of multi-core architectures to parallelize the internal optimization processes (optimization of the acquisition function, optimization of the hyper-parameters of a Gaussian process) and it vectorizes many of the linear algebra operations (via the Eigen 3 library and optional bindings to Intel’s MKL).
+
+      The library is distributed under the CeCILL-C license via a Github repository. The code is standard-compliant but it is currently mostly developed for GNU/Linux and Mac OS X with both the GCC and Clang compilers. New contributors can rely on a full API reference, while their developments are checked via a continuous integration platform (automatic unit-testing routines).
+
+      Limbo is currently used in the ERC project ResiBots, which is focused on data-efficient trial-and-error learning for robot damage recovery, and in the H2020 projet PAL, which uses social robots to help coping with diabetes. It has been instrumental in many scientific publications since 2015}
     }
     @article{vassiliades2017scaling,
       title={Using Centroidal Voronoi Tessellations to Scale Up the Multi-dimensional Archive of Phenotypic Elites Algorithm},
