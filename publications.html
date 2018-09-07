@@ -35,14 +35,6 @@
       url={https://arxiv.org/abs/1807.02303},
       abstract={Most policy search algorithms require thousands of training episodes to find an effective policy, which is often infeasible with a physical robot. This survey article focuses on the extreme other end of the spectrum: how can a robot adapt with only a handful of trials (a dozen) and a few minutes? By analogy with the word "big-data", we refer to this challenge as "micro-data reinforcement learning". We show that a first strategy is to leverage prior knowledge on the policy structure (e.g., dynamic movement primitives), on the policy parameters (e.g., demonstrations), or on the dynamics (e.g., simulators). A second strategy is to create data-driven surrogate models of the expected reward (e.g., Bayesian optimization) or the dynamical model (e.g., model-based policy search), so that the policy optimizer queries the model instead of the real system. Overall, all successful micro-data algorithms combine these two strategies by varying the kind of model and prior knowledge. The current scientific challenges essentially revolve around scaling up to complex robots (e.g., humanoids), designing generic priors, and optimizing the computing time.}
     }
-    @article{kaushik2018multi,
-        title={Multi-objective Model-based Policy Search for Data-efficient Learning with Sparse Rewards},
-        author={Rituraj Kaushik, <b>Konstantinos Chatzilygeroudis</b>, and Jean-Baptiste Mouret},
-        year={2018},
-        booktitle={arXiv:1806.09351},
-        url={https://arxiv.org/abs/1806.09351},
-        abstract={The most data-efficient algorithms for reinforcement learning in robotics are model-based policy search algorithms, which alternate between learning a dynamical model of the robot and optimizing a policy to maximize the expected return given the model and its uncertainties. However, the current algorithms lack an effective exploration strategy to deal with sparse or misleading reward scenarios: if they do not experience any state with a positive reward during the initial random exploration, it is very unlikely to solve the problem. Here, we propose a novel model-based policy search algorithm, Multi-DEX, that leverages a learned dynamical model to efficiently explore the task space and solve tasks with sparse rewards in a few episodes. To achieve this, we frame the policy search problem as a multi-objective, model-based policy optimization problem with three objectives: (1) generate maximally novel state trajectories, (2) maximize the expected return and (3) keep the system in state-space regions for which the model is as accurate as possible. We then optimize these objectives using a Pareto-based multi-objective optimization algorithm. The experiments show that Multi-DEX is able to solve sparse reward scenarios (with a simulated robotic arm) in much lower interaction time than VIME, TRPO, GEP-PG, CMA-ES and Black-DROPS.}
-    }
   </textarea>
 
   <textarea id="bibtex_input_journals" style="display:none;">
@@ -86,6 +78,15 @@
   </textarea>
 
   <textarea id="bibtex_input_conf" style="display:none;">
+      @inproceedings{kaushik2018multi,
+          title={Multi-objective Model-based Policy Search for Data-efficient Learning with Sparse Rewards},
+          author={Rituraj Kaushik, <b>Konstantinos Chatzilygeroudis</b>, and Jean-Baptiste Mouret},
+          year={2018},
+          booktitle={Conference on Robot Learning (CoRL)},
+          url={https://arxiv.org/abs/1806.09351},
+          video={https://www.youtube.com/watch?v=XOBWq7mkYho},
+          abstract={The most data-efficient algorithms for reinforcement learning in robotics are model-based policy search algorithms, which alternate between learning a dynamical model of the robot and optimizing a policy to maximize the expected return given the model and its uncertainties. However, the current algorithms lack an effective exploration strategy to deal with sparse or misleading reward scenarios: if they do not experience any state with a positive reward during the initial random exploration, it is very unlikely to solve the problem. Here, we propose a novel model-based policy search algorithm, Multi-DEX, that leverages a learned dynamical model to efficiently explore the task space and solve tasks with sparse rewards in a few episodes. To achieve this, we frame the policy search problem as a multi-objective, model-based policy optimization problem with three objectives: (1) generate maximally novel state trajectories, (2) maximize the expected return and (3) keep the system in state-space regions for which the model is as accurate as possible. We then optimize these objectives using a Pareto-based multi-objective optimization algorithm. The experiments show that Multi-DEX is able to solve sparse reward scenarios (with a simulated robotic arm) in much lower interaction time than VIME, TRPO, GEP-PG, CMA-ES and Black-DROPS.}
+      }
       @inproceedings{chatzilygeroudis2018using,
         title={Using Parameterized Black-Box Priors to Scale Up Model-Based Policy Search for Robotics},
         author={<b>Konstantinos Chatzilygeroudis</b> and Jean-Baptiste Mouret},
