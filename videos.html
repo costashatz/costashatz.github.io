@@ -29,8 +29,8 @@
     <h1 id="logo" class="text-center">
       <img class="img-circle" src="assets/images/profile.jpg" alt="">
       <span class="title">Konstantinos Chatzilygeroudis</span>
-      <span class="tagline">PhD Candidate in Robotics and Machine Learning<br>
-        <a href="http://www.inria.fr/en/centre/nancy" target="_blank">Inria Nancy</a> - <a href="https://team.inria.fr/larsen/" target="_blank">LARSEN Team</a><br>
+      <span class="tagline">Post-doctoral Fellow in Robotics and Machine Learning<br>
+        <a href="https://www.epfl.ch/" target="_blank">EPFL</a> - <a href="http://lasa.epfl.ch/" target="_blank">LASA Team</a><br>
         <a href="mailto:costashatz@gmail.com">costashatz@gmail.com</a></span>
     </h1>
   </div>
@@ -60,6 +60,48 @@
 
 <main id="main">
   <div class="container">
+
+    <div class="row topspace">
+      <h2 class="section-title">
+        <span>CoRL 2018</span>
+      </h2>
+      <div class="col-sm-8 col-sm-offset-2">
+
+        <article class="post">
+          <header class="entry-header">
+            <div class="entry-meta">
+              <span class="posted-on">
+                <time class="entry-date published" date="2018-01-12">December 23, 2018</time>
+              </span>
+            </div>
+            <h1 class="entry-content">
+              <center>Multi-objective Model-based Policy Search for Data-efficient Learning with Sparse Rewards</center>
+            </h1>
+          </header>
+          <div class="entry-content">
+            <p>
+              <center>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/XOBWq7mkYho" frameborder="0" allowfullscreen></iframe>
+              </center>
+            </p>
+            <p>
+              <b>"Multi-objective Model-based Policy Search for Data-efficient Learning with Sparse Rewards"</b><br/>
+              <i>Rituraj Kaushik</i>, <i>Konstantinos Chatzilygeroudis</i> and <i>Jean-Baptiste Mouret</i>
+              <br/>Paper to be presented at the <b>Conference on Robot Learning</b> (CoRL) 2018<br/><br/>
+            </p>
+            <p>
+              <b>Abstract:</b>
+              </br/>
+              <br/> The most data-efficient algorithms for reinforcement learning in robotics are model-based policy search algorithms, which alternate between learning a dynamical model of the robot  and optimizing a policy to maximize the expected return given the model and its  uncertainties. However, the current algorithms lack an effective exploration strategy to deal with sparse or misleading reward scenarios: if they do not experience any state with a positive reward during the initial random exploration, it is very unlikely to solve the problem. Here, we propose a novel model-based policy search algorithm, Multi-DEX, that leverages a learned dynamical model to efficiently explore the task space and solve tasks with sparse rewards in a few episodes.To achieve this, we frame the policy search problem as a multi-objective, model-based policy optimization problem with three objectives: (1) generate maximally novel state trajectories, (2) maximize the expected return and (3) keep the system in state-space regions for which the model is as accurate as possible. We then optimize these objectives using a Pareto-based multi-objective optimization algorithm.
+              <br/><br/>
+
+              This work was supported by the ERC project <a href="http://www.resibots.eu">“ResiBots”</a> (grant agreement No 637972), funded by the European Research Council.
+            </p>
+          </div>
+        </article>
+        <!-- #post-## -->
+      </div>
+    </div>  
 
     <div class="row topspace">
       <h2 class="section-title">
@@ -299,15 +341,15 @@
       <div class="col-md-4 widget">
         <h3 class="widget-title">Contact</h3>
         <div class="widget-body">
-          <p>+33 610466287<br>
-            <a href="mailto:konstantinos.chatzilygeroudis@inria.fr">konstantinos.chatzilygeroudis@inria.fr</a><br>
+          <p>+41 78 303 64 40<br>
+            <a href="mailto:konstantinos.chatzilygeroudis@epfl.ch">konstantinos.chatzilygeroudis@epfl.ch</a><br>
             <a href="mailto:costashatz@gmail.com">costashatz@gmail.com</a><br>
             <br>
-            <a href="http://www.inria.fr/en/centre/nancy" target="_blank">Inria Nancy - Grand Est</a><br>
-            <a href="https://team.inria.fr/larsen/" target="_blank">LARSEN Team</a><br>
-            Room C127<br>
-            615 rue du Jardin Botanique,<br>
-            54600 Villers-lès-Nancy, France
+            <a href="https://www.epfl.ch/" target="_blank">EPFL</a><br>
+            <a href="http://lasa.epfl.ch/" target="_blank">LASA Team</a><br>
+            ME A3 395<br>
+            EPFL-STI-IMT-LASA, Station 9<br>
+            CH 1015, Lausanne, Switzerland
           </p>
         </div>
       </div>
