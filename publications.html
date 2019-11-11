@@ -27,17 +27,38 @@
 <body>
 
   <textarea id="bibtex_input_preprint" style="display:none;">
-    @article{chatzilygeroudis2018survey,
-      title={A survey on policy search algorithms for learning robot controllers in a handful of trials},
-      author={<b>Konstantinos Chatzilygeroudis</b>, Vassilis Vassiliades, Freek Stulp, Sylvain Calinon and Jean-Baptiste Mouret},
+    @article{sanchez2019benchmark,
+      title={Benchmark for Human-to-Robot Handovers of Unseen Containers with Unknown Filling},
+      author={Ricardo Sanchez-Matilla*, <b>Konstantinos Chatzilygeroudis</b>*, Apostolos Modas, Nuno Ferreira Duarte, Alessio Xompero, Pascal Frossard, Aude Billard, and Andrea Cavallaro},
+      year={2019},
+      booktitle={Submitted to Robotics and Automation Letters (RA-L), Special Issue on Benchmarking Protocols for Robotic Manipulation},
+      url={https://github.com/CORSMAL/2019_RA-L_Benchmark-for-Human-to-Robot-Handovers-of-Unseen-Containers-with-Unknown-Filling}
+    }
+    @article{chatzilygeroudis2019benchmark,
+      title={Benchmark for Learning and Control of Bimanual Insertion of Semi-deformable Objects},
+      author={<b>Konstantinos Chatzilygeroudis</b>, Bernardo Fichera, Ilaria Lauzana, Fanjun Bu, Kunpeng Yao, Farshad Khadivar, and Aude Billard},
+      year={2019},
+      booktitle={Submitted to Robotics and Automation Letters (RA-L), Special Issue on Benchmarking Protocols for Robotic Manipulation},
+      url={https://www.epfl.ch/labs/lasa/sahr/databasecode/}
+    }
+    @article{paul2018robustrl,
+      title={Robust Reinforcement Learning with Bayesian Optimisation and Quadrature},
+      author={Supratik Paul, <b>Konstantinos Chatzilygeroudis</b>, Kamil Ciosek, Jean-Baptiste Mouret, Michael Osborne, and Shimon Whiteson},
       year={2018},
-      booktitle={arXiv:1807.02303},
-      url={https://arxiv.org/abs/1807.02303},
-      abstract={Most policy search algorithms require thousands of training episodes to find an effective policy, which is often infeasible with a physical robot. This survey article focuses on the extreme other end of the spectrum: how can a robot adapt with only a handful of trials (a dozen) and a few minutes? By analogy with the word "big-data", we refer to this challenge as "micro-data reinforcement learning". We show that a first strategy is to leverage prior knowledge on the policy structure (e.g., dynamic movement primitives), on the policy parameters (e.g., demonstrations), or on the dynamics (e.g., simulators). A second strategy is to create data-driven surrogate models of the expected reward (e.g., Bayesian optimization) or the dynamical model (e.g., model-based policy search), so that the policy optimizer queries the model instead of the real system. Overall, all successful micro-data algorithms combine these two strategies by varying the kind of model and prior knowledge. The current scientific challenges essentially revolve around scaling up to complex robots (e.g., humanoids), designing generic priors, and optimizing the computing time.}
+      booktitle={Submitted to Journal of Machine Learning Research, Special Issue on Bayesian Optimization},
+      abstract={Bayesian optimisation has been successfully applied to a variety of reinforcement learning problems. However, the traditional approach for learning optimal policies in simulators does not utilise the opportunity to improve learning by adjusting certain environment variables: state features that are unobservable and randomly determined by the environment in a physical setting but are controllable in a simulator. This article considers the problem of finding a robust policy while taking into account the impact of environment variables. We present alternating optimisation and quadrature (ALOQ), which uses Bayesian optimisation and Bayesian quadrature to address such settings. We also present transferable ALOQ (TALOQ), for settings where simulator inaccuracies lead to difficulty in transferring the learnt policy to the physical system. We show that our algorithms are robust to the presence of significant rare events, which may not be observable under random sampling but play a substantial role in determining the optimal policy. Experimental results across different domains show that our algorithms learn robust policies efficiently.}
     }
   </textarea>
 
   <textarea id="bibtex_input_journals" style="display:none;">
+    @article{chatzilygeroudis2018survey,
+      title={A survey on policy search algorithms for learning robot controllers in a handful of trials},
+      author={<b>Konstantinos Chatzilygeroudis</b>, Vassilis Vassiliades, Freek Stulp, Sylvain Calinon and Jean-Baptiste Mouret},
+      year={2019},
+      journal={IEEE Transactions on Robotics (T-RO) - To Appear},
+      url={https://arxiv.org/abs/1807.02303},
+      abstract={Most policy search algorithms require thousands of training episodes to find an effective policy, which is often infeasible with a physical robot. This survey article focuses on the extreme other end of the spectrum: how can a robot adapt with only a handful of trials (a dozen) and a few minutes? By analogy with the word "big-data", we refer to this challenge as "micro-data reinforcement learning". We show that a first strategy is to leverage prior knowledge on the policy structure (e.g., dynamic movement primitives), on the policy parameters (e.g., demonstrations), or on the dynamics (e.g., simulators). A second strategy is to create data-driven surrogate models of the expected reward (e.g., Bayesian optimization) or the dynamical model (e.g., model-based policy search), so that the policy optimizer queries the model instead of the real system. Overall, all successful micro-data algorithms combine these two strategies by varying the kind of model and prior knowledge. The current scientific challenges essentially revolve around scaling up to complex robots (e.g., humanoids), designing generic priors, and optimizing the computing time.}
+    }
     @article{chatzilygeroudis2018resetfree,
       title={{Reset-free Trial-and-Error Learning for Robot Damage Recovery}},
       author={<b>Konstantinos Chatzilygeroudis</b>, Vassilis Vassiliades and Jean-Baptiste Mouret},
@@ -119,7 +140,7 @@
     @inproceedings{paul2018aloq,
       title={{Alternating Optimisation and Quadrature for Robust Control}},
       author={Supratik Paul, <b>Konstantinos Chatzilygeroudis</b>, Kamil Ciosek, Jean-Baptiste Mouret, Michael A. Osborne and Shimon Whiteson},
-      booktitle={Thirty-Second AAAI Conference on Artificial Intelligence (AAAI 2018)},
+      booktitle={Thirty-Second AAAI Conference on Artificial Intelligence (AAAI)},
       url={http://www.cs.ox.ac.uk/people/shimon.whiteson/pubs/paulaaai18.pdf},
       year={2018},
       abstract={Bayesian optimisation has been successfully applied to a variety of reinforcement learning problems. However, the traditional approach for learning optimal policies in simulators does not utilise the opportunity to improve learning by adjusting certain environment variables: state features that are unobservable and randomly determined by the environment in a physical setting but are controllable in a simulator. This paper considers the problem of finding a robust policy while taking into account the impact of environment variables. We present Alternating Optimisation and Quadrature (ALOQ), which uses Bayesian optimisation and Bayesian quadrature to address such settings. ALOQ is robust to the presence of significant rare events, which may not be observable under random sampling, but play a substantial role in determining the optimal policy. Experimental results across different domains show that ALOQ can learn more efficiently and robustly than existing methods.},
@@ -320,6 +341,7 @@
         </ul>
 
       </div>
+      *Equal contribution
       <!-- / section -->
 
     </div>
