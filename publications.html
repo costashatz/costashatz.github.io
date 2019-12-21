@@ -27,20 +27,6 @@
 <body>
 
   <textarea id="bibtex_input_preprint" style="display:none;">
-    @article{sanchez2019benchmark,
-      title={Benchmark for Human-to-Robot Handovers of Unseen Containers with Unknown Filling},
-      author={Ricardo Sanchez-Matilla*, <b>Konstantinos Chatzilygeroudis</b>*, Apostolos Modas, Nuno Ferreira Duarte, Alessio Xompero, Pascal Frossard, Aude Billard, and Andrea Cavallaro},
-      year={2019},
-      booktitle={Submitted to Robotics and Automation Letters (RA-L), Special Issue on Benchmarking Protocols for Robotic Manipulation},
-      url={http://corsmal.eecs.qmul.ac.uk/benchmark.html}
-    }
-    @article{chatzilygeroudis2019benchmark,
-      title={Benchmark for Bimanual Robotic Manipulation of Semi-deformable Objects},
-      author={<b>Konstantinos Chatzilygeroudis</b>, Bernardo Fichera, Ilaria Lauzana, Fanjun Bu, Kunpeng Yao, Farshad Khadivar, and Aude Billard},
-      year={2019},
-      booktitle={Submitted to Robotics and Automation Letters (RA-L), Special Issue on Benchmarking Protocols for Robotic Manipulation},
-      url={https://www.epfl.ch/labs/lasa/sahr/benchmark/}
-    }
     @article{paul2018robustrl,
       title={Robust Reinforcement Learning with Bayesian Optimisation and Quadrature},
       author={Supratik Paul, <b>Konstantinos Chatzilygeroudis</b>, Kamil Ciosek, Jean-Baptiste Mouret, Michael Osborne, and Shimon Whiteson},
@@ -51,6 +37,20 @@
   </textarea>
 
   <textarea id="bibtex_input_journals" style="display:none;">
+    @article{chatzilygeroudis2019benchmark,
+      title={Benchmark for Bimanual Robotic Manipulation of Semi-deformable Objects},
+      author={<b>Konstantinos Chatzilygeroudis</b>, Bernardo Fichera, Ilaria Lauzana, Fanjun Bu, Kunpeng Yao, Farshad Khadivar, and Aude Billard},
+      year={2019},
+      journal={Robotics and Automation Letters (RA-L): Special Issue on Benchmarking Protocols for Robotic Manipulation - To Appear},
+      url={https://www.epfl.ch/labs/lasa/sahr/benchmark/}
+    }
+    @article{sanchez2019benchmark,
+      title={Benchmark for Human-to-Robot Handovers of Unseen Containers with Unknown Filling},
+      author={Ricardo Sanchez-Matilla*, <b>Konstantinos Chatzilygeroudis</b>*, Apostolos Modas, Nuno Ferreira Duarte, Alessio Xompero, Pascal Frossard, Aude Billard, and Andrea Cavallaro},
+      year={2019},
+      journal={Robotics and Automation Letters (RA-L): Special Issue on Benchmarking Protocols for Robotic Manipulation - To Appear},
+      url={http://corsmal.eecs.qmul.ac.uk/benchmark.html}
+    }
     @article{chatzilygeroudis2018survey,
       title={A survey on policy search algorithms for learning robot controllers in a handful of trials},
       author={<b>Konstantinos Chatzilygeroudis</b>, Vassilis Vassiliades, Freek Stulp, Sylvain Calinon and Jean-Baptiste Mouret},
@@ -222,15 +222,18 @@
       <div class="if author" style="font-weight: normal;">
         <span class="author"></span>.
         <span class="if booktitle">
+          <!-- <br/> -->
           <span style="font-weight: normal; font-style: italic;" class="booktitle"></span>
         </span>
         <span class="if journal">
+          <br/>
           <span style="font-weight: normal; font-style: italic;" class="journal"></span>
         </span>
         ,
         <span class="if year">
             <span style="font-weight: bold;" class="year"></span>
           </span>
+        <span class="if url"><br/></span>
         <span class="if url" style="margin-left: 20px">
           <a class="url" style="font-weight: bold; color:black; font-size:10px" target="_blank">(view online)</a>
         </span>
@@ -317,7 +320,7 @@
         </ul>
 
         <h2 class="section-title">
-          <span>Peer-reviewed Journals</span>
+          <span>Peer-reviewed Journal Papers</span>
         </h2>
 
         <ul style="list-style-type: none;">
@@ -325,7 +328,7 @@
         </ul>
 
         <h2 class="section-title">
-          <span>Peer-reviewed Conferences</span>
+          <span>Peer-reviewed Conference Papers</span>
         </h2>
 
         <ul style="list-style-type: none;">
@@ -333,7 +336,7 @@
         </ul>
 
         <h2 class="section-title">
-          <span>Peer-reviewed Workshops</span>
+          <span>Peer-reviewed Workshop Papers</span>
         </h2>
 
         <ul style="list-style-type: none;">
