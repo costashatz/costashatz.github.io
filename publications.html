@@ -27,16 +27,23 @@
 <body>
 
   <textarea id="bibtex_input_preprint" style="display:none;">
-    @article{paul2018robustrl,
-      title={Robust Reinforcement Learning with Bayesian Optimisation and Quadrature},
-      author={Supratik Paul, <b>Konstantinos Chatzilygeroudis</b>, Kamil Ciosek, Jean-Baptiste Mouret, Michael Osborne, and Shimon Whiteson},
-      year={2018},
-      booktitle={Submitted to Journal of Machine Learning Research, Special Issue on Bayesian Optimization},
-      abstract={Bayesian optimisation has been successfully applied to a variety of reinforcement learning problems. However, the traditional approach for learning optimal policies in simulators does not utilise the opportunity to improve learning by adjusting certain environment variables: state features that are unobservable and randomly determined by the environment in a physical setting but are controllable in a simulator. This article considers the problem of finding a robust policy while taking into account the impact of environment variables. We present alternating optimisation and quadrature (ALOQ), which uses Bayesian optimisation and Bayesian quadrature to address such settings. We also present transferable ALOQ (TALOQ), for settings where simulator inaccuracies lead to difficulty in transferring the learnt policy to the physical system. We show that our algorithms are robust to the presence of significant rare events, which may not be observable under random sampling but play a substantial role in determining the optimal policy. Experimental results across different domains show that our algorithms learn robust policies efficiently.}
+    @article{duarte2020human,
+      title={From human action understanding to robot action execution: how the physical properties of handled objects modulate non-verbal cues},
+      author={Nuno Ferreira Duarte, <b>Konstantinos Chatzilygeroudis</b>, José Santos-Victor, Aude Billard},
+      year={2020},
+      booktitle={Submitted to International Conference on Development and Learning and Epigenetic Robotics (ICDL-EpiRob)},
+      abstract={Humans manage to communicate action intentions in a non-verbal way, through body posture and movement. We start from this observation to investigate how a robot can decode a human's non-verbal cues during the manipulation of an object, with specific physical properties, to learn the adequate level of "carefulness" to use when handling that object. We construct dynamical models of the human behaviour using a human-to-human handover dataset consisting of 3 different cups with different levels of fillings. We then included these models into the design of an online classifier that identifies the type of action, based on the human wrist movement. We close the loop from action understanding to robot action execution with an adaptive and robust controller based on the learned classifier, and evaluate the entire pipeline on a collaborative task with a 7-DOF manipulator. Our results show that it is possible to correctly understand the "carefulness" behaviour of humans during object manipulation, even in the pick and place scenario, that was not part of the training set.}
     }
   </textarea>
 
   <textarea id="bibtex_input_journals" style="display:none;">
+    @article{paul2018robustrl,
+      title={Robust Reinforcement Learning with Bayesian Optimisation and Quadrature},
+      author={Supratik Paul, <b>Konstantinos Chatzilygeroudis</b>, Kamil Ciosek, Jean-Baptiste Mouret, Michael Osborne, and Shimon Whiteson},
+      year={2020},
+      booktitle={Journal of Machine Learning Research (JMLR), Special Issue on Bayesian Optimization (Under publication)},
+      abstract={Bayesian optimisation has been successfully applied to a variety of reinforcement learning problems. However, the traditional approach for learning optimal policies in simulators does not utilise the opportunity to improve learning by adjusting certain environment variables: state features that are unobservable and randomly determined by the environment in a physical setting but are controllable in a simulator. This article considers the problem of finding a robust policy while taking into account the impact of environment variables. We present alternating optimisation and quadrature (ALOQ), which uses Bayesian optimisation and Bayesian quadrature to address such settings. We also present transferable ALOQ (TALOQ), for settings where simulator inaccuracies lead to difficulty in transferring the learnt policy to the physical system. We show that our algorithms are robust to the presence of significant rare events, which may not be observable under random sampling but play a substantial role in determining the optimal policy. Experimental results across different domains show that our algorithms learn robust policies efficiently.}
+    }
     @article{chatzilygeroudis2019benchmark,
       title={Benchmark for Bimanual Robotic Manipulation of Semi-deformable Objects},
       author={<b>Konstantinos Chatzilygeroudis</b>, Bernardo Fichera, Ilaria Lauzana, Fanjun Bu, Kunpeng Yao, Farshad Khadivar, and Aude Billard},
