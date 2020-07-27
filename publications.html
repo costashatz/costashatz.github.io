@@ -107,6 +107,25 @@
     }
   </textarea>
 
+  <textarea id="bibtex_input_chapters" style="display:none;">
+    @incollection{chatzilygeroudis2020qd,
+          title={Quality-Diversity Optimization: a novel branch of stochastic optimization},
+          author={<b>Konstantinos Chatzilygeroudis</b>, Antoine Cully, Vassilis Vassiliades, and Jean-Baptiste Mouret},
+          editor={Panos Pardalos, Michael Vrahatis, Varvara Rasskazova},
+          booktitle={Black Box Optimization, Machine Learning and No-Free Lunch Theorems (Under publication)},
+          publisher={Springer},
+          year={2020}
+    }
+    @incollection{chatzilygeroudis2020ml,
+      title={Machine Learning Basics},
+      author={<b>Konstantinos Chatzilygeroudis</b>, Ioannis Hatzilygeroudis, and Isidoros Perikos},
+      editor={Andreas Komninos, Parisa Eslambolchilar, Mark Dunlop},
+      booktitle={Intelligent Computing for Interactive System Design: Statistics, Digital Signal Processing and Machine Learning in practice (Under publication)},
+      publisher={ACM},
+      year={2020}
+}
+  </textarea>
+
   <textarea id="bibtex_input_conf" style="display:none;">
       @inproceedings{starke2019GraspForces,
           title={On Force Synergies in Human Grasping Behavior},
@@ -240,6 +259,9 @@
           <span style="font-weight: normal; font-style: italic;" class="journal"></span>
         </span>
         ,
+        <span class="if editor">
+          <b>Edited by: </b><span style="font-weight: normal;" class="editor"></span>,
+        </span>
         <span class="if year">
             <span style="font-weight: bold;" class="year"></span>
           </span>
@@ -334,6 +356,14 @@
 
         <ol reversed>
           <div id="bibtex_display_journals"></div>
+        </ol>
+
+        <h2 class="section-title">
+          <span>Peer-reviewed Book Chapters</span>
+        </h2>
+
+        <ol reversed>
+          <div id="bibtex_display_chapters"></div>
         </ol>
 
         <h2 class="section-title">

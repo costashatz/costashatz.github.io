@@ -375,6 +375,7 @@ function bibtex_js_draw() {
   (new BibtexDisplay()).displayBibtex($("#bibtex_input_conf").val(), $("#bibtex_display_conf"));
   (new BibtexDisplay()).displayBibtex($("#bibtex_input_journals").val(), $("#bibtex_display_journals"));
   (new BibtexDisplay()).displayBibtex($("#bibtex_input_workshops").val(), $("#bibtex_display_workshops"));
+  (new BibtexDisplay()).displayBibtex($("#bibtex_input_chapters").val(), $("#bibtex_display_chapters"));
 }
 
 // check whether or not jquery is present
