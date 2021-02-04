@@ -27,12 +27,12 @@
 <body>
 
   <textarea id="bibtex_input_preprint" style="display:none;">
-    @article{duarte2020human,
-      title={From human action understanding to robot action execution: how the physical properties of handled objects modulate non-verbal cues},
-      author={Nuno Ferreira Duarte, <b>Konstantinos Chatzilygeroudis</b>, José Santos-Victor, Aude Billard},
+    @article{khadivar2020robustQP,
+      title={Self-Correcting Quadratic Programming-Based Robot Control},
+      author={Farshad Khadivar*, <b>Konstantinos Chatzilygeroudis</b>*, Theodoros Komninos, and Aude Billard},
       year={2020},
-      booktitle={Submitted to International Conference on Development and Learning and Epigenetic Robotics (ICDL-EpiRob)},
-      abstract={Humans manage to communicate action intentions in a non-verbal way, through body posture and movement. We start from this observation to investigate how a robot can decode a human's non-verbal cues during the manipulation of an object, with specific physical properties, to learn the adequate level of "carefulness" to use when handling that object. We construct dynamical models of the human behaviour using a human-to-human handover dataset consisting of 3 different cups with different levels of fillings. We then included these models into the design of an online classifier that identifies the type of action, based on the human wrist movement. We close the loop from action understanding to robot action execution with an adaptive and robust controller based on the learned classifier, and evaluate the entire pipeline on a collaborative task with a 7-DOF manipulator. Our results show that it is possible to correctly understand the "carefulness" behaviour of humans during object manipulation, even in the pick and place scenario, that was not part of the training set.}
+      booktitle={Submitted to IEEE Transactions on Pattern Analysis and Machine Intelligence},
+      abstract={Quadratic Programming (QP)-based controllers allow many robotic systems such as humanoids to achieve complex motions and interactions. However, these approaches heavily rely on adequately capturing the underlying model of the environment and the robot's dynamics. This assumption, nevertheless, is rarely satisfied and we usually turn to well-tuned end-effector PD controllers to compensate for the model mismatch. In this paper, we propose to augment traditional QP-based controllers with a learned task-space inverse dynamics model, and an adaptive control law which adjusts the QP on-line to account for model uncertainties and unforeseen disturbances. In particular, we propose (1) a novel formulation of an inverse dynamics model that can be incorporated inside the QP-control optimization procedure without limiting the expressiveness of the model (in fact any model learning approach can be used), and (2) a novel combination of adaptive control and QP-based methods to avoid the manual tuning of end-effector PID controllers. We extensively evaluate our method in simulation on several robotic scenarios ranging from a 7-DOF manipulator tracking a trajectory to a humanoid robot performing a squat for which the model used by the controller and the one used in the simulated world do not match (unknown friction coefficients, masses). Finally, we also validate our approach on a physical robotic scenario where two 7-DOF robotic arms need to manipulate a box by inserting the correct desired forces, and where the model of the environment (exact mass, friction coefficients, etc.) is not known.}
     }
   </textarea>
 
@@ -41,7 +41,9 @@
       title={Robust Reinforcement Learning with Bayesian Optimisation and Quadrature},
       author={Supratik Paul, <b>Konstantinos Chatzilygeroudis</b>, Kamil Ciosek, Jean-Baptiste Mouret, Michael Osborne, and Shimon Whiteson},
       year={2020},
-      booktitle={Journal of Machine Learning Research (JMLR), Special Issue on Bayesian Optimization (Under publication)},
+      url={https://jmlr.org/papers/volume21/18-216/18-216.pdf},
+      video={https://www.youtube.com/watch?v=R8Ss-dhDCmo&feature=youtu.be&ab_channel=Jean-BaptisteMouret},
+      booktitle={Journal of Machine Learning Research (JMLR), Special Issue on Bayesian Optimization},
       abstract={Bayesian optimisation has been successfully applied to a variety of reinforcement learning problems. However, the traditional approach for learning optimal policies in simulators does not utilise the opportunity to improve learning by adjusting certain environment variables: state features that are unobservable and randomly determined by the environment in a physical setting but are controllable in a simulator. This article considers the problem of finding a robust policy while taking into account the impact of environment variables. We present alternating optimisation and quadrature (ALOQ), which uses Bayesian optimisation and Bayesian quadrature to address such settings. We also present transferable ALOQ (TALOQ), for settings where simulator inaccuracies lead to difficulty in transferring the learnt policy to the physical system. We show that our algorithms are robust to the presence of significant rare events, which may not be observable under random sampling but play a substantial role in determining the optimal policy. Experimental results across different domains show that our algorithms learn robust policies efficiently.}
     }
     @article{chatzilygeroudis2019benchmark,
@@ -114,6 +116,7 @@
           editor={Panos Pardalos, Michael Vrahatis, Varvara Rasskazova},
           booktitle={Black Box Optimization, Machine Learning and No-Free Lunch Theorems (Under publication)},
           publisher={Springer},
+          url={https://arxiv.org/abs/2012.04322},
           year={2020}
     }
     @incollection{chatzilygeroudis2020ml,
@@ -127,6 +130,15 @@
   </textarea>
 
   <textarea id="bibtex_input_conf" style="display:none;">
+      @inproceedings{duarte2020human,
+        title={From human action understanding to robot action execution: how the physical properties of handled objects modulate non-verbal cues},
+        author={Nuno Ferreira Duarte, <b>Konstantinos Chatzilygeroudis</b>, José Santos-Victor, and Aude Billard},
+        year={2020},
+        url={./files/ICDL2020.pdf},
+        video={./files/ICDL2020.mp4},
+        booktitle={International Conference on Development and Learning and Epigenetic Robotics (ICDL-EpiRob)},
+        abstract={Humans manage to communicate action intentions in a non-verbal way, through body posture and movement. We start from this observation to investigate how a robot can decode a human's non-verbal cues during the manipulation of an object, with specific physical properties, to learn the adequate level of "carefulness" to use when handling that object. We construct dynamical models of the human behaviour using a human-to-human handover dataset consisting of 3 different cups with different levels of fillings. We then included these models into the design of an online classifier that identifies the type of action, based on the human wrist movement. We close the loop from action understanding to robot action execution with an adaptive and robust controller based on the learned classifier, and evaluate the entire pipeline on a collaborative task with a 7-DOF manipulator. Our results show that it is possible to correctly understand the "carefulness" behaviour of humans during object manipulation, even in the pick and place scenario, that was not part of the training set.}
+      }
       @inproceedings{starke2019GraspForces,
           title={On Force Synergies in Human Grasping Behavior},
           author={Julia Starke, <b>Konstantinos Chatzilygeroudis</b>, Aude Billard and Tamim Asfour},
@@ -292,7 +304,8 @@
         <span class="title">Konstantinos Chatzilygeroudis</span>
         <span class="tagline">Post-doctoral Fellow in Robotics and Machine Learning<br>
           <a href="http://cilab.math.upatras.gr/" target="_blank">Computational Intelligence Laboratory, University of Patras</a><br>
-          <a href="https://www.cti.gr/en/" target="_blank">Computer Technology Institute, Patras</a><br>
+          <a href="https://www.linkedin.com/company/metargus/" target="_blank">Leader of the R&D Computer Vision Team at Metargus</a><br>
+          <a href="https://www.ceid.upatras.gr/en" target="_blank">Adjunct Lecturer at CEID, University of Patras</a><br>
           <a href="mailto:costashatz@gmail.com">costashatz@gmail.com</a></span>
       </h1>
     </div>
@@ -342,13 +355,13 @@
 
       <div class="row section recentworks topspace">
 
-        <h2 class="section-title">
+        <!-- <h2 class="section-title">
           <span>Pre-prints (under review)</span>
         </h2>
 
         <ul style="list-style-type: none;">
           <div id="bibtex_display_preprint"></div>
-        </ul>
+        </ul> -->
 
         <h2 class="section-title">
           <span>Peer-reviewed Journal Papers</span>
@@ -398,8 +411,8 @@
           <h3 class="widget-title">Contact</h3>
           <div class="widget-body">
             <p>+30 6978 120 104<br>
-            <a href="mailto:costashatz@math.upatras.gr">costashatz@math.upatras.gr</a><br>
-            <a href="mailto:kchatzil@cti.gr">kchatzil@cti.gr</a><br>
+            <a href="mailto:costashatz@upatras.gr">costashatz@upatras.gr</a><br>
+            <a href="mailto:k.chatzilygeroudis@metargus.com">k.chatzilygeroudis@metargus.com</a><br>
             <a href="mailto:costashatz@gmail.com">costashatz@gmail.com</a><br>
             <br>
             <a href="http://cilab.math.upatras.gr/" target="_blank">Computational Intelligence Laboratory</a><br>
@@ -407,11 +420,6 @@
             Department of Mathematics<br>
             University of Patras<br>
             GR-26110 Rion, Patras, Greece
-            <br>
-            <a href="https://www.cti.gr/en/" target="_blank">Computer Technology Institute, Patras</a><br>
-            N. Kazantzaki Str.<br>
-            University Campus of Patras<br>
-            GR-26504 Rion, Patras, Greece
             </p>
           </div>
         </div>
