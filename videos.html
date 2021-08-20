@@ -28,12 +28,13 @@
   <div id="head" class="parallax" parallax-speed="2">
     <h1 id="logo" class="text-center">
       <img class="img-circle" src="assets/images/profile.jpg" alt="">
-      <span class="title">Konstantinos Chatzilygeroudis</span>
-      <span class="tagline">Post-doctoral Fellow in Robotics and Machine Learning<br>
-        <a href="http://cilab.math.upatras.gr/" target="_blank">Computational Intelligence Laboratory, University of Patras</a><br>
-        <a href="https://www.linkedin.com/company/metargus/" target="_blank">Leader of the R&D Computer Vision Team at Metargus</a><br>
-        <a href="https://www.ceid.upatras.gr/en" target="_blank">Adjunct Lecturer at CEID, University of Patras</a><br>
-        <a href="mailto:costashatz@gmail.com">costashatz@gmail.com</a></span>
+        <span class="title">Konstantinos Chatzilygeroudis</span>
+        <span class="tagline">Robotics and Machine Learning Researcher and Engineer<br>
+          <a href="https://www.linkedin.com/company/metargus/" target="_blank">Leader of the R&D Computer Vision Team at Metargus</a><br>
+          <a href="https://www.ceid.upatras.gr/en" target="_blank">Adjunct Lecturer at CEID, University of Patras</a><br>
+          <a href="https://ragdolldynamics.com/" target="_blank">Robotics Engineer at Ragdoll Dynamics</a><br>
+          <a href="http://cilab.math.upatras.gr/" target="_blank">Research Affiliate at CILab, University of Patras</a><br>
+          <a href="mailto:costashatz@gmail.com">costashatz@gmail.com</a></span>
     </h1>
   </div>
 
@@ -62,7 +63,51 @@
 
 <main id="main">
   <div class="container">
+      <div class="row topspace">
+          <h2 class="section-title">
+            <span>IROS 2021</span>
+          </h2>
+          <div class="col-sm-8 col-sm-offset-2">
 
+            <article class="post">
+              <header class="entry-header">
+                <div class="entry-meta">
+                  <span class="posted-on">
+                    <time class="entry-date published" date="2021-09-27">September 17, 2021</time>
+                  </span>
+                </div>
+                <h1 class="entry-content">
+                  <center>Learning of Parameters in Behavior Trees for Movement Skills</center>
+                </h1>
+              </header>
+              <div class="entry-content">
+                <p>
+                  <center>
+                    <video widht="560" height="315" controls>
+                      <source src="./files/IROS2021.mp4" type="video/mp4"/>
+                      <b>Your browser does not support the video tag. Please update.</b>
+                    </video>
+                  </center>
+                </p>
+                <p>
+                  <b>"Learning of Parameters in Behavior Trees for Movement Skills"</b><br/>
+                  <i>Matthias Mayr</i>, <i>Konstantinos Chatzilygeroudis</i>, <i>Faseeh Ahmad</i>, <i>Luigi Nardi</i> and <i>Volker Krueger</i>
+                  <br/><b>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</b> 2021
+                  <br/><br/>
+                </p>
+                <p>
+                  <b>Abstract:</b>
+                  </br/>
+                  <br/> Reinforcement Learning (RL) is a powerful mathematical framework that allows robots to learn complex skills by trial-and-error. Despite numerous successes in many applications, RL algorithms still require thousands of trials to converge to high-performing policies, can produce dangerous behaviors while learning, and the optimized policies (usually modeled as neural networks) give almost zero explanation when they fail to perform the task. For these reasons, the adoption of RL in industrial settings is not common. Behavior Trees (BTs), on the other hand, can provide a policy representation that a) supports modular and composable skills, b) allows for easy interpretation of the robot actions, and c) provides an advantageous low-dimensional parameter space. In this paper, we present a novel algorithm that can learn the parameters of a BT policy in simulation and then generalize to the physical robot without any additional training. We leverage a physical simulator with a digital twin of our workstation, and optimize the relevant parameters with a black-box optimizer. We showcase the efficacy of our method with a 7-DOF KUKA-iiwa manipulator in a task that includes obstacle avoidance and a contact-rich insertion (peg-in-hole), in which our method outperforms the baselines.
+                  <br/><br/>
+
+                  This work was partially supported by the Wallenberg AI, Autonomous Systems and Software Program (WASP) funded by Knut and Alice Wallenberg Foundation. This research was also supported in part by affiliate members and other supporters of the Stanford DAWN project-Ant Financial, Facebook, Google, InfoSys, Teradata, NEC, and VMware.
+                </p>
+              </div>
+            </article>
+            <!-- #post-## -->
+          </div>
+      </div>
       <div class="row topspace">
           <h2 class="section-title">
             <span>ICDL-EpiRob 2020</span>
@@ -110,14 +155,14 @@
       </div>
       <div class="row topspace">
           <h2 class="section-title">
-            <span>RA-L 2019</span>
+            <span>RA-L 2020</span>
           </h2>
           <div class="col-sm-8 col-sm-offset-2">
             <article class="post">
               <header class="entry-header">
                 <div class="entry-meta">
                   <span class="posted-on">
-                    <time class="entry-date published" date="2019-12-21">December 21, 2019</time>
+                    <time class="entry-date published" date="2020-02-10">February 10, 2020</time>
                   </span>
                 </div>
                 <h1 class="entry-content">
@@ -155,7 +200,7 @@
               <header class="entry-header">
                 <div class="entry-meta">
                   <span class="posted-on">
-                    <time class="entry-date published" date="2019-12-21">December 21, 2019</time>
+                    <time class="entry-date published" date="2020-01-24">January 24, 2020</time>
                   </span>
                 </div>
                 <h1 class="entry-content">
@@ -523,7 +568,7 @@
       <div class="col-md-12 widget">
         <div class="widget-body">
           <p class="text-right">
-            Copyright &copy; 2015, Konstantinos Chatzilygeroudis<br>
+            Copyright &copy; 2015-2021, Konstantinos Chatzilygeroudis<br>
             Design: <a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a> </p>
         </div>
       </div>

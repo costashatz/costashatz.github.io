@@ -27,14 +27,28 @@
 <body>
 
   <textarea id="bibtex_input_preprint" style="display:none;">
-    @article{mayr2021iros,
-      title={Learning of Parameters in Behavior Trees for Movement Skills},
-      author={Matthias Mayr, <b>Konstantinos Chatzilygeroudis</b>, Faseeh Ahmad, Luigi Nardi and Volker Krueger},
+    @article{khadivar2021self,
+      title={Self-Correcting Quadratic Programming-Based Robot Control},
+      author={Farshad Khadivar*, <b>Konstantinos Chatzilygeroudis</b>*, and Aude Billard},
       year={2021},
-      booktitle={Submitted to IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
-      abstract={Reinforcement Learning (RL) is a powerful mathematical framework that allows robots to learn complex skills by trial-and-error. Despite numerous successes in many applications, RL algorithms still require thousands of trials to converge to high-performing policies, can produce dangerous behaviors while learning, and the optimized policies (usually modeled as neural networks) give almost zero explanation when they fail to perform the task. For these reasons, the adoption of RL in industrial settings is not common. Behavior Trees (BTs), on the other hand, can provide a policy representation that a) supports modular and composable skills, b) allows for easy interpretation of the robot actions, and c) provides an advantageous low-dimensional parameter space. In this paper, we present a novel algorithm that can learn the parameters of a BT policy in simulation and then generalize to the physical robot without any additional training. We leverage a physical simulator with a digital twin of our workstation, and optimize the relevant parameters with a black-box optimizer. We showcase the efficacy of our method with a 7-DOF KUKA-iiwa manipulator in a task that includes obstacle avoidance and a contact-rich insertion (peg-in-hole), in which our method outperforms the baselines.}
+      booktitle={Submitted to International Journal of Robotics Research (IJRR)},
+      abstract={Quadratic Programming (QP)-based controllers allow many robotic systems such as humanoids to achieve complex motions and interactions. However, these approaches heavily rely on adequately capturing the underlying model of the environment and the robot's dynamics. This assumption, nevertheless, is rarely satisfied and we usually turn to well-tuned end-effector PD controllers to compensate for the model mismatch.
+      In this paper, we propose to augment traditional QP-based controllers with a learned residual inverse dynamics model, and an adaptive control law that adjusts the QP online to account for model uncertainties and unforeseen disturbances.
+      In particular, we propose (1) to learn a residual inverse dynamics model using Gaussian Process and linearize it so that it can be incorporated inside the QP-control optimization procedure, and (2) a novel combination of adaptive control and QP-based methods to avoid the manual tuning of end-effector PID controllers and faster convergence in learning the residual dynamics model.
+      We extensively evaluate our method in simulation on several robotic scenarios ranging from a 7-DOF manipulator tracking a trajectory to a humanoid robot performing a waving motion for which the model used by the controller and the one used in the simulated world do not match (unmodeled dynamics). Finally, we also validate our approach on physical robotic scenarios where a 7-DOF robotic arm performs tasks where the model of the environment (exact mass, friction coefficients, etc.) is not fully known.}
     }
   </textarea>
+
+  <!-- <textarea id="bibtex_input_preprint" style="display:none;">
+    @article{tsinganos2021behavior,
+      title={Behavior Policy Learning: Learning Long-Horizon Tasks via Solution Sketches and Model-Based Controllers},
+      author={Konstantinos Tsinganos*, <b>Konstantinos Chatzilygeroudis</b>*, Denis Hadjivelichkov, Dimitrios Kanoulas, Theodoros Komninos and Evangelos Dermatas},
+      year={2021},
+      booktitle={Submitted to Conference on Robot Learning (CoRL)},
+      url={https://sites.google.com/view/behaviorpl/home},
+      abstract={Long-horizon tasks are a challenge for reinforcement learning methods, and require either specific task knowledge (e.g., task segmentation) or big amount of interaction times to be learned. In this paper, we propose Behavior Policy Learning (BPL) that effectively combines (a) solution sketches, that is demonstrations without the actions, but only the states, (b) model-based controllers, and (c) simulations to effectively solve long-horizon tasks without strong knowledge about the underlying task. Our main intuition is that solution sketches alone can provide strong data for learning a high-level behavior by imitation, and model-based controllers can be used to follow this behavior effectively. Finally, we utilize robotic simulations to further improve the policy and make it robust in a Sim2Real style. We evaluate our method in simulation with a robotic manipulator that has to perform two tasks with variations: (a) grasp a box and place it in a basket, and (b) re-place a book on a different level within a bookcase. We also validate the Sim2Real capabilities of our method by performing real-world experiments and realistic simulated experiments where the objects are tracked through an RGB-D camera for the first task.}
+    }
+  </textarea> -->
 
   <textarea id="bibtex_input_journals" style="display:none;">
     @article{paul2018robustrl,
@@ -130,12 +144,21 @@
   </textarea>
 
   <textarea id="bibtex_input_conf" style="display:none;">
+      @inproceedings{mayr2021iros,
+        title={Learning of Parameters in Behavior Trees for Movement Skills},
+        author={Matthias Mayr, <b>Konstantinos Chatzilygeroudis</b>, Faseeh Ahmad, Luigi Nardi and Volker Krueger},
+        year={2021},
+        url={./files/IROS2021.pdf},
+        video={./files/IROS2021.mp4},
+        booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+        abstract={Reinforcement Learning (RL) is a powerful mathematical framework that allows robots to learn complex skills by trial-and-error. Despite numerous successes in many applications, RL algorithms still require thousands of trials to converge to high-performing policies, can produce dangerous behaviors while learning, and the optimized policies (usually modeled as neural networks) give almost zero explanation when they fail to perform the task. For these reasons, the adoption of RL in industrial settings is not common. Behavior Trees (BTs), on the other hand, can provide a policy representation that a) supports modular and composable skills, b) allows for easy interpretation of the robot actions, and c) provides an advantageous low-dimensional parameter space. In this paper, we present a novel algorithm that can learn the parameters of a BT policy in simulation and then generalize to the physical robot without any additional training. We leverage a physical simulator with a digital twin of our workstation, and optimize the relevant parameters with a black-box optimizer. We showcase the efficacy of our method with a 7-DOF KUKA-iiwa manipulator in a task that includes obstacle avoidance and a contact-rich insertion (peg-in-hole), in which our method outperforms the baselines.}
+      }
       @inproceedings{chatzilygeroudis2021lion,
         title={Feature Selection in single-cell RNA-seq data via a Genetic Algorithm},
         author={<b>Konstantinos Chatzilygeroudis</b>, Aristidis Vrahatis, Sotiris Tasoulis, and Michael Vrahatis},
         year={2021},
         booktitle={The 15th Learning and Intelligent Optimization Conference (LION)},
-        url={https://lion15.sba-research.org/program.html},
+        url={./files/LION15.pdf},
         abstract={Big data methods prevail in the biomedical domain leading to effective and scalable data-driven approaches. Biomedical data are known for their ultra-high dimensionality, especially the ones coming from molecular biology experiments. This property is also included in the emerging technique of single-cell RNA-sequencing (scRNA-seq), where we obtain sequence information from individual cells. A reliable way to uncover their complexity is by using Machine Learning approaches, including dimensional reduction and feature selection methods. Although the first choice has had remarkable progress in scRNA-seq data, only the latter can offer deeper interpretability at the gene level since it highlights the dominant gene features in the given data. Towards tackling this challenge, we propose a feature selection framework that utilizes genetic optimization principles and identifies low-dimensional combinations of gene lists in order to enhance classification performance of any off-the-shelf classifier (e.g., LDA or SVM). Our intuition is that by identifying an optimal genes subset, we can enhance the prediction power of scRNA-seq data even if these genes are unrelated to each other. We showcase our proposed framework's effectiveness in two real scRNA-seq experiments with gene dimensions up to 36708. Our framework can identify very low-dimensional subsets of genes (less than 200) while boosting the classifiers' performance. Finally, we provide a biological interpretation of the selected genes, thus providing evidence of our method's utility towards explainable artificial intelligence.}
       }
       @inproceedings{duarte2020human,
@@ -310,10 +333,11 @@
       <h1 id="logo" class="text-center">
         <img class="img-circle" src="assets/images/profile.jpg" alt="">
         <span class="title">Konstantinos Chatzilygeroudis</span>
-        <span class="tagline">Post-doctoral Fellow in Robotics and Machine Learning<br>
-          <a href="http://cilab.math.upatras.gr/" target="_blank">Computational Intelligence Laboratory, University of Patras</a><br>
+        <span class="tagline">Robotics and Machine Learning Researcher and Engineer<br>
           <a href="https://www.linkedin.com/company/metargus/" target="_blank">Leader of the R&D Computer Vision Team at Metargus</a><br>
           <a href="https://www.ceid.upatras.gr/en" target="_blank">Adjunct Lecturer at CEID, University of Patras</a><br>
+          <a href="https://ragdolldynamics.com/" target="_blank">Robotics Engineer at Ragdoll Dynamics</a><br>
+          <a href="http://cilab.math.upatras.gr/" target="_blank">Research Affiliate at CILab, University of Patras</a><br>
           <a href="mailto:costashatz@gmail.com">costashatz@gmail.com</a></span>
       </h1>
     </div>
@@ -482,7 +506,7 @@
         <div class="col-md-12 widget">
           <div class="widget-body">
             <p class="text-right">
-              Copyright &copy; 2015, Konstantinos Chatzilygeroudis
+              Copyright &copy; 2015-2021, Konstantinos Chatzilygeroudis
               <br> Design:
               <a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a>
             </p>
