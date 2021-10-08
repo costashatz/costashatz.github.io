@@ -27,6 +27,15 @@
 <body>
 
   <textarea id="bibtex_input_preprint" style="display:none;">
+    @article{mayr2021learning,
+      title={Learning Tacit Knowledge of Robot Tasks through Planning, Knowledge Integration and Multi-objective Optimization},
+      author={Matthias Mayr, Faseeh Ahmad, <b>Konstantinos Chatzilygeroudis</b>, Luigi Nardi, and Volker Krueger},
+      year={2021},
+      booktitle={Submitted to International Conference on Robotics and Automation (ICRA)},
+      abstract={We introduce TAKNO, a framework for integrating planning with targeted learning of scenario-specific parameters that capture the tacit knowledge of a robot task. TAKNO uses a coarse-to-fine strategy: (1) the user provides a task goal in PDDL, (2) a plan (i.e., a sequence of skills) is generated and the learnable parameters of the skills are automatically identified. An operator then chooses (3) reward functions and hyperparameters for the (4) subsequent learning process. Two aspects of our methodology are critical: (a) learning is tightly integrated with a knowledge framework to support planning and to provide priors for learning, (b) using multi-objective optimization, since objectives such as safety and task execution can often affect each other. Our system utilizes extended Behavior Trees for planning, execution and modeling of policies in combination with a motion generator that controls the robot. 
+      We adopt a multi-objective Bayesian optimization approach to learn the parameters of our tasks statistically efficient. Learning is done entirely in simulation and we use domain randomization techniques to ensure the results work in a real-world scenario.
+      We demonstrate the efficacy of our approach by learning skill parameters for two challenging contact-rich tasks and demonstrate their successful execution on a 7-DOF KUKA-iiwa manipulator.}
+    }
     @article{khadivar2021self,
       title={Self-Correcting Quadratic Programming-Based Robot Control},
       author={Farshad Khadivar*, <b>Konstantinos Chatzilygeroudis</b>*, and Aude Billard},
@@ -128,7 +137,7 @@
           title={Quality-Diversity Optimization: a novel branch of stochastic optimization},
           author={<b>Konstantinos Chatzilygeroudis</b>, Antoine Cully, Vassilis Vassiliades, and Jean-Baptiste Mouret},
           editor={Panos Pardalos, Michael Vrahatis, Varvara Rasskazova},
-          booktitle={Black Box Optimization, Machine Learning and No-Free Lunch Theorems (Under publication)},
+          booktitle={Black Box Optimization, Machine Learning and No-Free Lunch Theorems},
           publisher={Springer},
           url={https://arxiv.org/abs/2012.04322},
           year={2021}
@@ -137,7 +146,7 @@
       title={Machine Learning Basics},
       author={<b>Konstantinos Chatzilygeroudis</b>, Ioannis Hatzilygeroudis, and Isidoros Perikos},
       editor={Andreas Komninos, Parisa Eslambolchilar, Mark Dunlop},
-      booktitle={Intelligent Computing for Interactive System Design: Statistics, Digital Signal Processing and Machine Learning in practice (Under publication)},
+      booktitle={Intelligent Computing for Interactive System Design: Statistics, Digital Signal Processing and Machine Learning in practice},
       publisher={ACM},
       year={2021}
     }
