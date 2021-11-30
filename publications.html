@@ -27,10 +27,10 @@
 <body>
 
   <textarea id="bibtex_input_preprint" style="display:none;">
-    @article{mayr2021learning,
+    @article{mayr2022learning,
       title={Learning Tacit Knowledge of Robot Tasks through Planning, Knowledge Integration and Multi-objective Optimization},
       author={Matthias Mayr, Faseeh Ahmad, <b>Konstantinos Chatzilygeroudis</b>, Luigi Nardi, and Volker Krueger},
-      year={2021},
+      year={2022},
       booktitle={Submitted to International Conference on Robotics and Automation (ICRA)},
       abstract={We introduce TAKNO, a framework for integrating planning with targeted learning of scenario-specific parameters that capture the tacit knowledge of a robot task. TAKNO uses a coarse-to-fine strategy: (1) the user provides a task goal in PDDL, (2) a plan (i.e., a sequence of skills) is generated and the learnable parameters of the skills are automatically identified. An operator then chooses (3) reward functions and hyperparameters for the (4) subsequent learning process. Two aspects of our methodology are critical: (a) learning is tightly integrated with a knowledge framework to support planning and to provide priors for learning, (b) using multi-objective optimization, since objectives such as safety and task execution can often affect each other. Our system utilizes extended Behavior Trees for planning, execution and modeling of policies in combination with a motion generator that controls the robot. 
       We adopt a multi-objective Bayesian optimization approach to learn the parameters of our tasks statistically efficient. Learning is done entirely in simulation and we use domain randomization techniques to ensure the results work in a real-world scenario.
@@ -40,7 +40,7 @@
       title={Self-Correcting Quadratic Programming-Based Robot Control},
       author={Farshad Khadivar*, <b>Konstantinos Chatzilygeroudis</b>*, and Aude Billard},
       year={2021},
-      booktitle={Submitted to International Journal of Robotics Research (IJRR)},
+      booktitle={Submitted to IEEE Transactions on Systems, Man, and Cybernetics},
       abstract={Quadratic Programming (QP)-based controllers allow many robotic systems such as humanoids to achieve complex motions and interactions. However, these approaches heavily rely on adequately capturing the underlying model of the environment and the robot's dynamics. This assumption, nevertheless, is rarely satisfied and we usually turn to well-tuned end-effector PD controllers to compensate for the model mismatch.
       In this paper, we propose to augment traditional QP-based controllers with a learned residual inverse dynamics model, and an adaptive control law that adjusts the QP online to account for model uncertainties and unforeseen disturbances.
       In particular, we propose (1) to learn a residual inverse dynamics model using Gaussian Process and linearize it so that it can be incorporated inside the QP-control optimization procedure, and (2) a novel combination of adaptive control and QP-based methods to avoid the manual tuning of end-effector PID controllers and faster convergence in learning the residual dynamics model.
