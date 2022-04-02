@@ -28,13 +28,13 @@
 
   <textarea id="bibtex_input_preprint" style="display:none;">
     @article{mayr2022learning,
-      title={Learning Tacit Knowledge of Robot Tasks through Planning, Knowledge Integration and Multi-objective Optimization},
+      title={Skill-based Multi-objective Reinforcement Learning of Industrial Robot Tasks with Planning and Knowledge Integration},
       author={Matthias Mayr, Faseeh Ahmad, <b>Konstantinos Chatzilygeroudis</b>, Luigi Nardi, and Volker Krueger},
       year={2022},
-      booktitle={Submitted to International Conference on Robotics and Automation (ICRA)},
-      abstract={We introduce TAKNO, a framework for integrating planning with targeted learning of scenario-specific parameters that capture the tacit knowledge of a robot task. TAKNO uses a coarse-to-fine strategy: (1) the user provides a task goal in PDDL, (2) a plan (i.e., a sequence of skills) is generated and the learnable parameters of the skills are automatically identified. An operator then chooses (3) reward functions and hyperparameters for the (4) subsequent learning process. Two aspects of our methodology are critical: (a) learning is tightly integrated with a knowledge framework to support planning and to provide priors for learning, (b) using multi-objective optimization, since objectives such as safety and task execution can often affect each other. Our system utilizes extended Behavior Trees for planning, execution and modeling of policies in combination with a motion generator that controls the robot. 
-      We adopt a multi-objective Bayesian optimization approach to learn the parameters of our tasks statistically efficient. Learning is done entirely in simulation and we use domain randomization techniques to ensure the results work in a real-world scenario.
-      We demonstrate the efficacy of our approach by learning skill parameters for two challenging contact-rich tasks and demonstrate their successful execution on a 7-DOF KUKA-iiwa manipulator.}
+      booktitle={Submitted to IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+      abstract={In modern industrial settings with small batch sizes it should be easy to set up a robot system for a new task. Strategies exist, e.g. the use of skills, but when it comes to handling forces and torques, these systems often fall short. We introduce an approach that provides a combination of task-level planning with targeted learning of scenario-specific parameters for skill-based systems. We propose the following pipeline: (1) the user provides a task goal in the planning language PDDL, (2) a plan (i.e., a sequence of skills) is generated and the learnable parameters of the skills are automatically identified. An operator then chooses (3) reward functions and hyperparameters for the learning process. Two aspects of our methodology are critical: (a) learning is tightly integrated with a knowledge framework to support symbolic planning and to provide priors for learning, (b) using multi-objective optimization. This can help to balance key performance indicators (KPIs) such as safety and task performance since they can often affect each other. We adopt a multi-objective Bayesian optimization approach and learn entirely in simulation. We demonstrate the efficacy and versatility of our approach by learning skill parameters for two different contact-rich tasks. We show their successful execution on a real 7-DOF KUKA-iiwa manipulator and outperform the manual parameterization by human robot operators.},
+      url={https://sites.google.com/ulund.org/SkiREIL},
+      video={https://drive.google.com/file/d/1575CHpLu3Ogfped9uCys-NUYxX8fpJ_T/view}
     }
     @article{khadivar2021self,
       title={Self-Correcting Quadratic Programming-Based Robot Control},
@@ -153,6 +153,20 @@
   </textarea>
 
   <textarea id="bibtex_input_conf" style="display:none;">
+      @inproceedings{allard2022gecco,
+        title={Hierarchical Quality-Diversity for Online Damage Recovery},
+        author={Maxime Allard, Simón C. Smith, <b>Konstantinos Chatzilygeroudis</b> and Antoine Cully},
+        year={2022},
+        booktitle={The Genetic and Evolutionary Computation Conference (GECCO)},
+        abstract={Adaptation capabilities, like damage recovery, are crucial for the deployment of robots in complex environments. Several works have demonstrated that using repertoires of pre-trained skills can enable robots to adapt to unforeseen mechanical damages in a few minutes. These adaptation capabilities are directly linked to the behavioural diversity in the repertoire. The more alternatives the robot has to execute a skill, the better are the chances that it can adapt to a new situation. However, solving complex tasks, like maze navigation, usually requires multiple different skills. Finding a large behavioural diversity for these multiple skills often leads to an intractable exponential growth of the number of required solutions. In this paper, we introduce the Hierarchical Trial and Error algorithm, which uses a hierarchical behavioural repertoire to learn diverse skills and leverages them to make the robot more adaptive to different situations. We show that the hierarchical decomposition of skills enables the robot to learn more complex behaviours while keeping the learning of the repertoire tractable. The experiments with a hexapod robot show that our method solves maze navigation tasks with 20% less actions in the most challenging scenarios than the best baseline while having 57% less complete failures.}
+      }
+      @inproceedings{dimitropoulos2022raad,
+        title={A Brief Survey of Sim2Real Methods for Robot Learning},
+        author={Konstantinos Dimitropoulos, Ioannis Hatzilygeroudis and <b>Konstantinos Chatzilygeroudis</b>},
+        year={2022},
+        booktitle={31st International Conference on Robotics in Alpe-Adria-Danube Region (RAAD)},
+        abstract={Simulation has been crucial for robotics research development almost from the beginning of its existence. While simulation has been widely used for education, testing, and prototyping, only very recently the robotics community has attempted transferring behaviors learned in simulation to the real world (this process is usually referred to as Sim2Real). Those attempts have opened-up a novel research direction that has produced some exciting results that were previously thought impossible to achieve. In this paper, we attempt to give a quick overview of the most promising Simulation-To-Reality (Sim2Real) methods, results and directions.}
+      }
       @inproceedings{mayr2021iros,
         title={Learning of Parameters in Behavior Trees for Movement Skills},
         author={Matthias Mayr, <b>Konstantinos Chatzilygeroudis</b>, Faseeh Ahmad, Luigi Nardi and Volker Krueger},
