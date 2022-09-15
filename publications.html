@@ -27,11 +27,11 @@
 <body>
 
   <textarea id="bibtex_input_preprint" style="display:none;">
-    @article{mayr2022learning,
+    @article{mayr2022skill,
       title={Skill-based Multi-objective Reinforcement Learning of Industrial Robot Tasks with Planning and Knowledge Integration},
       author={Matthias Mayr, Faseeh Ahmad, <b>Konstantinos Chatzilygeroudis</b>, Luigi Nardi, and Volker Krueger},
       year={2022},
-      booktitle={Submitted to IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+      booktitle={Submitted to IEEE International Conference on Robotics and Biomimetics (ROBIO)},
       abstract={In modern industrial settings with small batch sizes it should be easy to set up a robot system for a new task. Strategies exist, e.g. the use of skills, but when it comes to handling forces and torques, these systems often fall short. We introduce an approach that provides a combination of task-level planning with targeted learning of scenario-specific parameters for skill-based systems. We propose the following pipeline: (1) the user provides a task goal in the planning language PDDL, (2) a plan (i.e., a sequence of skills) is generated and the learnable parameters of the skills are automatically identified. An operator then chooses (3) reward functions and hyperparameters for the learning process. Two aspects of our methodology are critical: (a) learning is tightly integrated with a knowledge framework to support symbolic planning and to provide priors for learning, (b) using multi-objective optimization. This can help to balance key performance indicators (KPIs) such as safety and task performance since they can often affect each other. We adopt a multi-objective Bayesian optimization approach and learn entirely in simulation. We demonstrate the efficacy and versatility of our approach by learning skill parameters for two different contact-rich tasks. We show their successful execution on a real 7-DOF KUKA-iiwa manipulator and outperform the manual parameterization by human robot operators.},
       url={https://sites.google.com/ulund.org/SkiREIL},
       video={https://drive.google.com/file/d/1575CHpLu3Ogfped9uCys-NUYxX8fpJ_T/view}
@@ -153,6 +153,14 @@
   </textarea>
 
   <textarea id="bibtex_input_conf" style="display:none;">
+      @article{mayr2022learning,
+        title={Learning Skill-based Industrial Robot Tasks with User Priors},
+        author={Matthias Mayr, Carl Hvarfner, <b>Konstantinos Chatzilygeroudis</b>, Luigi Nardi, and Volker Krueger},
+        year={2022},
+        booktitle={IEEE International Conference on Automation Science and Engineering (CASE)},
+        abstract={Robot skills systems are meant to reduce robot setup time for new manufacturing tasks. Yet, for dexterous, contact-rich tasks, it is often difficult to find the right skill parameters. One strategy is to learn these parameters by allowing the robot system to learn directly on the task. For a learning problem, a robot operator can typically specify the type and range of values of the parameters. Nevertheless, given their prior experience, robot operators should be able to help the learning process further by providing educated guesses about where in the parameter space potential optimal solutions could be found. Interestingly, such prior knowledge is not exploited in current robot learning frameworks. We introduce an approach that combines user priors and Bayesian optimization to allow fast optimization of robot industrial tasks at robot deployment time. We evaluate our method on three tasks that are learned in simulation as well as on two tasks that are learned directly on a real robot system. Additionally, we transfer knowledge from the corresponding simulation tasks by automatically constructing priors from well-performing configurations for learning on the real system. To handle potentially contradicting task objectives, the tasks are modeled as multi-objective problems. Our results show that operator priors, both user-specified and transferred, vastly accelerate the discovery of rich Pareto fronts, and typically produce final performance far superior to proposed baselines.},
+        url={https://arxiv.org/abs/2208.01605}
+      }
       @inproceedings{allard2022gecco,
         title={Hierarchical Quality-Diversity for Online Damage Recovery},
         author={Maxime Allard, Simón C. Smith, <b>Konstantinos Chatzilygeroudis</b> and Antoine Cully},
@@ -359,10 +367,9 @@
         <img class="img-circle" src="assets/images/profile.jpg" alt="">
         <span class="title">Konstantinos Chatzilygeroudis</span>
         <span class="tagline">Robotics and Machine Learning Researcher and Engineer<br>
-          <a href="https://www.linkedin.com/company/metargus/" target="_blank">Leader of the R&D Computer Vision Team at Metargus</a><br>
-          <a href="https://www.ceid.upatras.gr/en" target="_blank">Adjunct Lecturer at CEID, University of Patras</a><br>
-          <a href="https://ragdolldynamics.com/" target="_blank">Robotics Engineer at Ragdoll Dynamics</a><br>
           <a href="http://cilab.math.upatras.gr/" target="_blank">Post-doctoral Fellow at University of Patras</a><br>
+          <a href="https://www.linkedin.com/company/metargus/" target="_blank">Leader of the R&D Computer Vision Team at Metargus</a><br>
+          <a href="https://ragdolldynamics.com/" target="_blank">Robotics Engineer at Ragdoll Dynamics</a><br>
           <a href="mailto:costashatz@gmail.com">costashatz@gmail.com</a></span>
       </h1>
     </div>
@@ -531,7 +538,7 @@
         <div class="col-md-12 widget">
           <div class="widget-body">
             <p class="text-right">
-              Copyright &copy; 2015-2021, Konstantinos Chatzilygeroudis
+              Copyright &copy; 2015-2022, Konstantinos Chatzilygeroudis
               <br> Design:
               <a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a>
             </p>
