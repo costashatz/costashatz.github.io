@@ -27,17 +27,31 @@
 <body>
 
   <textarea id="bibtex_input_preprint" style="display:none;">
-    @title{allard2022telo,
-      title={Online Damage Recovery for Physical Robots with Hierarchical Quality-Diversity},
-      author={Maxime Allard, Simón C. Smith, <b>Konstantinos Chatzilygeroudis</b>, Bryan Lim and Antoine Cully},
-      year={2022},
-      booktitle={Submitted to ACM Transactions on Evolutionary Learning and Optimization},
-      url={https://arxiv.org/abs/2210.09918},
-      abstract={In real-world environments, robots need to be resilient to damages and robust to unforeseen scenarios. Quality-Diversity (QD) algorithms have been successfully used to make robots adapt to damages in seconds by leveraging a diverse set of learned skills. A high diversity of skills increases the chances of a robot to succeed at overcoming new situations since there are more potential alternatives to solve a new task. However, finding and storing a large behavioural diversity of multiple skills often leads to an increase in computational complexity. Furthermore, robot planning in a large skill space is an additional challenge that arises with an increased number of skills. Hierarchical structures can help reducing this search and storage complexity by breaking down skills into primitive skills. In this paper, we introduce the Hierarchical Trial and Error algorithm, which uses a hierarchical behavioural repertoire to learn diverse skills and leverages them to make the robot adapt quickly in the physical world. We show that the hierarchical decomposition of skills enables the robot to learn more complex behaviours while keeping the learning of the repertoire tractable. Experiments with a hexapod robot show that our method solves a maze navigation tasks with 20% less actions in simulation, and 43% less actions in the physical world, for the most challenging scenarios than the best baselines while having 78% less complete failures.}
+    @inproceedings{chatzilygeroudis2023evolving,
+      title={Evolving Dynamic Locomotion Policies in Minutes},
+      author={<b>Konstantinos Chatzilygeroudis</b>, Constantinos Tsakonas, and Michael Vrahatis},
+      year={2023},
+      booktitle={Submitted to The Fourteenth International Conference on Information, Intelligence, Systems and Applications (IISA 2023)},
+      abstract={Many effective evolutionary methods have been proposed that allow robots to learn how to walk. Most of the proposed methods have one or more of the following drawbacks: (a) utilization of hand designed open loop policies that cannot scale to different robots, and/or (b) requiring big wall time due to sample inefficiency and simulation costs, a fact that limits the practical usage of those algorithms. In this paper, we propose to combine (a) a simplified model for locomotion dynamics, and (b) the effectiveness of Quality-Diversity Algorithms, and propose a novel algorithm that is able to evolve, in less than an hour on a standard computer, generic (e.g. neural network), reactive locomotion policies that operate with a local view of the world. Our approach makes it possible to generate in a few minutes reactive policies for locomotion that can perform dynamic motions like jumps. We also present preliminary results of transferring the behaviors to realistic simulators using a whole body inverse kinematics solver and a joint impedance controller.}
+    }
+    @inproceedings{tsakoans2023effective,
+      title={Effective Skill Learning via Autonomous Goal Representation Learning},
+      author={Constantinos Tsakonas, and <b>Konstantinos Chatzilygeroudis</b>},
+      year={2023},
+      booktitle={Submitted to The Fourteenth International Conference on Information, Intelligence, Systems and Applications (IISA 2023)},
+      abstract={A long standing goal of robotics researchers is to develop robots that are able to develop in an autonomous open-ended manner through lifelong learning and interactions. If we are to see robots learning in an autonomous and open-ended manner, we need to develop methods for incremental and autonomous skill discovery and trial-and-error learning. In other words, we want our robots to be able to autonomously select their goals according to their current capabilities and learn controllers or policies to achieve those goals. In this paper, we take a step towards solving this challenge and propose a novel pipeline, called AGRL, that effectively combines deterministic simulations, Variational Auto-Encoders (VAEs) and Reinforcement Learning (RL) and enables robots to learn goal-conditioned policies suited to their capabilities. Our main intuition is that we can use effective exploration strategies in order to learn a good goal representation and distribution, and then use this distribution to generate effective and reachable goals for fast skill learning. We extensively evaluate the proposed method in simulation with a 7DOF manipulator and a differential drive mobile robot.}
     }
   </textarea>
 
   <textarea id="bibtex_input_journals" style="display:none;">
+    @article{allard2022telo,
+      title={Online Damage Recovery for Physical Robots with Hierarchical Quality-Diversity},
+      author={Maxime Allard, Simón C. Smith, <b>Konstantinos Chatzilygeroudis</b>, Bryan Lim, and Antoine Cully},
+      year={2023},
+      booktitle={ACM Transactions on Evolutionary Learning and Optimization},
+      url={https://arxiv.org/abs/2210.09918},
+      abstract={In real-world environments, robots need to be resilient to damages and robust to unforeseen scenarios. Quality-Diversity (QD) algorithms have been successfully used to make robots adapt to damages in seconds by leveraging a diverse set of learned skills. A high diversity of skills increases the chances of a robot to succeed at overcoming new situations since there are more potential alternatives to solve a new task. However, finding and storing a large behavioural diversity of multiple skills often leads to an increase in computational complexity. Furthermore, robot planning in a large skill space is an additional challenge that arises with an increased number of skills. Hierarchical structures can help to reduce this search and storage complexity by breaking down skills into primitive skills. In this paper, we extend the analysis of the Hierarchical Trial and Error algorithm, which uses a hierarchical behavioural repertoire to learn diverse skills and leverages them to make the robot adapt quickly in the physical world. We show that the hierarchical decomposition of skills enables the robot to learn more complex behaviours while keeping the learning of the repertoire tractable. Experiments with a hexapod robot both in simulation and the physical world show that our method solves a maze navigation task with up to 20% respectively 43% less actions than the best baselines while having 78% less complete failures.}
+    }
     @article{khadivar2023self,
       title={Self-Correcting Quadratic Programming-Based Robot Control},
       author={Farshad Khadivar*, <b>Konstantinos Chatzilygeroudis</b>*, and Aude Billard},
@@ -288,17 +302,26 @@
   </textarea>
 
   <textarea id="bibtex_input_workshops" style="display:none;">
+    @inproceedings{totsila2023end,
+      title={End-to-End Stable Imitation Learning via Autonomous Neural Dynamic Policies},
+      author={Dionis Totsila*, <b>Konstantinos Chatzilygeroudis</b>*, Denis Hadjivelichkov, Valerio Modugno, Ioannis Hatzilygeroudis, and Dimitrios Kanoulas},
+      year={2023},
+      booktitle={Life-Long Learning with Human Help (L3H2) Workshop, at ICRA},
+      url={https://arxiv.org/abs/2305.12886}
+    }
     @inproceedings{mayr2022combining,
       title={Combining Planning, Reasoning and Reinforcement Learning to solve Industrial Robot Tasks},
       author={Matthias Mayr, Faseeh Ahmad, <b>Konstantinos Chatzilygeroudis</b>, Luigi Nardi, and Volker Krueger},
       year={2022},
-      booktitle={2nd Workshop on Trends and Advances in Machine Learning and Automated Reasoning for Intelligent Robots and Systems, at IROS}
+      booktitle={2nd Workshop on Trends and Advances in Machine Learning and Automated Reasoning for Intelligent Robots and Systems, at IROS},
+      url={https://arxiv.org/abs/2212.03570}
     }
     @inproceedings{mayr2022set,
       title={How to Set Up & Learn New Robot Tasks with Explainable Behaviors?},
       author={Matthias Mayr, Faseeh Ahmad, <b>Konstantinos Chatzilygeroudis</b>, Luigi Nardi, and Volker Krueger},
       booktitle={European Robotics Forum},
-      year={2022}
+      year={2022},
+      url={https://portal.research.lu.se/en/publications/how-to-set-up-amp-learn-new-robot-tasks-with-explainable-behavior}
     }
     @inproceedings{mouret201720,
       title={20 Years of Reality Gap: a few Thoughts about Simulators in Evolutionary Robotics},
