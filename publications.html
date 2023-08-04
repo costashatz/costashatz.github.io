@@ -27,19 +27,12 @@
 <body>
 
   <textarea id="bibtex_input_preprint" style="display:none;">
-    @inproceedings{chatzilygeroudis2023evolving,
-      title={Evolving Dynamic Locomotion Policies in Minutes},
-      author={<b>Konstantinos Chatzilygeroudis</b>, Constantinos Tsakonas, and Michael Vrahatis},
+    @article{syriopoulos2023optimizing,
+      title={Optimizing doubly stochastic matrices for average consensus through swarm and evolutionary algorithms},
+      author={Panos Syriopoulos, <b>Konstantinos Chatzilygeroudis</b>, Nektarios Kalampalikis, and Michael Vrahatis},
       year={2023},
-      booktitle={Submitted to The Fourteenth International Conference on Information, Intelligence, Systems and Applications (IISA 2023)},
-      abstract={Many effective evolutionary methods have been proposed that allow robots to learn how to walk. Most of the proposed methods have one or more of the following drawbacks: (a) utilization of hand designed open loop policies that cannot scale to different robots, and/or (b) requiring big wall time due to sample inefficiency and simulation costs, a fact that limits the practical usage of those algorithms. In this paper, we propose to combine (a) a simplified model for locomotion dynamics, and (b) the effectiveness of Quality-Diversity Algorithms, and propose a novel algorithm that is able to evolve, in less than an hour on a standard computer, generic (e.g. neural network), reactive locomotion policies that operate with a local view of the world. Our approach makes it possible to generate in a few minutes reactive policies for locomotion that can perform dynamic motions like jumps. We also present preliminary results of transferring the behaviors to realistic simulators using a whole body inverse kinematics solver and a joint impedance controller.}
-    }
-    @inproceedings{tsakoans2023effective,
-      title={Effective Skill Learning via Autonomous Goal Representation Learning},
-      author={Constantinos Tsakonas, and <b>Konstantinos Chatzilygeroudis</b>},
-      year={2023},
-      booktitle={Submitted to The Fourteenth International Conference on Information, Intelligence, Systems and Applications (IISA 2023)},
-      abstract={A long standing goal of robotics researchers is to develop robots that are able to develop in an autonomous open-ended manner through lifelong learning and interactions. If we are to see robots learning in an autonomous and open-ended manner, we need to develop methods for incremental and autonomous skill discovery and trial-and-error learning. In other words, we want our robots to be able to autonomously select their goals according to their current capabilities and learn controllers or policies to achieve those goals. In this paper, we take a step towards solving this challenge and propose a novel pipeline, called AGRL, that effectively combines deterministic simulations, Variational Auto-Encoders (VAEs) and Reinforcement Learning (RL) and enables robots to learn goal-conditioned policies suited to their capabilities. Our main intuition is that we can use effective exploration strategies in order to learn a good goal representation and distribution, and then use this distribution to generate effective and reachable goals for fast skill learning. We extensively evaluate the proposed method in simulation with a 7DOF manipulator and a differential drive mobile robot.}
+      booktitle={Conditionally Accepted to Annals of Mathematics and Artificial Intelligence},
+      abstract={Doubly-stochastic matrices play a vital role in modern applications of complex networks such as tracking and decentralized state estimation, coordination and control of autonomous agents. A central theme in all of the above is consensus, that is, nodes reaching agreement about the value of an underlying variable (e.g. the state of the environment). Despite the fact that complex networks have been studied thoroughly, the communication graphs are usually described by symmetric matrices due to their advantageous theoretical properties. We do not yet have methods for optimizing generic doubly-stochastic matrices. In this paper, we propose a novel formulation and framework, EvoDSM, for achieving fast linear distributed averaging by: (a) optimizing the weights of a fixed graph topology, and (b) optimizing for the topology itself. We are concerned with graphs that can be described by positive doubly-stochastic matrices. Our method relies on swarm and evolutionary optimization algorithms and our experimental results and analysis showcase that our method (1) achieves comparable performance with traditional methods for symmetric graphs, (2) is applicable to non-symmetric network structures and edge weights, and (3) is scalable and can operate effectively with moderately large graphs without engineering overhead.}
     }
   </textarea>
 
@@ -163,6 +156,22 @@
   </textarea>
 
   <textarea id="bibtex_input_conf" style="display:none;">
+      @inproceedings{chatzilygeroudis2023evolving,
+        title={Evolving Dynamic Locomotion Policies in Minutes},
+        author={<b>Konstantinos Chatzilygeroudis</b>, Constantinos Tsakonas, and Michael Vrahatis},
+        year={2023},
+        video={https://www.youtube.com/watch?v=VdyUlAAWMzQ},
+        booktitle={The Fourteenth International Conference on Information, Intelligence, Systems and Applications (IISA 2023)},
+        abstract={Many effective evolutionary methods have been proposed that allow robots to learn how to walk. Most of the proposed methods have one or more of the following drawbacks: (a) utilization of hand designed open loop policies that cannot scale to different robots, and/or (b) requiring big wall time due to sample inefficiency and simulation costs, a fact that limits the practical usage of those algorithms. In this paper, we propose to combine (a) a simplified model for locomotion dynamics, and (b) the effectiveness of Quality-Diversity Algorithms, and propose a novel algorithm that is able to evolve, in less than an hour on a standard computer, generic (e.g. neural network), reactive locomotion policies that operate with a local view of the world. Our approach makes it possible to generate in a few minutes reactive policies for locomotion that can perform dynamic motions like jumps. We also present preliminary results of transferring the behaviors to realistic simulators using a whole body inverse kinematics solver and a joint impedance controller.}
+      }
+      @inproceedings{tsakoans2023effective,
+        title={Effective Skill Learning via Autonomous Goal Representation Learning},
+        author={Constantinos Tsakonas, and <b>Konstantinos Chatzilygeroudis</b>},
+        year={2023},
+        video={https://www.youtube.com/watch?v=x-j5mid6jxM},
+        booktitle={The Fourteenth International Conference on Information, Intelligence, Systems and Applications (IISA 2023)},
+        abstract={A long standing goal of robotics researchers is to develop robots that are able to develop in an autonomous open-ended manner through lifelong learning and interactions. If we are to see robots learning in an autonomous and open-ended manner, we need to develop methods for incremental and autonomous skill discovery and trial-and-error learning. In other words, we want our robots to be able to autonomously select their goals according to their current capabilities and learn controllers or policies to achieve those goals. In this paper, we take a step towards solving this challenge and propose a novel pipeline, called AGRL, that effectively combines deterministic simulations, Variational Auto-Encoders (VAEs) and Reinforcement Learning (RL) and enables robots to learn goal-conditioned policies suited to their capabilities. Our main intuition is that we can use effective exploration strategies in order to learn a good goal representation and distribution, and then use this distribution to generate effective and reachable goals for fast skill learning. We extensively evaluate the proposed method in simulation with a 7DOF manipulator and a differential drive mobile robot.}
+      }
       @inproceedings{chatzilygeroudis2023lion,
         title={Fast and Robust Constrained Optimization via Evolutionary and Quadratic Programming},
         author={<b>Konstantinos Chatzilygeroudis</b>, and Michael Vrahatis},
@@ -414,12 +423,12 @@
     <div id="head" class="parallax" parallax-speed="2">
       <h1 id="logo" class="text-center">
         <img class="img-circle" src="assets/images/profile.jpg" alt="">
-        <span class="title">Konstantinos Chatzilygeroudis</span>
-        <span class="tagline">Robotics and Machine Learning Researcher and Engineer<br>
-          <a href="http://cilab.math.upatras.gr/" target="_blank">Post-doctoral Fellow at University of Patras</a><br>
-          <!-- <a href="https://www.linkedin.com/company/metargus/" target="_blank">Leader of the R&D Computer Vision Team at Metargus</a><br>
-          <a href="https://ragdolldynamics.com/" target="_blank">Robotics Engineer at Ragdoll Dynamics</a><br> -->
-          <a href="mailto:costashatz@gmail.com">costashatz@gmail.com</a></span>
+          <span class="title">Konstantinos Chatzilygeroudis</span>
+          <span class="tagline">Robotics and Machine Learning Researcher and Engineer<br>
+            <a href="https://www.ece.upatras.gr/index.php/en/division/systems-and-control-sae.html" target="_blank">Assistant Professor at University of Patras</a><br>
+            <!-- <a href="https://www.linkedin.com/company/metargus/" target="_blank">Leader of the R&D Computer Vision Team at Metargus</a><br>
+            <a href="https://ragdolldynamics.com/" target="_blank">Robotics Engineer at Ragdoll Dynamics</a><br> -->
+            <a href="mailto:costashatz@upatras.gr">costashatz@upatras.gr</a></span>
       </h1>
     </div>
 
