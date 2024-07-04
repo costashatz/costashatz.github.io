@@ -31,7 +31,10 @@
       title={Sensorimotor Learning with Stability Guarantees via Autonomous Neural Dynamic Policies},
       author={Dionis Totsila*, <b>Konstantinos Chatzilygeroudis*</b>, Valerio Modugno, Denis Hadjivelichkov, and Dimitrios Kanoulas},
       year={2024},
-      booktitle={Submitted to ACM Transactions on Evolutionary Learning and Optimization, Special Issue on Learning and Intelligent Optimization},
+      booktitle={Submitted to IEEE Robotics and Automation Letters (RA-L)},
+      url={https://nosalro.github.io/andps/},
+      video={https://www.youtube.com/watch?v=ZI9-TLSovpQ},
+      code={https://github.com/NOSALRO/andps},
       abstract={State-of-the-art sensorimotor learning algorithms, either in the context of reinforcement learning or imitation learning, offer policies that can often produce unstable behaviors, damaging the robot and/or the environment. Moreover, it is very difficult to interpret the optimized controller and analyze its behavior and/or performance. Traditional robot learning, on the contrary, relies on dynamical system-based policies that can be analyzed for stability/safety. Such policies, however, are neither flexible nor generic and usually work only with proprioceptive sensor states. In this work, we bridge the gap between generic neural network policies and dynamical system-based policies, and we introduce Autonomous Neural Dynamic Policies (ANDPs) that: (a) are based on autonomous dynamical systems, (b) always produce asymptotically stable behaviors, and (c) are more flexible than traditional stable dynamical system-based policies. ANDPs are fully differentiable, flexible generic-policies that can be used for both imitation learning and reinforcement learning setups, while ensuring asymptotic stability. Through several experiments, we explore the flexibility and capacity of ANDPs in several imitation learning tasks including experiments with image observations. The results show that ANDPs combine the benefits of both neural network-based and dynamical system-based methods.}
     }
   </textarea>
@@ -42,6 +45,7 @@
       author={Panos Syriopoulos, <b>Konstantinos Chatzilygeroudis</b>, Nektarios Kalampalikis, and Michael Vrahatis},
       year={2024},
       booktitle={Annals of Mathematics and Artificial Intelligence},
+      url={https://link.springer.com/article/10.1007/s10472-023-09912-8?utm_source=rct_congratemailt&utm_medium=email&utm_campaign=nonoa_20240608&utm_content=10.1007%2Fs10472-023-09912-8},
       abstract={Doubly-stochastic matrices play a vital role in modern applications of complex networks such as tracking and decentralized state estimation, coordination and control of autonomous agents. A central theme in all of the above is consensus, that is, nodes reaching agreement about the value of an underlying variable (e.g. the state of the environment). Despite the fact that complex networks have been studied thoroughly, the communication graphs are usually described by symmetric matrices due to their advantageous theoretical properties. We do not yet have methods for optimizing generic doubly-stochastic matrices. In this paper, we propose a novel formulation and framework, EvoDSM, for achieving fast linear distributed averaging by: (a) optimizing the weights of a fixed graph topology, and (b) optimizing for the topology itself. We are concerned with graphs that can be described by positive doubly-stochastic matrices. Our method relies on swarm and evolutionary optimization algorithms and our experimental results and analysis showcase that our method (1) achieves comparable performance with traditional methods for symmetric graphs, (2) is applicable to non-symmetric network structures and edge weights, and (3) is scalable and can operate effectively with moderately large graphs without engineering overhead.}
     }
     @article{allard2022telo,
@@ -163,6 +167,14 @@
   </textarea>
 
   <textarea id="bibtex_input_conf" style="display:none;">
+      @inproceedings{asimakopoulos2024lion,
+        title={Effective Kinodynamic Planning and Exploration through Quality Diversity and Trajectory Optimization},
+        author={Konstantinos Asimakopoulos, Aristeidis Androutsopoulos, Michael Vrahatis, and <b>Konstantinos Chatzilygeroudis</b>},
+        year={2024},
+        booktitle={The 18th Learning and Intelligent Optimization Conference (LION)},
+        url={./files/LION18.pdf},
+        abstract={Efficient and rapid kinodynamic planning is crucial for numerous real-world robotics applications. Various methods have been proposed to address this challenge, primarily falling into two categories: (a) randomized planners and (b) trajectory optimization utilizing simplified models and numerical optimization. Randomized planners such as RRT and PRM excel in exploring the state space, while trajectory optimization methods, like direct collocation, are adept at discovering optimal trajectories within well-defined spaces. We aim to achieve effective and efficient kinodynamic planning and exploration by integrating evolutionary algorithms (Quality-Diversity) with trajectory optimization. Our preliminary experiments showcase that using the proposed methodology we get the best from both worlds on two simulated experiments.}
+      }
       @inproceedings{chatzilygeroudis2023evolving,
         title={Evolving Dynamic Locomotion Policies in Minutes},
         author={<b>Konstantinos Chatzilygeroudis</b>, Constantinos Tsakonas, and Michael Vrahatis},
