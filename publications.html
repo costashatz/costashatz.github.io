@@ -27,19 +27,26 @@
 <body>
 
   <textarea id="bibtex_input_preprint" style="display:none;">
-    @article{dionis2024andps,
-      title={Sensorimotor Learning with Stability Guarantees via Autonomous Neural Dynamic Policies},
-      author={Dionis Totsila*, <b>Konstantinos Chatzilygeroudis*</b>, Valerio Modugno, Denis Hadjivelichkov, and Dimitrios Kanoulas},
-      year={2024},
-      booktitle={Submitted to IEEE Robotics and Automation Letters (RA-L)},
-      url={https://nosalro.github.io/andps/},
-      video={https://www.youtube.com/watch?v=ZI9-TLSovpQ},
-      code={https://github.com/NOSALRO/andps},
-      abstract={State-of-the-art sensorimotor learning algorithms, either in the context of reinforcement learning or imitation learning, offer policies that can often produce unstable behaviors, damaging the robot and/or the environment. Moreover, it is very difficult to interpret the optimized controller and analyze its behavior and/or performance. Traditional robot learning, on the contrary, relies on dynamical system-based policies that can be analyzed for stability/safety. Such policies, however, are neither flexible nor generic and usually work only with proprioceptive sensor states. In this work, we bridge the gap between generic neural network policies and dynamical system-based policies, and we introduce Autonomous Neural Dynamic Policies (ANDPs) that: (a) are based on autonomous dynamical systems, (b) always produce asymptotically stable behaviors, and (c) are more flexible than traditional stable dynamical system-based policies. ANDPs are fully differentiable, flexible generic-policies that can be used for both imitation learning and reinforcement learning setups, while ensuring asymptotic stability. Through several experiments, we explore the flexibility and capacity of ANDPs in several imitation learning tasks including experiments with image observations. The results show that ANDPs combine the benefits of both neural network-based and dynamical system-based methods.}
+    @article{tsakonas2025vqelites,
+      title={Vector Quantized-Elites: Unsupervised and Problem Agnostic Quality-Diversity Optimization},
+      author={Constantinos Tsakonas, and <b>Konstantinos Chatzilygeroudis</b>},
+      year={2025},
+      booktitle={Submitted to IEEE Transactions on Evolutionary Computation},
+      abstract={Quality-Diversity (QD) algorithms have transformed optimization by prioritizing the discovery of diverse, high-performing solutions over a single optimal result. However, traditional QD methods, such as MAP-Elites, rely heavily on predefined behavioral descriptors and complete prior knowledge of the task to define the behavioral space grid, limiting their flexibility and applicability. In this work, we introduce Vector Quantized-Elites (VQ-Elites), a novel QD algorithm that autonomously constructs a structured behavioral space grid using unsupervised learning, eliminating the need for prior task-specific knowledge. At the core of VQ-Elites is the integration of Vector Quantized Variational Autoencoders (VQ-VAE), which enables the dynamic learning of behavioral descriptors and the generation of a structured, rather than unstructured, behavioral space grid — a significant advancement over existing unsupervised QD approaches. This design establishes VQ-Elites as a flexible, robust, and task-agnostic optimization framework. To further enhance the performance of unsupervised QD algorithms, we introduce two key components: behavioral space bounding and cooperation mechanisms, which significantly improve convergence and performance. We validate VQ-Elites on robotic arm pose-reaching and mobile robot space-covering tasks. The results demonstrate its ability to efficiently generate diverse, high-quality solutions, emphasizing its adaptability, scalability, robustness to hyperparameters, and potential to extend QD optimization to complex, previously inaccessible domains.}
     }
   </textarea>
 
   <textarea id="bibtex_input_journals" style="display:none;">
+    @article{dionis2024andps,
+      title={Sensorimotor Learning with Stability Guarantees via Autonomous Neural Dynamic Policies},
+      author={Dionis Totsila*, <b>Konstantinos Chatzilygeroudis*</b>, Valerio Modugno, Denis Hadjivelichkov, and Dimitrios Kanoulas},
+      year={2024},
+      booktitle={IEEE Robotics and Automation Letters (RA-L)},
+      url={https://nosalro.github.io/andps/},
+      video={https://www.youtube.com/watch?v=oPWdoSAkqlE},
+      code={https://github.com/NOSALRO/andps},
+      abstract={State-of-the-art sensorimotor learning algorithms, either in the context of reinforcement learning or imitation learning, offer policies that can often produce unstable behaviors, damaging the robot and/or the environment. Moreover, it is very difficult to interpret the optimized controller and analyze its behavior and/or performance. Traditional robot learning, on the contrary, relies on dynamical system-based policies that can be analyzed for stability/safety. Such policies, however, are neither flexible nor generic and usually work only with proprioceptive sensor states. In this work, we bridge the gap between generic neural network policies and dynamical system-based policies, and we introduce Autonomous Neural Dynamic Policies (ANDPs) that: (a) are based on autonomous dynamical systems, (b) always produce asymptotically stable behaviors, and (c) are more flexible than traditional stable dynamical system-based policies. ANDPs are fully differentiable, flexible generic-policies that can be used for both imitation learning and reinforcement learning setups, while ensuring asymptotic stability. Through several experiments, we explore the flexibility and capacity of ANDPs in several imitation learning tasks including experiments with image observations. The results show that ANDPs combine the benefits of both neural network-based and dynamical system-based methods.}
+    }
     @article{Chatzilygeroudis2024,
         doi = {10.21105/joss.06771},
         url = {https://doi.org/10.21105/joss.06771},
@@ -180,6 +187,14 @@
   </textarea>
 
   <textarea id="bibtex_input_conf" style="display:none;">
+      @inproceedings{asimakopoulos2025icara,
+        title={Integrating Trajectory Optimization in Quality-Diversity for Kinodynamic Motion Planning},
+        author={Konstantinos Asimakopoulos, and <b>Konstantinos Chatzilygeroudis</b>},
+        year={2025},
+        booktitle={11th International Conference on Automation, Robotics, and Applications (ICARA)},
+        url={./files/ICARA2025.pdf},
+        abstract={Kinodynamic planning is a critical component of robotics, enabling robots to generate dynamically feasible trajectories while adhering to geometric constraints. Existing methods for kinodynamic planning primarily fall into two categories: (a) stochastic planners, such as Rapidly-Exploring Random Trees (RRT) and Probabilistic Roadmaps (PRM), which excel in state-space exploration due to their directed randomness, and (b) optimization-based approaches, which are well-suited for structured environments, producing smooth and optimal solutions. In this work, we present Hybrid Trajectory Exploration for Kinodynamic Planning (HyTraX), a hybrid framework that integrates the strengths of these two paradigms. Specifically, HyTraX enhances the effectiveness of the Go-Explore algorithm by incorporating trajectory optimization with random target selection as its core exploration strategy. We evaluate HyTraX on two challenging kinodynamic motion planning tasks: a car-like agent and a planar quadrotor navigating through maze environments. Our results demonstrate significant performance improvements with minimal task-specific tuning, highlighting the robustness and versatility of the proposed approach.}
+      }
       @inproceedings{tsikelis2024gait,
         title={Gait Optimization for Legged Systems Through Mixed Distribution Cross-Entropy Optimization},
         author={Ioannis Tsikelis*, and <b>Konstantinos Chatzilygeroudis</b>*},
