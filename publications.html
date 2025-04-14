@@ -31,9 +31,17 @@
       title={Vector Quantized-Elites: Unsupervised and Problem Agnostic Quality-Diversity Optimization},
       author={Constantinos Tsakonas, and <b>Konstantinos Chatzilygeroudis</b>},
       year={2025},
+      url={https://arxiv.org/abs/2504.08057},
       booktitle={Submitted to IEEE Transactions on Evolutionary Computation},
       abstract={Quality-Diversity (QD) algorithms have transformed optimization by prioritizing the discovery of diverse, high-performing solutions over a single optimal result. However, traditional QD methods, such as MAP-Elites, rely heavily on predefined behavioral descriptors and complete prior knowledge of the task to define the behavioral space grid, limiting their flexibility and applicability. In this work, we introduce Vector Quantized-Elites (VQ-Elites), a novel QD algorithm that autonomously constructs a structured behavioral space grid using unsupervised learning, eliminating the need for prior task-specific knowledge. At the core of VQ-Elites is the integration of Vector Quantized Variational Autoencoders (VQ-VAE), which enables the dynamic learning of behavioral descriptors and the generation of a structured, rather than unstructured, behavioral space grid — a significant advancement over existing unsupervised QD approaches. This design establishes VQ-Elites as a flexible, robust, and task-agnostic optimization framework. To further enhance the performance of unsupervised QD algorithms, we introduce two key components: behavioral space bounding and cooperation mechanisms, which significantly improve convergence and performance. We validate VQ-Elites on robotic arm pose-reaching and mobile robot space-covering tasks. The results demonstrate its ability to efficiently generate diverse, high-quality solutions, emphasizing its adaptability, scalability, robustness to hyperparameters, and potential to extend QD optimization to complex, previously inaccessible domains.}
     }
+    <!-- @article{ntagkas2025learning
+      title={Learning and Optimization with 3D Orientations},
+      author={Alexandros Ntagkas*, Constantinos Tsakonas*, and <b>Konstantinos Chatzilygeroudis</b>},
+      year={2025},
+      booktitle={Submitted to IEEE Robotics and Automation Letters (RA-L)},
+      abstract={There exist numerous ways of representing 3D orientations. Each representation has both limitations and unique features. Choosing the best representation for one task is often a difficult chore, and there exist conflicting opinions on which representation is better suited for a set of family of tasks. Even worse, when dealing with scenarios where we need to learn or optimize functions with orientations as inputs and/or outputs, the set of possibilities (representations, loss functions, etc.) is even larger and it is not easy to decide what is best for each scenario. In this paper, we attempt to a) present clearly, concisely and with unified notation all available representations, and “tricks” related to 3D orientations (including Lie Group algebra), and b) benchmark them in representative scenarios. The first part feels like it is missing from the robotics literature as one has to read many different textbooks and papers in order have a concise and clear understanding of all possibilities, while the benchmark is necessary in order to come up with recommendations based on empirical evidence. More precisely, we experiment with the following settings that attempt to cover most widely used scenarios in robotics: 1) direct optimization, 2) imitation/supervised learning with a neural network controller, 3) reinforcement learning, and 4) trajectory optimization using differential dynamic programming. We finally provide guidelines depending on the scenario, and make available a reference implementation of all the orientation math described in the paper.}
+    } -->
   </textarea>
 
   <textarea id="bibtex_input_journals" style="display:none;">
@@ -187,6 +195,15 @@
   </textarea>
 
   <textarea id="bibtex_input_conf" style="display:none;">
+      @inproceedings{trakas2025ecc,
+        title={On the Adaptive Performance Control of Robot Manipulators},
+        author={Panagiotis Trakas, Alexandros Ntagkas, <b>Konstantinos Chatzilygeroudis</b>, and Charalampos Bechlioulis},
+        year={2025},
+        booktitle={23rd European Control Conference (ECC)},
+        url={./files/ECC2025.pdf},
+        video={https://www.youtube.com/watch?v=Mv-cQfQ25PI},
+        abstract={In this paper, we propose an adaptive performance control (APC) framework for output-feedback control of robot manipulators with input constraints, focusing on achieving joint position tracking with adaptive performance attributes. Building on the APC methodology, we introduce a single-funnel control approach that dynamically adjusts performance constraints to accommodate the actuator limitations inherent in robotic systems. Moreover, a robust tracking differentiator with predefined convergence characteristics is developed to estimate the unmeasured velocity errors. The effectiveness of the proposed control scheme is validated through simulation results on a 2-DoF planar manipulator and experiments on a 3-fingered 12 degree-of-freedom robotic hand tasked with performing a musical piece on a keyboard.}
+      }
       @inproceedings{asimakopoulos2025icara,
         title={Integrating Trajectory Optimization in Quality-Diversity for Kinodynamic Motion Planning},
         author={Konstantinos Asimakopoulos, and <b>Konstantinos Chatzilygeroudis</b>},
