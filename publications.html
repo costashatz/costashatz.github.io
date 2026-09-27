@@ -1,695 +1,570 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="Sergey Pozhilov (GetTemplate.com)">
-
-  <title>Konstantinos Chatzilygeroudis | Publications</title>
-
-  <link rel="shortcut icon" href="assets/images/favicon.gif">
-
-  <!-- Bootstrap -->
-  <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
-  <!-- Icons -->
-  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-  <!-- Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
-  <!-- Custom styles -->
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="assets/css/academicons.css">
-
-  <!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="description" content="Full list of journal papers, conference papers, book chapters, magazine articles and workshop papers by Konstantinos Chatzilygeroudis, with links to PDFs, code and videos.">
+<title>Publications — Konstantinos Chatzilygeroudis</title>
+<link rel="shortcut icon" href="assets/images/favicon.gif">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap">
+<link rel="stylesheet" href="assets/css/main.css">
 </head>
-
 <body>
 
-  <textarea id="bibtex_input_preprint" style="display:none;">
-    @article{tsakonas2025vqelites,
-      title={Vector Quantized-Elites: Unsupervised and Problem Agnostic Quality-Diversity Optimization},
-      author={Constantinos Tsakonas, and <b>Konstantinos Chatzilygeroudis</b>},
-      year={2025},
-      url={https://arxiv.org/abs/2504.08057},
-      booktitle={Submitted to IEEE Transactions on Evolutionary Computation},
-      abstract={Quality-Diversity (QD) algorithms have transformed optimization by prioritizing the discovery of diverse, high-performing solutions over a single optimal result. However, traditional QD methods, such as MAP-Elites, rely heavily on predefined behavioral descriptors and complete prior knowledge of the task to define the behavioral space grid, limiting their flexibility and applicability. In this work, we introduce Vector Quantized-Elites (VQ-Elites), a novel QD algorithm that autonomously constructs a structured behavioral space grid using unsupervised learning, eliminating the need for prior task-specific knowledge. At the core of VQ-Elites is the integration of Vector Quantized Variational Autoencoders (VQ-VAE), which enables the dynamic learning of behavioral descriptors and the generation of a structured, rather than unstructured, behavioral space grid — a significant advancement over existing unsupervised QD approaches. This design establishes VQ-Elites as a flexible, robust, and task-agnostic optimization framework. To further enhance the performance of unsupervised QD algorithms, we introduce two key components: behavioral space bounding and cooperation mechanisms, which significantly improve convergence and performance. We validate VQ-Elites on robotic arm pose-reaching and mobile robot space-covering tasks. The results demonstrate its ability to efficiently generate diverse, high-quality solutions, emphasizing its adaptability, scalability, robustness to hyperparameters, and potential to extend QD optimization to complex, previously inaccessible domains.}
-    }
-    <!-- @article{ntagkas2025learning
-      title={Learning and Optimization with 3D Orientations},
-      author={Alexandros Ntagkas*, Constantinos Tsakonas*, and <b>Konstantinos Chatzilygeroudis</b>},
-      year={2025},
-      booktitle={Submitted to IEEE Robotics and Automation Letters (RA-L)},
-      abstract={There exist numerous ways of representing 3D orientations. Each representation has both limitations and unique features. Choosing the best representation for one task is often a difficult chore, and there exist conflicting opinions on which representation is better suited for a set of family of tasks. Even worse, when dealing with scenarios where we need to learn or optimize functions with orientations as inputs and/or outputs, the set of possibilities (representations, loss functions, etc.) is even larger and it is not easy to decide what is best for each scenario. In this paper, we attempt to a) present clearly, concisely and with unified notation all available representations, and “tricks” related to 3D orientations (including Lie Group algebra), and b) benchmark them in representative scenarios. The first part feels like it is missing from the robotics literature as one has to read many different textbooks and papers in order have a concise and clear understanding of all possibilities, while the benchmark is necessary in order to come up with recommendations based on empirical evidence. More precisely, we experiment with the following settings that attempt to cover most widely used scenarios in robotics: 1) direct optimization, 2) imitation/supervised learning with a neural network controller, 3) reinforcement learning, and 4) trajectory optimization using differential dynamic programming. We finally provide guidelines depending on the scenario, and make available a reference implementation of all the orientation math described in the paper.}
-    } -->
-  </textarea>
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">KC</span>
+      <span class="brand-name">Konstantinos Chatzilygeroudis</span>
+    </a>
+    <nav class="nav-links">
+<a href="index.html">Home</a>
+<a href="research.html">Research</a>
+<a href="publications.html" class="active">Publications</a>
+<a href="files/Konstantinos_Chatzilygeroudis_CV.pdf" target="_blank" rel="noopener">CV</a>
+<a href="videos.html">Videos</a>
+<a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
 
-  <textarea id="bibtex_input_journals" style="display:none;">
-    @article{dionis2024andps,
-      title={Sensorimotor Learning with Stability Guarantees via Autonomous Neural Dynamic Policies},
-      author={Dionis Totsila*, <b>Konstantinos Chatzilygeroudis*</b>, Valerio Modugno, Denis Hadjivelichkov, and Dimitrios Kanoulas},
-      year={2024},
-      booktitle={IEEE Robotics and Automation Letters (RA-L)},
-      url={https://nosalro.github.io/andps/},
-      video={https://www.youtube.com/watch?v=oPWdoSAkqlE},
-      code={https://github.com/NOSALRO/andps},
-      abstract={State-of-the-art sensorimotor learning algorithms, either in the context of reinforcement learning or imitation learning, offer policies that can often produce unstable behaviors, damaging the robot and/or the environment. Moreover, it is very difficult to interpret the optimized controller and analyze its behavior and/or performance. Traditional robot learning, on the contrary, relies on dynamical system-based policies that can be analyzed for stability/safety. Such policies, however, are neither flexible nor generic and usually work only with proprioceptive sensor states. In this work, we bridge the gap between generic neural network policies and dynamical system-based policies, and we introduce Autonomous Neural Dynamic Policies (ANDPs) that: (a) are based on autonomous dynamical systems, (b) always produce asymptotically stable behaviors, and (c) are more flexible than traditional stable dynamical system-based policies. ANDPs are fully differentiable, flexible generic-policies that can be used for both imitation learning and reinforcement learning setups, while ensuring asymptotic stability. Through several experiments, we explore the flexibility and capacity of ANDPs in several imitation learning tasks including experiments with image observations. The results show that ANDPs combine the benefits of both neural network-based and dynamical system-based methods.}
-    }
-    @article{Chatzilygeroudis2024,
-        doi = {10.21105/joss.06771},
-        url = {https://doi.org/10.21105/joss.06771},
-        code = {https://nosalro.github.io/robot_dart},
-        year = {2024},
-        publisher = {The Open Journal},
-        volume = {9},
-        number = {102},
-        pages = {6771},
-        author = {<b>Konstantinos Chatzilygeroudis</b>, Dionis Totsila, and Jean-Baptiste Mouret},
-        title = {RobotDART: a versatile robot simulator for robotics and machine learning researchers},
-        journal = {Journal of Open Source Software}
-    }
-    @article{syriopoulos2024optimizing,
-      title={Optimizing Doubly Stochastic Matrices for Average Consensus through Swarm and Evolutionary Algorithms},
-      author={Panos Syriopoulos, <b>Konstantinos Chatzilygeroudis</b>, Nektarios Kalampalikis, and Michael Vrahatis},
-      year={2024},
-      booktitle={Annals of Mathematics and Artificial Intelligence},
-      url={https://link.springer.com/article/10.1007/s10472-023-09912-8?utm_source=rct_congratemailt&utm_medium=email&utm_campaign=nonoa_20240608&utm_content=10.1007%2Fs10472-023-09912-8},
-      abstract={Doubly-stochastic matrices play a vital role in modern applications of complex networks such as tracking and decentralized state estimation, coordination and control of autonomous agents. A central theme in all of the above is consensus, that is, nodes reaching agreement about the value of an underlying variable (e.g. the state of the environment). Despite the fact that complex networks have been studied thoroughly, the communication graphs are usually described by symmetric matrices due to their advantageous theoretical properties. We do not yet have methods for optimizing generic doubly-stochastic matrices. In this paper, we propose a novel formulation and framework, EvoDSM, for achieving fast linear distributed averaging by: (a) optimizing the weights of a fixed graph topology, and (b) optimizing for the topology itself. We are concerned with graphs that can be described by positive doubly-stochastic matrices. Our method relies on swarm and evolutionary optimization algorithms and our experimental results and analysis showcase that our method (1) achieves comparable performance with traditional methods for symmetric graphs, (2) is applicable to non-symmetric network structures and edge weights, and (3) is scalable and can operate effectively with moderately large graphs without engineering overhead.}
-    }
-    @article{allard2022telo,
-      title={Online Damage Recovery for Physical Robots with Hierarchical Quality-Diversity},
-      author={Maxime Allard, Simón C. Smith, <b>Konstantinos Chatzilygeroudis</b>, Bryan Lim, and Antoine Cully},
-      year={2023},
-      booktitle={ACM Transactions on Evolutionary Learning and Optimization},
-      url={https://arxiv.org/abs/2210.09918},
-      abstract={In real-world environments, robots need to be resilient to damages and robust to unforeseen scenarios. Quality-Diversity (QD) algorithms have been successfully used to make robots adapt to damages in seconds by leveraging a diverse set of learned skills. A high diversity of skills increases the chances of a robot to succeed at overcoming new situations since there are more potential alternatives to solve a new task. However, finding and storing a large behavioural diversity of multiple skills often leads to an increase in computational complexity. Furthermore, robot planning in a large skill space is an additional challenge that arises with an increased number of skills. Hierarchical structures can help to reduce this search and storage complexity by breaking down skills into primitive skills. In this paper, we extend the analysis of the Hierarchical Trial and Error algorithm, which uses a hierarchical behavioural repertoire to learn diverse skills and leverages them to make the robot adapt quickly in the physical world. We show that the hierarchical decomposition of skills enables the robot to learn more complex behaviours while keeping the learning of the repertoire tractable. Experiments with a hexapod robot both in simulation and the physical world show that our method solves a maze navigation task with up to 20% respectively 43% less actions than the best baselines while having 78% less complete failures.}
-    }
-    @article{khadivar2023self,
-      title={Self-Correcting Quadratic Programming-Based Robot Control},
-      author={Farshad Khadivar*, <b>Konstantinos Chatzilygeroudis</b>*, and Aude Billard},
-      year={2023},
-      journal={IEEE Transactions on Systems, Man, and Cybernetics: Systems},
-      url={https://infoscience.epfl.ch/record/301975?&ln=en},
-      video={https://www.youtube.com/watch?v=cA-_SKoO_9c&ab_channel=KonstantinosChatzilygeroudis},
-      abstract={Quadratic Programming (QP)-based controllers allow many robotic systems, such as humanoids, to successfully undertake complex motions and interactions. However, these approaches rely heavily on adequately capturing the underlying model of the environment and the robot's dynamics. This assumption, nevertheless, is rarely satisfied, and we usually turn to well-tuned end-effector PD controllers to compensate for model mismatches. In this paper, we propose to augment traditional QP-based controllers with a learned residual inverse dynamics model and an adaptive control law that adjusts the QP online to account for model uncertainties and unforeseen disturbances. In particular, we propose (i) learning a residual inverse dynamics model using the Gaussian Process and linearizing it so that it can be incorporated inside the QP-control optimization procedure and (ii) a novel combination of adaptive control and QP-based methods to avoid the manual tuning of end-effector PID controllers and faster convergence in learning the residual dynamics model. In simulation, we extensively evaluate our method in several robotic scenarios ranging from a 7-DoFs manipulator tracking a trajectory to a humanoid robot performing a waving motion for which the model used by the controller and the one used in the simulated world do not match (unmodeled dynamics). Finally, we also validate our approach in physical robotic scenarios where a 7-DoFs robotic arm performs tasks where the model of the environment (mass, friction coefficients, etc.) is not fully known.}
-    }
-    @article{tsinganos2022behavior,
-      title={Behavior Policy Learning: Learning Multi-Stage Tasks via Solution Sketches and Model-Based Controllers},
-      author={Konstantinos Tsinganos*, <b>Konstantinos Chatzilygeroudis</b>*, Denis Hadjivelichkov, Theodoros Komninos, Evangelos Dermatas, and Dimitrios Kanoulas},
-      journal={Frontiers in Robotics and AI},
-      year={2022},
-      url={https://www.frontiersin.org/articles/10.3389/frobt.2022.974537/full},
-      video={https://www.youtube.com/watch?v=5ueUBvq65O4},
-      abstract={Multi-stage tasks are a challenge for reinforcement learning methods, and require either specific task knowledge (e.g., task segmentation) or big amount of interaction times to be learned. In this paper, we propose Behavior Policy Learning (BPL) that effectively combines 1) only few solution sketches, that is demonstrations without the actions, but only the states, 2) model-based controllers, and 3) simulations to effectively solve multi-stage tasks without strong knowledge about the underlying task. Our main intuition is that solution sketches alone can provide strong data for learning a high-level trajectory by imitation, and model-based controllers can be used to follow this trajectory (we call it behavior) effectively. Finally, we utilize robotic simulations to further improve the policy and make it robust in a Sim2Real style. We evaluate our method in simulation with a robotic manipulator that has to perform two tasks with variations: 1) grasp a box and place it in a basket, and 2) re-place a book on a different level within a bookcase. We also validate the Sim2Real capabilities of our method by performing real-world experiments and realistic simulated experiments where the objects are tracked through an RGB-D camera for the first task.}
-    }
-    @article{paul2018robustrl,
-      title={Robust Reinforcement Learning with Bayesian Optimisation and Quadrature},
-      author={Supratik Paul, <b>Konstantinos Chatzilygeroudis</b>, Kamil Ciosek, Jean-Baptiste Mouret, Michael Osborne, and Shimon Whiteson},
-      year={2020},
-      url={https://jmlr.org/papers/volume21/18-216/18-216.pdf},
-      video={https://www.youtube.com/watch?v=R8Ss-dhDCmo&feature=youtu.be&ab_channel=Jean-BaptisteMouret},
-      journal={Journal of Machine Learning Research (JMLR), Special Issue on Bayesian Optimization},
-      abstract={Bayesian optimisation has been successfully applied to a variety of reinforcement learning problems. However, the traditional approach for learning optimal policies in simulators does not utilise the opportunity to improve learning by adjusting certain environment variables: state features that are unobservable and randomly determined by the environment in a physical setting but are controllable in a simulator. This article considers the problem of finding a robust policy while taking into account the impact of environment variables. We present alternating optimisation and quadrature (ALOQ), which uses Bayesian optimisation and Bayesian quadrature to address such settings. We also present transferable ALOQ (TALOQ), for settings where simulator inaccuracies lead to difficulty in transferring the learnt policy to the physical system. We show that our algorithms are robust to the presence of significant rare events, which may not be observable under random sampling but play a substantial role in determining the optimal policy. Experimental results across different domains show that our algorithms learn robust policies efficiently.}
-    }
-    @article{chatzilygeroudis2019benchmark,
-      title={Benchmark for Bimanual Robotic Manipulation of Semi-deformable Objects},
-      author={<b>Konstantinos Chatzilygeroudis</b>, Bernardo Fichera, Ilaria Lauzana, Fanjun Bu, Kunpeng Yao, Farshad Khadivar, and Aude Billard},
-      year={2020},
-      journal={Robotics and Automation Letters (RA-L): Special Issue on Benchmarking Protocols for Robotic Manipulation},
-      code={https://github.com/epfl-lasa/sahr_benchmark},
-      url={https://www.epfl.ch/labs/lasa/sahr/benchmark/}
-    }
-    @article{sanchez2019benchmark,
-      title={Benchmark for Human-to-Robot Handovers of Unseen Containers with Unknown Filling},
-      author={Ricardo Sanchez-Matilla*, <b>Konstantinos Chatzilygeroudis</b>*, Apostolos Modas, Nuno Ferreira Duarte, Alessio Xompero, Pascal Frossard, Aude Billard, and Andrea Cavallaro},
-      year={2020},
-      journal={Robotics and Automation Letters (RA-L): Special Issue on Benchmarking Protocols for Robotic Manipulation},
-      code={https://github.com/CORSMAL/Benchmark},
-      url={http://corsmal.eecs.qmul.ac.uk/benchmark.html}
-    }
-    @article{chatzilygeroudis2018survey,
-      title={A survey on policy search algorithms for learning robot controllers in a handful of trials},
-      author={<b>Konstantinos Chatzilygeroudis</b>, Vassilis Vassiliades, Freek Stulp, Sylvain Calinon and Jean-Baptiste Mouret},
-      year={2019},
-      journal={IEEE Transactions on Robotics (T-RO)},
-      url={https://arxiv.org/abs/1807.02303},
-      abstract={Most policy search algorithms require thousands of training episodes to find an effective policy, which is often infeasible with a physical robot. This survey article focuses on the extreme other end of the spectrum: how can a robot adapt with only a handful of trials (a dozen) and a few minutes? By analogy with the word "big-data", we refer to this challenge as "micro-data reinforcement learning". We show that a first strategy is to leverage prior knowledge on the policy structure (e.g., dynamic movement primitives), on the policy parameters (e.g., demonstrations), or on the dynamics (e.g., simulators). A second strategy is to create data-driven surrogate models of the expected reward (e.g., Bayesian optimization) or the dynamical model (e.g., model-based policy search), so that the policy optimizer queries the model instead of the real system. Overall, all successful micro-data algorithms combine these two strategies by varying the kind of model and prior knowledge. The current scientific challenges essentially revolve around scaling up to complex robots (e.g., humanoids), designing generic priors, and optimizing the computing time.}
-    }
-    @article{chatzilygeroudis2018resetfree,
-      title={{Reset-free Trial-and-Error Learning for Robot Damage Recovery}},
-      author={<b>Konstantinos Chatzilygeroudis</b>, Vassilis Vassiliades and Jean-Baptiste Mouret},
-      journal={Robotics and Autonomous Systems},
-      url={https://arxiv.org/abs/1610.04213},
-      year={2018},
-      video={https://youtu.be/IqtyHFrb3BU},
-      code={https://github.com/resibots/chatzilygeroudis_2018_rte},
-      abstract={The high probability of hardware failures prevents many advanced robots (e.g., legged robots) from being confidently deployed in real-world situations (e.g., post-disaster rescue). Instead of attempting to diagnose the failures, robots could adapt by trial-and-error in order to be able to complete their tasks. In this situation, damage recovery can be seen as a Reinforcement Learning (RL) problem. However, the best RL algorithms for robotics require the robot and the environment to be reset to an initial state after each episode, that is, the robot is not learning autonomously. In addition, most of the RL methods for robotics do not scale well with complex robots (e.g., walking robots) and either cannot be used at all or take too long to converge to a solution (e.g., hours of learning). In this paper, we introduce a novel learning algorithm called "Reset-free Trial-and-Error" (RTE) that (1) breaks the complexity by pre-generating hundreds of possible behaviors with a dynamics simulator of the intact robot, and (2) allows complex robots to quickly recover from damage while completing their tasks and taking the environment into account. We evaluate our algorithm on a simulated wheeled robot, a simulated six-legged robot, and a real six-legged walking robot that are damaged in several ways (e.g., a missing leg, a shortened leg, faulty motor, etc.) and whose objective is to reach a sequence of targets in an arena. Our experiments show that the robots can recover most of their locomotion abilities in an environment with obstacles, and without any human intervention.}
-    }
-    @article{cully2018limbo,
-      title={Limbo: A Flexible High-performance Library for Gaussian Processes modeling and Data-Efficient Optimization},
-      author={Antoine Cully, <b>Konstantinos Chatzilygeroudis</b>, Federico Allocati and Jean-Baptiste Mouret},
-      year={2018},
-      journal={The Journal of Open Source Software},
-      publisher={The Open Journal},
-      url={http://joss.theoj.org/papers/10.21105/joss.00545},
-      code={https://github.com/resibots/limbo},
-      abstract={Limbo (LIbrary for Model-Based Optimization) is an open-source C++11 library for Gaussian Processes and data-efficient optimization (e.g., Bayesian optimization) that is designed to be both highly flexible and very fast. It can be used as a state-of-the-art optimization library or to experiment with novel algorithms with “plugin” components. Limbo is currently mostly used for data-efficient policy search in robot learning and online adaptation because computation time matters when using the low-power embedded computers of robots. For example, Limbo was the key library to develop a new algorithm that allows a legged robot to learn a new gait after a mechanical damage in about 10-15 trials (2 minutes), and a 4-DOF manipulator to learn neural networks policies for goal reaching in about 5 trials.
+<main>
 
-      The implementation of Limbo follows a policy-based design that leverages C++ templates: this allows it to be highly flexible without the cost induced by classic object-oriented designs (cost of virtual functions). The regression benchmarks show that the query time of Limbo’s Gaussian processes is several orders of magnitude better than the one of GPy (a state-of-the-art Python library for Gaussian processes) for a similar accuracy (the learning time highly depends on the optimization algorithm chosen to optimize the hyper-parameters). The black-box optimization benchmarks demonstrate that Limbo is about 2 times faster than BayesOpt (a C++ library for data-efficient optimization) for a similar accuracy and data-efficiency. In practice, changing one of the components of the algorithms in Limbo (e.g., changing the acquisition function) usually requires changing only a template definition in the source code. This design allows users to rapidly experiment and test new ideas while keeping the software as fast as specialized code.
+<div class="container">
 
-      Limbo takes advantage of multi-core architectures to parallelize the internal optimization processes (optimization of the acquisition function, optimization of the hyper-parameters of a Gaussian process) and it vectorizes many of the linear algebra operations (via the Eigen 3 library and optional bindings to Intel’s MKL).
-
-      The library is distributed under the CeCILL-C license via a Github repository. The code is standard-compliant but it is currently mostly developed for GNU/Linux and Mac OS X with both the GCC and Clang compilers. New contributors can rely on a full API reference, while their developments are checked via a continuous integration platform (automatic unit-testing routines).
-
-      Limbo is currently used in the ERC project ResiBots, which is focused on data-efficient trial-and-error learning for robot damage recovery, and in the H2020 projet PAL, which uses social robots to help coping with diabetes. It has been instrumental in many scientific publications since 2015}
-    }
-    @article{vassiliades2017scaling,
-      title={Using Centroidal Voronoi Tessellations to Scale Up the Multi-dimensional Archive of Phenotypic Elites Algorithm},
-      author={Vassilis Vassiliades, <b>Konstantinos Chatzilygeroudis</b> and Jean-Baptiste Mouret},
-      journal={IEEE Transactions on Evolutionary Computation},
-      year={2017},
-      url={https://arxiv.org/abs/1610.05729},
-      code={https://github.com/resibots/vassiliades_2017_cvt_map_elites},
-      abstract={The recently introduced Multi-dimensional Archive of Phenotypic Elites (MAP-Elites) is an evolutionary algorithm capable of producing a large archive of diverse, high-performing solutions in a single run. It works by discretizing a continuous feature space into unique regions according to the desired discretization per dimension. While simple, this algorithm has a main drawback: it cannot scale to high-dimensional feature spaces since the number of regions increase exponentially with the number of dimensions. In this paper, we address this limitation by introducing a simple extension of MAP-Elites that has a constant, pre-defined number of regions irrespective of the dimensionality of the feature space. Our main insight is that methods from computational geometry could partition a high-dimensional space into well-spread geometric regions. In particular, our algorithm uses a centroidal Voronoi tessellation (CVT) to divide the feature space into a desired number of regions; it then places every generated individual in its closest region, replacing a less fit one if the region is already occupied. We demonstrate the effectiveness of the new "CVT-MAP-Elites" algorithm in high-dimensional feature spaces through comparisons against MAP-Elites in maze navigation and hexapod locomotion tasks.}
-    }
-  </textarea>
-
-  <textarea id="bibtex_input_chapters" style="display:none;">
-    @incollection{chatzilygeroudis2020qd,
-          title={Quality-Diversity Optimization: a novel branch of stochastic optimization},
-          author={<b>Konstantinos Chatzilygeroudis</b>, Antoine Cully, Vassilis Vassiliades, and Jean-Baptiste Mouret},
-          editor={Panos Pardalos, Michael Vrahatis, Varvara Rasskazova},
-          booktitle={Black Box Optimization, Machine Learning and No-Free Lunch Theorems},
-          publisher={Springer},
-          url={https://arxiv.org/abs/2012.04322},
-          year={2021}
-    }
-    @incollection{chatzilygeroudis2020ml,
-      title={Machine Learning Basics},
-      author={<b>Konstantinos Chatzilygeroudis</b>, Ioannis Hatzilygeroudis, and Isidoros Perikos},
-      editor={Andreas Komninos, Parisa Eslambolchilar, Mark Dunlop},
-      booktitle={Intelligent Computing for Interactive System Design: Statistics, Digital Signal Processing and Machine Learning in practice},
-      publisher={ACM},
-      year={2021}
-    }
-  </textarea>
-
-  <textarea id="bibtex_input_conf" style="display:none;">
-      @inproceedings{trakas2025ecc,
-        title={On the Adaptive Performance Control of Robot Manipulators},
-        author={Panagiotis Trakas, Alexandros Ntagkas, <b>Konstantinos Chatzilygeroudis</b>, and Charalampos Bechlioulis},
-        year={2025},
-        booktitle={23rd European Control Conference (ECC)},
-        url={./files/ECC2025.pdf},
-        video={https://www.youtube.com/watch?v=Mv-cQfQ25PI},
-        abstract={In this paper, we propose an adaptive performance control (APC) framework for output-feedback control of robot manipulators with input constraints, focusing on achieving joint position tracking with adaptive performance attributes. Building on the APC methodology, we introduce a single-funnel control approach that dynamically adjusts performance constraints to accommodate the actuator limitations inherent in robotic systems. Moreover, a robust tracking differentiator with predefined convergence characteristics is developed to estimate the unmeasured velocity errors. The effectiveness of the proposed control scheme is validated through simulation results on a 2-DoF planar manipulator and experiments on a 3-fingered 12 degree-of-freedom robotic hand tasked with performing a musical piece on a keyboard.}
-      }
-      @inproceedings{asimakopoulos2025icara,
-        title={Integrating Trajectory Optimization in Quality-Diversity for Kinodynamic Motion Planning},
-        author={Konstantinos Asimakopoulos, and <b>Konstantinos Chatzilygeroudis</b>},
-        year={2025},
-        booktitle={11th International Conference on Automation, Robotics, and Applications (ICARA)},
-        url={./files/ICARA2025.pdf},
-        abstract={Kinodynamic planning is a critical component of robotics, enabling robots to generate dynamically feasible trajectories while adhering to geometric constraints. Existing methods for kinodynamic planning primarily fall into two categories: (a) stochastic planners, such as Rapidly-Exploring Random Trees (RRT) and Probabilistic Roadmaps (PRM), which excel in state-space exploration due to their directed randomness, and (b) optimization-based approaches, which are well-suited for structured environments, producing smooth and optimal solutions. In this work, we present Hybrid Trajectory Exploration for Kinodynamic Planning (HyTraX), a hybrid framework that integrates the strengths of these two paradigms. Specifically, HyTraX enhances the effectiveness of the Go-Explore algorithm by incorporating trajectory optimization with random target selection as its core exploration strategy. We evaluate HyTraX on two challenging kinodynamic motion planning tasks: a car-like agent and a planar quadrotor navigating through maze environments. Our results demonstrate significant performance improvements with minimal task-specific tuning, highlighting the robustness and versatility of the proposed approach.}
-      }
-      @inproceedings{tsikelis2024gait,
-        title={Gait Optimization for Legged Systems Through Mixed Distribution Cross-Entropy Optimization},
-        author={Ioannis Tsikelis*, and <b>Konstantinos Chatzilygeroudis</b>*},
-        booktitle={IEEE-RAS International Conference on Humanoid Robots (Humanoids)},
-        url={https://nosalro.github.io/cregopt/},
-        video={https://www.youtube.com/watch?v=N0bk9KOIHdI&ab_channel=NOSALRO},
-        year={2024},
-        abstract={Legged robotic systems can play an important role in real-world applications due to their superior load-bearing capabilities, enhanced autonomy, and effective navigation on uneven terrain. They offer an optimal trade-off between mobility and payload capacity, excelling in diverse environments while maintaining efficiency in transporting heavy loads. However, planning and optimizing gaits and gait sequences for these robots presents significant challenges due to the complexity of their dynamic motion and the numerous optimization variables involved. Traditional trajectory optimization methods address these challenges by formulating the problem as an optimization task, aiming to minimize cost functions, and to automatically discover contact sequences. Despite their structured approach, optimization-based methods face substantial difficulties, particularly because such formulations result in highly nonlinear and difficult to solve problems. To address these limitations, we propose CrEGOpt, a bi-level optimization method that combines traditional trajectory optimization with a black-box optimization scheme. CrEGOpt at the higher level employs the Mixed Distribution Cross-Entropy Method to optimize both the gait sequence and the phase durations, thus simplifying the lower level trajectory optimization problem. This approach allows for fast solutions of complex gait optimization problems. Extensive evaluation in simulated environments demonstrates that CrEGOpt can find solutions for biped, quadruped, and hexapod robots in under 10 seconds. This novel bi-level optimization scheme offers a promising direction for future research in automatic contact scheduling.}
-      }
-      @inproceedings{asimakopoulos2024lion,
-        title={Effective Kinodynamic Planning and Exploration through Quality Diversity and Trajectory Optimization},
-        author={Konstantinos Asimakopoulos, Aristeidis Androutsopoulos, Michael Vrahatis, and <b>Konstantinos Chatzilygeroudis</b>},
-        year={2024},
-        booktitle={The 18th Learning and Intelligent Optimization Conference (LION)},
-        url={./files/LION18.pdf},
-        abstract={Efficient and rapid kinodynamic planning is crucial for numerous real-world robotics applications. Various methods have been proposed to address this challenge, primarily falling into two categories: (a) randomized planners and (b) trajectory optimization utilizing simplified models and numerical optimization. Randomized planners such as RRT and PRM excel in exploring the state space, while trajectory optimization methods, like direct collocation, are adept at discovering optimal trajectories within well-defined spaces. We aim to achieve effective and efficient kinodynamic planning and exploration by integrating evolutionary algorithms (Quality-Diversity) with trajectory optimization. Our preliminary experiments showcase that using the proposed methodology we get the best from both worlds on two simulated experiments.}
-      }
-      @inproceedings{chatzilygeroudis2023evolving,
-        title={Evolving Dynamic Locomotion Policies in Minutes},
-        author={<b>Konstantinos Chatzilygeroudis</b>, Constantinos Tsakonas, and Michael Vrahatis},
-        year={2023},
-        video={https://www.youtube.com/watch?v=VdyUlAAWMzQ},
-        booktitle={The Fourteenth International Conference on Information, Intelligence, Systems and Applications (IISA 2023)},
-        url={./files/IISA2023-EvoLoco.pdf},
-        abstract={Many effective evolutionary methods have been proposed that allow robots to learn how to walk. Most of the proposed methods have one or more of the following drawbacks: (a) utilization of hand designed open loop policies that cannot scale to different robots, and/or (b) requiring big wall time due to sample inefficiency and simulation costs, a fact that limits the practical usage of those algorithms. In this paper, we propose to combine (a) a simplified model for locomotion dynamics, and (b) the effectiveness of Quality-Diversity Algorithms, and propose a novel algorithm that is able to evolve, in less than an hour on a standard computer, generic (e.g. neural network), reactive locomotion policies that operate with a local view of the world. Our approach makes it possible to generate in a few minutes reactive policies for locomotion that can perform dynamic motions like jumps. We also present preliminary results of transferring the behaviors to realistic simulators using a whole body inverse kinematics solver and a joint impedance controller.}
-      }
-      @inproceedings{tsakoans2023effective,
-        title={Effective Skill Learning via Autonomous Goal Representation Learning},
-        author={Constantinos Tsakonas, and <b>Konstantinos Chatzilygeroudis</b>},
-        year={2023},
-        video={https://www.youtube.com/watch?v=x-j5mid6jxM},
-        booktitle={The Fourteenth International Conference on Information, Intelligence, Systems and Applications (IISA 2023)},
-        url={./files/IISA2023-AGRL.pdf},
-        abstract={A long standing goal of robotics researchers is to develop robots that are able to develop in an autonomous open-ended manner through lifelong learning and interactions. If we are to see robots learning in an autonomous and open-ended manner, we need to develop methods for incremental and autonomous skill discovery and trial-and-error learning. In other words, we want our robots to be able to autonomously select their goals according to their current capabilities and learn controllers or policies to achieve those goals. In this paper, we take a step towards solving this challenge and propose a novel pipeline, called AGRL, that effectively combines deterministic simulations, Variational Auto-Encoders (VAEs) and Reinforcement Learning (RL) and enables robots to learn goal-conditioned policies suited to their capabilities. Our main intuition is that we can use effective exploration strategies in order to learn a good goal representation and distribution, and then use this distribution to generate effective and reachable goals for fast skill learning. We extensively evaluate the proposed method in simulation with a 7DOF manipulator and a differential drive mobile robot.}
-      }
-      @inproceedings{chatzilygeroudis2023lion,
-        title={Fast and Robust Constrained Optimization via Evolutionary and Quadratic Programming},
-        author={<b>Konstantinos Chatzilygeroudis</b>, and Michael Vrahatis},
-        year={2023},
-        booktitle={The 17th Learning and Intelligent Optimization Conference (LION)},
-        url={./files/LION17.pdf},
-        abstract={Many efficient and effective approaches have been proposed in the evolutionary computation literature for solving constrained optimization problems. Most of the approaches assume that both the objective function and the constraints are black-box functions, while a few of them can take advantage of the gradient information. On the other hand, when the gradient information is available, the most versatile approaches are arguably the ones coming from the numerical optimization literature. Perhaps the most popular methods in this field are sequential quadratic programming and interior point. Despite their success, those methods require accurate gradients and usually require a well-shaped initialization to work as expected. In the paper at hand, a novel hybrid method, named UPSO-QP, is presented that is based on particle swarm optimization and borrows ideas from the numerical optimization literature and sequential quadratic programming approaches. The proposed method is evaluated on numerous constrained optimization tasks from simple low dimensional problems to high dimensional realistic trajectory optimization scenarios, and showcase that is able to outperform other evolutionary algorithms both in terms of convergence speed as well as performance, while also being robust to noisy gradients and bad initialization.}
-      }
-      @inproceedings{mayr2022skill,
-        title={Skill-based Multi-objective Reinforcement Learning of Industrial Robot Tasks with Planning and Knowledge Integration},
-        author={Matthias Mayr, Faseeh Ahmad, <b>Konstantinos Chatzilygeroudis</b>, Luigi Nardi, and Volker Krueger},
-        year={2022},
-        booktitle={IEEE International Conference on Robotics and Biomimetics (ROBIO)},
-        abstract={In modern industrial settings with small batch sizes it should be easy to set up a robot system for a new task. Strategies exist, e.g. the use of skills, but when it comes to handling forces and torques, these systems often fall short. We introduce an approach that provides a combination of task-level planning with targeted learning of scenario-specific parameters for skill-based systems. We propose the following pipeline: (1) the user provides a task goal in the planning language PDDL, (2) a plan (i.e., a sequence of skills) is generated and the learnable parameters of the skills are automatically identified. An operator then chooses (3) reward functions and hyperparameters for the learning process. Two aspects of our methodology are critical: (a) learning is tightly integrated with a knowledge framework to support symbolic planning and to provide priors for learning, (b) using multi-objective optimization. This can help to balance key performance indicators (KPIs) such as safety and task performance since they can often affect each other. We adopt a multi-objective Bayesian optimization approach and learn entirely in simulation. We demonstrate the efficacy and versatility of our approach by learning skill parameters for two different contact-rich tasks. We show their successful execution on a real 7-DOF KUKA-iiwa manipulator and outperform the manual parameterization by human robot operators.},
-        url={https://sites.google.com/ulund.org/SkiREIL},
-        video={./files/ROBIO2022.mp4},
-        code={https://github.com/matthias-mayr/SkiREIL}
-      }
-      @inproceedings{mayr2022learning,
-        title={Learning Skill-based Industrial Robot Tasks with User Priors},
-        author={Matthias Mayr, Carl Hvarfner, <b>Konstantinos Chatzilygeroudis</b>, Luigi Nardi, and Volker Krueger},
-        year={2022},
-        booktitle={IEEE International Conference on Automation Science and Engineering (CASE)},
-        abstract={Robot skills systems are meant to reduce robot setup time for new manufacturing tasks. Yet, for dexterous, contact-rich tasks, it is often difficult to find the right skill parameters. One strategy is to learn these parameters by allowing the robot system to learn directly on the task. For a learning problem, a robot operator can typically specify the type and range of values of the parameters. Nevertheless, given their prior experience, robot operators should be able to help the learning process further by providing educated guesses about where in the parameter space potential optimal solutions could be found. Interestingly, such prior knowledge is not exploited in current robot learning frameworks. We introduce an approach that combines user priors and Bayesian optimization to allow fast optimization of robot industrial tasks at robot deployment time. We evaluate our method on three tasks that are learned in simulation as well as on two tasks that are learned directly on a real robot system. Additionally, we transfer knowledge from the corresponding simulation tasks by automatically constructing priors from well-performing configurations for learning on the real system. To handle potentially contradicting task objectives, the tasks are modeled as multi-objective problems. Our results show that operator priors, both user-specified and transferred, vastly accelerate the discovery of rich Pareto fronts, and typically produce final performance far superior to proposed baselines.},
-        url={https://arxiv.org/abs/2208.01605}
-      }
-      @inproceedings{allard2022gecco,
-        title={Hierarchical Quality-Diversity for Online Damage Recovery (<b>Best Paper Award at CS Track</b>)},
-        author={Maxime Allard, Simón C. Smith, <b>Konstantinos Chatzilygeroudis</b> and Antoine Cully},
-        year={2022},
-        booktitle={The Genetic and Evolutionary Computation Conference (GECCO)},
-        url={https://arxiv.org/abs/2204.05726},
-        abstract={Adaptation capabilities, like damage recovery, are crucial for the deployment of robots in complex environments. Several works have demonstrated that using repertoires of pre-trained skills can enable robots to adapt to unforeseen mechanical damages in a few minutes. These adaptation capabilities are directly linked to the behavioural diversity in the repertoire. The more alternatives the robot has to execute a skill, the better are the chances that it can adapt to a new situation. However, solving complex tasks, like maze navigation, usually requires multiple different skills. Finding a large behavioural diversity for these multiple skills often leads to an intractable exponential growth of the number of required solutions. In this paper, we introduce the Hierarchical Trial and Error algorithm, which uses a hierarchical behavioural repertoire to learn diverse skills and leverages them to make the robot more adaptive to different situations. We show that the hierarchical decomposition of skills enables the robot to learn more complex behaviours while keeping the learning of the repertoire tractable. The experiments with a hexapod robot show that our method solves maze navigation tasks with 20% less actions in the most challenging scenarios than the best baseline while having 57% less complete failures.}
-      }
-      @inproceedings{dimitropoulos2022raad,
-        title={A Brief Survey of Sim2Real Methods for Robot Learning},
-        author={Konstantinos Dimitropoulos, Ioannis Hatzilygeroudis and <b>Konstantinos Chatzilygeroudis</b>},
-        year={2022},
-        booktitle={31st International Conference on Robotics in Alpe-Adria-Danube Region (RAAD)},
-        url={https://link.springer.com/chapter/10.1007/978-3-031-04870-8_16},
-        abstract={Simulation has been crucial for robotics research development almost from the beginning of its existence. While simulation has been widely used for education, testing, and prototyping, only very recently the robotics community has attempted transferring behaviors learned in simulation to the real world (this process is usually referred to as Sim2Real). Those attempts have opened-up a novel research direction that has produced some exciting results that were previously thought impossible to achieve. In this paper, we attempt to give a quick overview of the most promising Simulation-To-Reality (Sim2Real) methods, results and directions.}
-      }
-      @inproceedings{mayr2021iros,
-        title={Learning of Parameters in Behavior Trees for Movement Skills},
-        author={Matthias Mayr, <b>Konstantinos Chatzilygeroudis</b>, Faseeh Ahmad, Luigi Nardi and Volker Krueger},
-        year={2021},
-        url={./files/IROS2021.pdf},
-        video={./files/IROS2021.mp4},
-        booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
-        abstract={Reinforcement Learning (RL) is a powerful mathematical framework that allows robots to learn complex skills by trial-and-error. Despite numerous successes in many applications, RL algorithms still require thousands of trials to converge to high-performing policies, can produce dangerous behaviors while learning, and the optimized policies (usually modeled as neural networks) give almost zero explanation when they fail to perform the task. For these reasons, the adoption of RL in industrial settings is not common. Behavior Trees (BTs), on the other hand, can provide a policy representation that a) supports modular and composable skills, b) allows for easy interpretation of the robot actions, and c) provides an advantageous low-dimensional parameter space. In this paper, we present a novel algorithm that can learn the parameters of a BT policy in simulation and then generalize to the physical robot without any additional training. We leverage a physical simulator with a digital twin of our workstation, and optimize the relevant parameters with a black-box optimizer. We showcase the efficacy of our method with a 7-DOF KUKA-iiwa manipulator in a task that includes obstacle avoidance and a contact-rich insertion (peg-in-hole), in which our method outperforms the baselines.}
-      }
-      @inproceedings{chatzilygeroudis2021lion,
-        title={Feature Selection in single-cell RNA-seq data via a Genetic Algorithm},
-        author={<b>Konstantinos Chatzilygeroudis</b>, Aristidis Vrahatis, Sotiris Tasoulis, and Michael Vrahatis},
-        year={2021},
-        booktitle={The 15th Learning and Intelligent Optimization Conference (LION)},
-        url={./files/LION15.pdf},
-        abstract={Big data methods prevail in the biomedical domain leading to effective and scalable data-driven approaches. Biomedical data are known for their ultra-high dimensionality, especially the ones coming from molecular biology experiments. This property is also included in the emerging technique of single-cell RNA-sequencing (scRNA-seq), where we obtain sequence information from individual cells. A reliable way to uncover their complexity is by using Machine Learning approaches, including dimensional reduction and feature selection methods. Although the first choice has had remarkable progress in scRNA-seq data, only the latter can offer deeper interpretability at the gene level since it highlights the dominant gene features in the given data. Towards tackling this challenge, we propose a feature selection framework that utilizes genetic optimization principles and identifies low-dimensional combinations of gene lists in order to enhance classification performance of any off-the-shelf classifier (e.g., LDA or SVM). Our intuition is that by identifying an optimal genes subset, we can enhance the prediction power of scRNA-seq data even if these genes are unrelated to each other. We showcase our proposed framework's effectiveness in two real scRNA-seq experiments with gene dimensions up to 36708. Our framework can identify very low-dimensional subsets of genes (less than 200) while boosting the classifiers' performance. Finally, we provide a biological interpretation of the selected genes, thus providing evidence of our method's utility towards explainable artificial intelligence.}
-      }
-      @inproceedings{duarte2020human,
-        title={From human action understanding to robot action execution: how the physical properties of handled objects modulate non-verbal cues},
-        author={Nuno Ferreira Duarte, <b>Konstantinos Chatzilygeroudis</b>, José Santos-Victor, and Aude Billard},
-        year={2020},
-        url={./files/ICDL2020.pdf},
-        video={./files/ICDL2020.mp4},
-        booktitle={International Conference on Development and Learning and Epigenetic Robotics (ICDL-EpiRob)},
-        abstract={Humans manage to communicate action intentions in a non-verbal way, through body posture and movement. We start from this observation to investigate how a robot can decode a human's non-verbal cues during the manipulation of an object, with specific physical properties, to learn the adequate level of "carefulness" to use when handling that object. We construct dynamical models of the human behaviour using a human-to-human handover dataset consisting of 3 different cups with different levels of fillings. We then included these models into the design of an online classifier that identifies the type of action, based on the human wrist movement. We close the loop from action understanding to robot action execution with an adaptive and robust controller based on the learned classifier, and evaluate the entire pipeline on a collaborative task with a 7-DOF manipulator. Our results show that it is possible to correctly understand the "carefulness" behaviour of humans during object manipulation, even in the pick and place scenario, that was not part of the training set.}
-      }
-      @inproceedings{starke2019GraspForces,
-          title={On Force Synergies in Human Grasping Behavior},
-          author={Julia Starke, <b>Konstantinos Chatzilygeroudis</b>, Aude Billard and Tamim Asfour},
-          year={2019},
-          booktitle={International Conference on Humanoid Robots},
-          url={./files/ICHR19_0047_FI.pdf},
-          abstract={The human hand is a versatile and complex system with dexterous manipulation capabilities. For the transfer of human grasping capabilities to humanoid robotic and prosthetic hands, an understanding of the dynamic characteristics of grasp motions is fundamental. Although the analysis of grasp synergies, especially for kinematic hand postures, is a very active field of research, the description and transfer of grasp forces is still a challenging task. In this work, we introduce a novel representation of grasp synergies in the force space, socalled force synergies, which describe forces applied at contact locations in a low dimensional space and are inspired by the correlations between grasp forces in fingers and palm. To evaluate this novel representation, we conduct a human grasping study with eight subjects performing handover and tool use tasks on 14 objects with varying content and weight using 16 different grasp types. We capture contact forces at 18 locations within the hand together with the joint angle values of a data glove with 22 degrees of freedom. We identify correlations between contact forces and derive force synergies using dimensionality reduction techniques, which allow to represent grasp forces applied during grasping with only eight parameters.}
-      }
-      @inproceedings{kaushik2018multi,
-          title={Multi-objective Model-based Policy Search for Data-efficient Learning with Sparse Rewards},
-          author={Rituraj Kaushik, <b>Konstantinos Chatzilygeroudis</b>, and Jean-Baptiste Mouret},
-          year={2018},
-          booktitle={Conference on Robot Learning (CoRL)},
-          url={https://arxiv.org/abs/1806.09351},
-          video={https://www.youtube.com/watch?v=XOBWq7mkYho},
-          code={https://github.com/resibots/kaushik_2018_multi-dex},
-          abstract={The most data-efficient algorithms for reinforcement learning in robotics are model-based policy search algorithms, which alternate between learning a dynamical model of the robot and optimizing a policy to maximize the expected return given the model and its uncertainties. However, the current algorithms lack an effective exploration strategy to deal with sparse or misleading reward scenarios: if they do not experience any state with a positive reward during the initial random exploration, it is very unlikely to solve the problem. Here, we propose a novel model-based policy search algorithm, Multi-DEX, that leverages a learned dynamical model to efficiently explore the task space and solve tasks with sparse rewards in a few episodes. To achieve this, we frame the policy search problem as a multi-objective, model-based policy optimization problem with three objectives: (1) generate maximally novel state trajectories, (2) maximize the expected return and (3) keep the system in state-space regions for which the model is as accurate as possible. We then optimize these objectives using a Pareto-based multi-objective optimization algorithm. The experiments show that Multi-DEX is able to solve sparse reward scenarios (with a simulated robotic arm) in much lower interaction time than VIME, TRPO, GEP-PG, CMA-ES and Black-DROPS.}
-      }
-      @inproceedings{chatzilygeroudis2018using,
-        title={Using Parameterized Black-Box Priors to Scale Up Model-Based Policy Search for Robotics},
-        author={<b>Konstantinos Chatzilygeroudis</b> and Jean-Baptiste Mouret},
-        url={https://arxiv.org/abs/1709.06917},
-        year={2018},
-        video={https://youtu.be/HFkZkhGGzTo},
-        code={https://github.com/resibots/blackdrops},
-        booktitle={International Conference on Robotics and Automation (ICRA)},
-        abstract={The most data-efficient algorithms for reinforcement learning in robotics are model-based policy search algorithms, which alternate between learning a dynamical model of the robot and optimizing a policy to maximize the expected return given the model and its uncertainties. Among the few proposed approaches, the recently introduced Black-DROPS algorithm exploits a black-box optimization algorithm to achieve both high data-efficiency and good computation times when several cores are used; nevertheless, like all model-based policy search approaches, Black-DROPS does not scale to high dimensional state/action spaces. In this paper, we introduce a new model learning procedure in Black-DROPS that leverages parameterized black-box priors to (1) scale up to high-dimensional systems, and (2) be robust to large inaccuracies of the prior information. We demonstrate the effectiveness of our approach with the "pendubot" swing-up task in simulation and with a physical hexapod robot (48D state space, 18D action space) that has to walk forward as fast as possible. The results show that our new algorithm is more data-efficient than previous model-based policy search algorithms (with and without priors) and that it can allow a physical 6-legged robot to learn new gaits in only 16 to 30 seconds of interaction time.}
-      }
-      @inproceedings{pautrat2018bayesian,
-        title={Bayesian Optimization with Automatic Prior Selection for Data-Efficient Direct Policy Search},
-        author={Rémi Pautrat, <b>Konstantinos Chatzilygeroudis</b> and Jean-Baptiste Mouret},
-        url={https://arxiv.org/abs/1709.06919},
-        year={2018},
-        video={https://youtu.be/xo8mUIZTvNE},
-        code={https://github.com/resibots/pautrat_2018_mlei},
-        booktitle={International Conference on Robotics and Automation (ICRA).},
-        journal={A short version of the paper was accepted at the non-archival track of the 1st Conference on Robot Learning (CoRL) 2017},
-        abstract={One of the most interesting features of Bayesian optimization for direct policy search is that it can leverage priors (e.g., from simulation or from previous tasks) to accelerate learning on a robot. In this paper, we are interested in situations for which several priors exist but we do not know in advance which one fits best the current situation. We tackle this problem by introducing a novel acquisition function, called Most Likely Expected Improvement (MLEI), that combines the likelihood of the priors and the expected improvement. We evaluate this new acquisition function on a transfer learning task for a 5-DOF planar arm and on a possibly damaged, 6-legged robot that has to learn to walk on flat ground and on stairs, with priors corresponding to different stairs and different kinds of damages. Our results show that MLEI effectively identifies and exploits the priors, even when there is no obvious match between the current situations and the priors.}
-      }
-    @inproceedings{paul2018aloq,
-      title={{Alternating Optimisation and Quadrature for Robust Control}},
-      author={Supratik Paul, <b>Konstantinos Chatzilygeroudis</b>, Kamil Ciosek, Jean-Baptiste Mouret, Michael A. Osborne and Shimon Whiteson},
-      booktitle={Thirty-Second AAAI Conference on Artificial Intelligence (AAAI)},
-      url={http://www.cs.ox.ac.uk/people/shimon.whiteson/pubs/paulaaai18.pdf},
-      year={2018},
-      abstract={Bayesian optimisation has been successfully applied to a variety of reinforcement learning problems. However, the traditional approach for learning optimal policies in simulators does not utilise the opportunity to improve learning by adjusting certain environment variables: state features that are unobservable and randomly determined by the environment in a physical setting but are controllable in a simulator. This paper considers the problem of finding a robust policy while taking into account the impact of environment variables. We present Alternating Optimisation and Quadrature (ALOQ), which uses Bayesian optimisation and Bayesian quadrature to address such settings. ALOQ is robust to the presence of significant rare events, which may not be observable under random sampling, but play a substantial role in determining the optimal policy. Experimental results across different domains show that ALOQ can learn more efficiently and robustly than existing methods.},
-      organization={AAAI}
-    }
-    @inproceedings{chatzilygeroudis2017black,
-      title={{Black-Box Data-efficient Policy Search for Robotics}},
-      author={<b>Konstantinos Chatzilygeroudis</b>, Roberto Rama, Rituraj Kaushik, Dorian Goepp, Vassilis Vassiliades and Jean-Baptiste Mouret},
-      booktitle={International Conference on Intelligent Robots and Systems (IROS)},
-      abstract={The most data-efficient algorithms for reinforcement learning (RL) in robotics are based on uncertain dynamical models: after each episode, they first learn a dynamical model of the robot, then they use an optimization algorithm to find a policy that maximizes the expected return given the model and its uncertainties. It is often believed that this optimization can be tractable only if analytical, gradient-based algorithms are used; however, these algorithms require using specific families of reward functions and policies, which greatly limits the flexibility of the overall approach. In this paper, we introduce a novel model-based RL algorithm, called Black-DROPS (Black-box Data-efficient RObot Policy Search) that: (1) does not impose any constraint on the reward function or the policy (they are treated as black-boxes), (2) is as data-efficient as the state-of-the-art algorithm for data-efficient RL in robotics, and (3) is as fast (or faster) than analytical approaches when several cores are available. The key idea is to replace the gradient-based optimization algorithm with a parallel, black-box algorithm that takes into account the model uncertainties. We demonstrate the performance of our new algorithm on two standard control benchmark problems (in simulation) and a low-cost robotic manipulator (with a real robot).},
-      url={https://arxiv.org/abs/1703.07261},
-      code={https://github.com/resibots/blackdrops},
-      year={2017},
-      video={https://www.youtube.com/watch?v=kTEyYiIFGPM},
-      organization={IEEE}
-    }
-    @inproceedings{koustoumpardis2015human,
-      title={Human robot collaboration for folding fabrics based on force/RGB-D feedback},
-      author={Panagiotis Koustoumpardis, <b>Konstantinos Chatzilygeroudis</b>, Aris Synodinos and Nikos Aspragathos},
-      booktitle={24th International Conference on Robotics in Alpe-Adria-Danube Region (RAAD)},
-      abstract={In this paper, the human-robot collaboration for executing complicated handling tasks for folding non-rigid objects is investigated. A hierarchical control system is developed for the co-manipulation task of folding sheets like fabrics/cloths. The system is based on force and RGB-D feedback in both higher and lower control levels of the process. In the higher level, the perception of the human's intention is used for deciding the robot's action; in the lower level the robot reacts to the force/RGB-D feedback to follow human guidance. The proposed approach is tested in folding a rectangular piece of fabric. Experiments showed that the developed robotic system is able to track the human's movement in order to help her/him to accomplish the folding co-manipulation task.},
-      url={http://dx.doi.org/10.1007/978-3-319-21290-6_24},
-      year={2015},
-      organization={IEEE}
-    }
-  </textarea>
-
-  <textarea id="bibtex_input_workshops" style="display:none;">
-    @inproceedings{totsila2023end,
-      title={End-to-End Stable Imitation Learning via Autonomous Neural Dynamic Policies},
-      author={Dionis Totsila*, <b>Konstantinos Chatzilygeroudis</b>*, Denis Hadjivelichkov, Valerio Modugno, Ioannis Hatzilygeroudis, and Dimitrios Kanoulas},
-      year={2023},
-      booktitle={Life-Long Learning with Human Help (L3H2) Workshop, at ICRA},
-      url={https://arxiv.org/abs/2305.12886}
-    }
-    @inproceedings{mayr2022combining,
-      title={Combining Planning, Reasoning and Reinforcement Learning to solve Industrial Robot Tasks},
-      author={Matthias Mayr, Faseeh Ahmad, <b>Konstantinos Chatzilygeroudis</b>, Luigi Nardi, and Volker Krueger},
-      year={2022},
-      booktitle={2nd Workshop on Trends and Advances in Machine Learning and Automated Reasoning for Intelligent Robots and Systems, at IROS},
-      url={https://arxiv.org/abs/2212.03570}
-    }
-    @inproceedings{mayr2022set,
-      title={How to Set Up & Learn New Robot Tasks with Explainable Behaviors?},
-      author={Matthias Mayr, Faseeh Ahmad, <b>Konstantinos Chatzilygeroudis</b>, Luigi Nardi, and Volker Krueger},
-      booktitle={European Robotics Forum},
-      year={2022},
-      url={https://portal.research.lu.se/en/publications/how-to-set-up-amp-learn-new-robot-tasks-with-explainable-behavior}
-    }
-    @inproceedings{mouret201720,
-      title={20 Years of Reality Gap: a few Thoughts about Simulators in Evolutionary Robotics},
-      author={Jean-Baptiste Mouret and <b>Konstantinos Chatzilygeroudis</b>},
-      booktitle={Proceedings of the International Workshop "Simulation in Evolutionary Robotics" at the Genetic and Evolutionary Computation Conference (GECCO)},
-      abstract={Simulators in Evolutionary Robotics (ER) are often considered as a "temporary evil" until experiments can be conducted on real robots. Yet, after more than 20 years of ER, most experiments still happen in simulation and nothing suggests that this situation will change in the next few years. In this short paper, we describe the requirements of ER from simulators, what we tried, and how we successfully crossed the "reality gap" in many experiments. We argue that future simulators need to be able to estimate their confidence when they predict a fitness value, so that behaviors that are not accurately simulated can be avoided.},
-      url={https://hal.inria.fr/hal-01518764/},
-      year={2017}
-    }
-    @inproceedings{vassiliades2017comparing,
-      title={Comparing multimodal optimization and illumination},
-      author={Vassilis Vassiliades, <b>Konstantinos Chatzilygeroudis</b> and Jean-Baptiste Mouret},
-      booktitle={Genetic and Evolutionary Computation Conference (GECCO) (Poster-only papers)},
-      abstract={Illumination algorithms are a recent addition to the evolutionary computation toolbox that allows the generation of many diverse and high-performing solutions in a single run. Nevertheless, traditional multimodal optimization algorithms also search for diverse and high-performing solutions: could some multimodal optimization algorithms be better at illumination than illumination algorithms? In this study, we compare two illumination algorithms (Novelty Search with Local Competition (NSLC), MAP-Elites) with two multimodal optimization ones (Clearing, Restricted Tournament Selection) in a maze navigation task. The results show that Clearing can have comparable performance to MAP-Elites and NSLC.},
-      url={https://hal.inria.fr/hal-01518802/},
-      year={2017}
-    }
-    @inproceedings{vassiliades2017comparison,
-      title={A comparison of illumination algorithms in unbounded spaces},
-      author={Vassilis Vassiliades, <b>Konstantinos Chatzilygeroudis</b> and Jean-Baptiste Mouret},
-      booktitle={Proceedings of the International Workshop "Measuring and Promoting Diversity in Evolutionary Algorithms" at the Genetic and Evolutionary Computation Conference (GECCO)},
-      abstract={Illumination algorithms are a new class of evolutionary algorithms capable of producing large archives of diverse and high-performing solutions. Examples of such algorithms include Novelty Search with Local Competition (NSLC), the Multi-dimensional Archive of Phenotypic Elites (MAP-Elites) and the newly introduced Centroidal Voronoi Tessellation (CVT) MAP-Elites. While NSLC can be used in unbounded behavioral spaces, MAP-Elites and CVT-MAP-Elites require the user to manually specify the bounds. In this study, we introduce variants of these algorithms that expand their bounds based on the discovered solutions. In addition, we introduce a novel algorithm called "Cluster-Elites" that can adapt its bounds to non-convex spaces. We compare all algorithms in a maze navigation problem and illustrate that Cluster-Elites and the expansive variants of MAP-Elites and CVT-MAP-Elites have comparable or better performance than NSLC, MAP-Elites and CVT-MAP-Elites.},
-      url={https://hal.inria.fr/hal-01518814/},
-      year={2017}
-    }
-    @inproceedings{papaspyros2016safety,
-      title={Safety-Aware Robot Damage Recovery Using Constrained Bayesian Optimization and Simulated Priors},
-      author={Vaios Papaspyros, <b>Konstantinos Chatzilygeroudis</b>, Vassilis Vassiliades and Jean-Baptiste Mouret},
-      booktitle={BayesOpt '16: Proceedings of the International Workshop "Bayesian Optimization: Black-box Optimization and Beyond" at NIPS},
-      abstract={The recently introduced Intelligent Trial-and-Error (IT&E) algorithm showed that robots can adapt to damage in a matter of a few trials. The success of this algorithm relies on two components: prior knowledge acquired through simulation with an intact robot, and Bayesian optimization (BO) that operates on-line, on the damaged robot. While IT&E leads to fast damage recovery, it does not incorporate any safety constraints that prevent the robot from attempting harmful behaviors. In this work, we address this limitation by replacing the BO component with a constrained BO procedure. We evaluate our approach on a simulated damaged humanoid robot that needs to crawl as fast as possible, while performing as few unsafe trials as possible. We compare our new "safety-aware IT&E" algorithm to IT&E and a multi-objective version of IT&E in which the safety constraints are dealt as separate objectives. Our results show that our algorithm outperforms the other approaches, both in crawling speed within the safe regions and number of unsafe trials.},
-      url={https://arxiv.org/abs/1611.09419},
-      year={2016},
-      video={https://www.youtube.com/watch?v=8esrj-7WhsQ}
-    }
-    @inproceedings{chatzilygeroudis2016semi-episodic,
-      title={Towards semi-episodic learning for robot damage recovery},
-      author={<b>Konstantinos Chatzilygeroudis</b>, Antoine Cully and Jean-Baptiste Mouret},
-      booktitle={AILTA '16: Proceedings of the International Workshop "AI for Long-term Autonomy" at ICRA},
-      abstract={The recently introduced Intelligent Trial and Error algorithm (IT&E) enables robots to creatively adapt to damage in a matter of minutes by combining an off-line evolutionary algorithm and an on-line learning algorithm based on Bayesian Optimization. We extend the IT&E algorithm to allow for robots to learn to compensate for damages while executing their task(s). This leads to a semi-episodic learning scheme that increases the robot’s life-time autonomy and adaptivity. Preliminary experiments on a toy simulation and a 6-legged robot locomotion task show promising results.},
-      url={https://arxiv.org/abs/1610.01407},
-      year={2016},
-      organization={IEEE},
-      video={https://www.youtube.com/watch?v=Gpf5h07pJFA}
-    }
-  </textarea>
-
-  <div class="bibtex_template" style="display:none;">
-    <li>
-      <div style="margin-left: 10px; margin-bottom:5px; font-weight: normal; font-size:20px;">
-        <span class="title"></span>
-      </div>
-      <div class="if author" style="font-weight: normal;">
-        <span class="author"></span>.
-        <span class="if booktitle">
-          <!-- <br/> -->
-          <span style="font-weight: normal; font-style: italic;" class="booktitle"></span>
-        </span>
-        <span class="if journal">
-          <br/>
-          <span style="font-weight: normal; font-style: italic;" class="journal"></span>
-        </span>
-        ,
-        <span class="if editor">
-          <b>Edited by: </b><span style="font-weight: normal;" class="editor"></span>,
-        </span>
-        <span class="if year">
-            <span style="font-weight: bold;" class="year"></span>
-          </span>
-        <span class="if url"><br/></span>
-        <span class="if url" style="margin-left: 20px">
-          <a class="url" style="font-weight: bold; color:black; font-size:10px" target="_blank">(view online)</a>
-        </span>
-        <span class="if code" style="margin-left: 20px">
-          <a class="code" style="font-weight: bold; color:black; font-size:10px" target="_blank">(code)</a>
-        </span>
-        <span class="if video" style="margin-left: 20px">
-          <a class="video" style="font-weight: bold; color:black; font-size:10px" target="_blank">(video)</a>
-        </span>
-      </div>
-      <!-- <div class="if abstract" style="font-style: italic; font-size:14px">
-        <b>Abstract:</b>
-        <br/>
-        <span class="abstract"></span>
-      </div> -->
-      <br/>
-    </li>
+  <div class="hero" style="padding-top:48px;">
+    <div>
+      <h1>Publications</h1>
+      <p class="tagline" style="max-width:700px;">According to <a href="https://scholar.google.com/citations?user=tnf6B-EAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a> (updated September 2026), this work has been cited 1,850 times, with an h-index of 22 and an i10-index of 28. Names in <span class="self">bold</span> are mine; * marks equal contribution.</p>
+    </div>
   </div>
 
-  <header id="header">
-    <div id="head" class="parallax" parallax-speed="2">
-      <h1 id="logo" class="text-center">
-        <img class="img-circle" src="assets/images/profile.jpg" alt="">
-          <span class="title">Konstantinos Chatzilygeroudis</span>
-          <span class="tagline">Robotics and Machine Learning Researcher and Engineer<br>
-            <a href="https://www.ece.upatras.gr/index.php/en/division/systems-and-control-sae.html" target="_blank">Assistant Professor at University of Patras</a><br>
-            <!-- <a href="https://www.linkedin.com/company/metargus/" target="_blank">Leader of the R&D Computer Vision Team at Metargus</a><br>
-            <a href="https://ragdolldynamics.com/" target="_blank">Robotics Engineer at Ragdoll Dynamics</a><br> -->
-            <a href="mailto:costashatz@upatras.gr">costashatz@upatras.gr</a></span>
-      </h1>
-    </div>
-
-    <nav class="navbar navbar-default navbar-sticky">
-      <div class="container-fluid">
-
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-
-        <div class="navbar-collapse collapse">
-
-          <ul class="nav navbar-nav">
-            <li class="active">
-              <a href="./index.html">Home</a>
-            </li>
-            <!-- <li><a href="./research.html">Research</a></li> -->
-            <li>
-              <a href="./publications.html">Publications</a>
-            </li>
-            <li>
-              <a href="./files/Konstantinos_Chatzilygeroudis_CV.pdf" target="_blank">CV</a>
-            </li>
-            <li>
-              <a href="./videos.html">Videos</a>
-            </li>
-            <li>
-              <a href="./contact.html">Contact</a>
-            </li>
-          </ul>
-
-        </div>
-        <!--/.nav-collapse -->
-      </div>
-    </nav>
-  </header>
-
-  <main id="main">
-
-    <div class="container">
-
-      <div class="row section recentworks topspace">
-
-        <h2 class="section-title">
-          <span>Pre-prints (under review)</span>
-        </h2>
-
-        <ul style="list-style-type: none;">
-          <div id="bibtex_display_preprint"></div>
-        </ul>
-
-        <h2 class="section-title">
-          <span>Peer-reviewed Journal Papers</span>
-        </h2>
-
-        <ol reversed>
-          <div id="bibtex_display_journals"></div>
-        </ol>
-
-        <h2 class="section-title">
-          <span>Peer-reviewed Book Chapters</span>
-        </h2>
-
-        <ol reversed>
-          <div id="bibtex_display_chapters"></div>
-        </ol>
-
-        <h2 class="section-title">
-          <span>Peer-reviewed Conference Papers</span>
-        </h2>
-
-        <ol reversed>
-          <div id="bibtex_display_conf"></div>
-        </ol>
-
-        <h2 class="section-title">
-          <span>Peer-reviewed Workshop Papers</span>
-        </h2>
-
-        <ol reversed>
-          <div id="bibtex_display_workshops"></div>
-        </ol>
-
-      </div>
-      *Equal contribution
-      <!-- / section -->
-
-    </div>
-    <!-- /container -->
-
-  </main>
-
-  <footer id="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 widget">
-          <h3 class="widget-title">Contact</h3>
-          <div class="widget-body">
-            <p>+30 6978 120 104<br>
-            <a href="mailto:costashatz@upatras.gr">costashatz@upatras.gr</a><br>
-            <!-- <a href="mailto:k.chatzilygeroudis@metargus.com">k.chatzilygeroudis@metargus.com</a><br> -->
-            <a href="mailto:costashatz@gmail.com">costashatz@gmail.com</a><br>
-            <!-- <br>
-            <a href="http://cilab.math.upatras.gr/" target="_blank">Computational Intelligence Laboratory</a><br>
-            Room: B/M 248, 2nd floor<br>
-            Department of Mathematics<br>
-            University of Patras<br>
-            GR-26110 Rion, Patras, Greece -->
-            </p>
-          </div>
-        </div>
-
-        <div class="col-md-4 widget">
-          <h3 class="widget-title">Research</h3>
-          <div class="widget-body">
-            <p class="follow-me-icons">
-              <a href="https://scholar.google.gr/citations?user=tnf6B-EAAAAJ&hl=en" class="ai ai-google-scholar" style="text-decoration: none;"
-                target="_blank"></a>
-              <a href="https://www.researchgate.net/profile/Konstantinos_Chatzilygeroudis" class="ai ai-researchgate" style="text-decoration: none;"
-                target="_blank"></a>
-              <a href="https://www.zotero.org/costashatz" class="ai ai-zotero" style="text-decoration: none;" target="_blank"></a>
-            </p>
-          </div>
-        </div>
-
-        <div class="col-md-4 widget">
-          <h3 class="widget-title">Follow me</h3>
-          <div class="widget-body">
-            <p class="follow-me-icons">
-              <a href="https://github.com/costashatz" target="_blank">
-                <i class="fa fa-github fa-2"></i>
-              </a>
-              <a href="https://bitbucket.org/costashatz" target="_blank">
-                <i class="fa fa-bitbucket fa-2"></i>
-              </a>
-              <a href="https://gr.linkedin.com/in/konstantinoschatzilygeroudis" target="_blank">
-                <i class="fa fa-linkedin fa-2"></i>
-              </a>
-              <a href="https://www.facebook.com/CostasHatz" target="_blank">
-                <i class="fa fa-facebook fa-2"></i>
-              </a>
-              <a href="https://plus.google.com/+KonstantinosChatzilygeroudis" target="_blank">
-                <i class="fa fa-google-plus fa-2"></i>
-              </a>
-              <a href="https://twitter.com/chatzilyge" target="_blank">
-                <i class="fa fa-twitter fa-2"></i>
-              </a>
-            </p>
-          </div>
-        </div>
-
-      </div>
-      <!-- /row of widgets -->
-    </div>
-  </footer>
-
-  <footer id="underfooter">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 widget">
-          <div class="widget-body">
-            <p class="text-right">
-              Copyright &copy; 2015-2022, Konstantinos Chatzilygeroudis
-              <br> Design:
-              <a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a>
-            </p>
-          </div>
-        </div>
-
-      </div>
-      <!-- /row of widgets -->
-    </div>
-  </footer>
+  
+  <h2 class="page-title" style="margin-top:52px;">Preprints</h2>
+  <div class="card preprint-card">
+    <span class="badge">arXiv &middot; 2026</span>
+    <div class="pub-title"><a href="https://arxiv.org/abs/2607.16876" target="_blank" rel="noopener">Hybrid Augmented Lagrangian Method for General Constrained Optimization via Evolutionary Algorithms</a></div>
+    <div class="pub-authors">Lampros Printzios, <span class="self">Konstantinos Chatzilygeroudis</span></div>
+    <p style="margin:2px 0 0; font-size:13px; color:var(--text-sub); line-height:1.5;">Extended journal version of our <a href="https://doi.org/10.1145/3795101.3805360" target="_blank" rel="noopener">GECCO 2026</a> paper. Evolutionary algorithms are embedded within an Augmented Lagrangian loop, combining gradient-free exploration with systematic constraint handling on ten benchmark problems, including high-dimensional cases.</p>
+  </div>
 
 
+  <h2 class="page-title">Peer-Reviewed Journal Papers</h2>
+  <div class="pub-list">
+<div class="pub-card">
+  <div class="pub-thumb">fig. 01</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://ieeexplore.ieee.org/document/11244136" target="_blank" rel="noopener">Vector Quantized-Elites: Unsupervised and Problem-Agnostic Quality-Diversity Optimization</a></div>
+    <div class="pub-authors">Constantinos Tsakonas, <span class="self">Konstantinos Chatzilygeroudis</span></div>
+    <div class="pub-venue">IEEE Transactions on Evolutionary Computation &middot; vol. 30, no. 4, pp. 1669–1683 &middot; 2025</div>
+    
+    <div class="pub-links"><a class="link-pill" href="https://doi.org/10.1109/TEVC.2025.3631786" target="_blank" rel="noopener">DOI</a></div>
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 02</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://pubs.acs.org/doi/10.1021/acs.iecr.5c02499" target="_blank" rel="noopener">A Novel Hybrid Modeling Framework for Polymer Reaction Engineering with Application to Real-Time Process Monitoring</a></div>
+    <div class="pub-authors">Cindy Trinh, Maria Prokopidou, <span class="self">Konstantinos Chatzilygeroudis</span>, Dimitrios Meimaroglou</div>
+    <div class="pub-venue">Industrial & Engineering Chemistry Research &middot; vol. 64, no. 46, pp. 22304–22320 &middot; 2025</div>
+    
+    
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 03</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://ieeexplore.ieee.org/document/10819655" target="_blank" rel="noopener">Sensorimotor Learning with Stability Guarantees via Autonomous Neural Dynamic Policies</a></div>
+    <div class="pub-authors">Dionis Totsila*, <span class="self">Konstantinos Chatzilygeroudis</span>*, Valerio Modugno, Denis Hadjivelichkov, Dimitrios Kanoulas</div>
+    <div class="pub-venue">IEEE Robotics and Automation Letters (RA-L) &middot; vol. 10, no. 2, pp. 1760–1767 &middot; 2025</div>
+    
+    <div class="pub-links"><a class="link-pill" href="https://doi.org/10.1109/LRA.2024.3524878" target="_blank" rel="noopener">DOI</a></div>
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 04</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://link.springer.com/article/10.1007/s10472-023-09912-8" target="_blank" rel="noopener">Optimizing Doubly Stochastic Matrices for Average Consensus through Swarm and Evolutionary Algorithms</a></div>
+    <div class="pub-authors">Panos Syriopoulos, <span class="self">Konstantinos Chatzilygeroudis</span>, Nektarios Kalampalikis, Michael Vrahatis</div>
+    <div class="pub-venue">Annals of Mathematics and Artificial Intelligence &middot; vol. 93, pp. 151–171 &middot; 2025</div>
+    
+    
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 05</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://joss.theoj.org/papers/10.21105/joss.06771" target="_blank" rel="noopener">RobotDART: a versatile robot simulator for robotics and machine learning researchers</a></div>
+    <div class="pub-authors"><span class="self">Konstantinos Chatzilygeroudis</span>, Dionis Totsila, Jean-Baptiste Mouret</div>
+    <div class="pub-venue">Journal of Open Source Software (JOSS) &middot; vol. 9, no. 102, pp. 6771 &middot; 2024</div>
+    
+    <div class="pub-links"><a class="link-pill" href="https://nosalro.github.io/robot_dart" target="_blank" rel="noopener">Code</a></div>
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 06</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://dl.acm.org/doi/10.1145/3596912" target="_blank" rel="noopener">Online Damage Recovery for Physical Robots with Hierarchical Quality-Diversity</a></div>
+    <div class="pub-authors">Maxime Allard, Simón C. Smith, <span class="self">Konstantinos Chatzilygeroudis</span>, Bryan Lim, Antoine Cully</div>
+    <div class="pub-venue">ACM Transactions on Evolutionary Learning and Optimization &middot; vol. 3, no. 2, pp. 6 &middot; 2023</div>
+    
+    
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 07</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://ieeexplore.ieee.org/document/10102575" target="_blank" rel="noopener">Self-Correcting Quadratic Programming-Based Robot Control</a></div>
+    <div class="pub-authors">Farshad Khadivar*, <span class="self">Konstantinos Chatzilygeroudis</span>*, Aude Billard</div>
+    <div class="pub-venue">IEEE Transactions on Systems, Man, and Cybernetics: Systems &middot; 2023</div>
+    
+    <div class="pub-links"><a class="link-pill" href="https://doi.org/10.1109/TSMC.2023.3262954" target="_blank" rel="noopener">DOI</a><a class="link-pill" href="https://www.youtube.com/watch?v=cA-_SKoO_9c&amp;ab_channel=KonstantinosChatzilygeroudis" target="_blank" rel="noopener">Video</a></div>
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 08</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://www.frontiersin.org/articles/10.3389/frobt.2022.974537/full" target="_blank" rel="noopener">Behavior Policy Learning: Learning Multi-Stage Tasks via Solution Sketches and Model-Based Controllers</a></div>
+    <div class="pub-authors">Konstantinos Tsinganos*, <span class="self">Konstantinos Chatzilygeroudis</span>*, Denis Hadjivelichkov, Theodoros Komninos, Evangelos Dermatas, Dimitrios Kanoulas</div>
+    <div class="pub-venue">Frontiers in Robotics and AI &middot; 2022</div>
+    
+    <div class="pub-links"><a class="link-pill" href="https://www.youtube.com/watch?v=5ueUBvq65O4" target="_blank" rel="noopener">Video</a></div>
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 09</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://jmlr.org/papers/volume21/18-216/18-216.pdf" target="_blank" rel="noopener">Robust Reinforcement Learning with Bayesian Optimisation and Quadrature</a></div>
+    <div class="pub-authors">Supratik Paul, <span class="self">Konstantinos Chatzilygeroudis</span>, Kamil Ciosek, Jean-Baptiste Mouret, Osborne Michael, Shimon Whiteson</div>
+    <div class="pub-venue">Journal of Machine Learning Research (JMLR), Special Issue on Bayesian Optimization &middot; 2020</div>
+    
+    <div class="pub-links"><a class="link-pill" href="https://www.youtube.com/watch?v=R8Ss-dhDCmo&amp;feature=youtu.be&amp;ab_channel=Jean-BaptisteMouret" target="_blank" rel="noopener">Video</a></div>
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 10</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://www.epfl.ch/labs/lasa/sahr/benchmark/" target="_blank" rel="noopener">Benchmark for Bimanual Robotic Manipulation of Semi-deformable Objects</a></div>
+    <div class="pub-authors"><span class="self">Konstantinos Chatzilygeroudis</span>, Bernardo Fichera, Ilaria Lauzana, Fanjun Bu, Kunpeng Yao, Farshad Khadivar, Aude Billard</div>
+    <div class="pub-venue">IEEE Robotics and Automation Letters (RA-L): Special Issue on Benchmarking Protocols for Robotic Manipulation &middot; 2020</div>
+    
+    <div class="pub-links"><a class="link-pill" href="https://github.com/epfl-lasa/sahr_benchmark" target="_blank" rel="noopener">Code</a></div>
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 11</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="http://corsmal.eecs.qmul.ac.uk/benchmark.html" target="_blank" rel="noopener">Benchmark for Human-to-Robot Handovers of Unseen Containers with Unknown Filling</a></div>
+    <div class="pub-authors">Ricardo Sanchez-Matilla*, <span class="self">Konstantinos Chatzilygeroudis</span>*, Apostolos Modas, Nuno Ferreira Duarte, Alessio Xompero, Pascal Frossard, Aude Billard, Andrea Cavallaro</div>
+    <div class="pub-venue">IEEE Robotics and Automation Letters (RA-L): Special Issue on Benchmarking Protocols for Robotic Manipulation &middot; 2020</div>
+    
+    <div class="pub-links"><a class="link-pill" href="https://github.com/CORSMAL/Benchmark" target="_blank" rel="noopener">Code</a></div>
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 12</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://arxiv.org/abs/1807.02303" target="_blank" rel="noopener">A survey on policy search algorithms for learning robot controllers in a handful of trials</a></div>
+    <div class="pub-authors"><span class="self">Konstantinos Chatzilygeroudis</span>, Vassilis Vassiliades, Freek Stulp, Sylvain Calinon, Jean-Baptiste Mouret</div>
+    <div class="pub-venue">IEEE Transactions on Robotics (T-RO) &middot; 2019</div>
+    
+    
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 13</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://arxiv.org/abs/1610.04213" target="_blank" rel="noopener">Reset-free Trial-and-Error Learning for Robot Damage Recovery</a></div>
+    <div class="pub-authors"><span class="self">Konstantinos Chatzilygeroudis</span>, Vassilis Vassiliades, Jean-Baptiste Mouret</div>
+    <div class="pub-venue">Robotics and Autonomous Systems &middot; 2018</div>
+    
+    <div class="pub-links"><a class="link-pill" href="https://github.com/resibots/chatzilygeroudis_2018_rte" target="_blank" rel="noopener">Code</a><a class="link-pill" href="https://youtu.be/IqtyHFrb3BU" target="_blank" rel="noopener">Video</a></div>
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 14</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="http://joss.theoj.org/papers/10.21105/joss.00545" target="_blank" rel="noopener">Limbo: A Flexible High-performance Library for Gaussian Processes modeling and Data-Efficient Optimization</a></div>
+    <div class="pub-authors">Antoine Cully, <span class="self">Konstantinos Chatzilygeroudis</span>, Federico Allocati, Jean-Baptiste Mouret</div>
+    <div class="pub-venue">Journal of Open Source Software (JOSS) &middot; 2018</div>
+    
+    <div class="pub-links"><a class="link-pill" href="https://github.com/resibots/limbo" target="_blank" rel="noopener">Code</a></div>
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 15</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://arxiv.org/abs/1610.05729" target="_blank" rel="noopener">Using Centroidal Voronoi Tessellations to Scale Up the Multi-dimensional Archive of Phenotypic Elites Algorithm</a></div>
+    <div class="pub-authors">Vassilis Vassiliades, <span class="self">Konstantinos Chatzilygeroudis</span>, Jean-Baptiste Mouret</div>
+    <div class="pub-venue">IEEE Transactions on Evolutionary Computation &middot; 2017</div>
+    
+    <div class="pub-links"><a class="link-pill" href="https://github.com/resibots/vassiliades_2017_cvt_map_elites" target="_blank" rel="noopener">Code</a></div>
+  </div>
+</div>
+  </div>
+  <h2 class="page-title">Magazine Articles</h2>
+  <div class="pub-list">
+<div class="pub-card">
+  <div class="pub-thumb">fig. 16</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://ieeexplore.ieee.org/document/11297905" target="_blank" rel="noopener">The 2025 Summer School on Optimization for Robotics</a></div>
+    <div class="pub-authors"><span class="self">Konstantinos Chatzilygeroudis</span>, Shivesh Kumar, Brian Plancher, Zachary Manchester, Enrico Mingo Hoffman, Patrick Wensing</div>
+    <div class="pub-venue">IEEE Robotics and Automation Magazine &middot; vol. 32, no. 4, pp. 121–123 &middot; 2025</div>
+    
+    <div class="pub-links"><a class="link-pill" href="https://doi.org/10.1109/MRA.2025.3617606" target="_blank" rel="noopener">DOI</a></div>
+  </div>
+</div>
+  </div>
+  <h2 class="page-title">Peer-Reviewed Book Chapters</h2>
+  <div class="pub-list">
+<div class="pub-card">
+  <div class="pub-thumb">fig. 17</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://arxiv.org/abs/2012.04322" target="_blank" rel="noopener">Quality-Diversity Optimization: a novel branch of stochastic optimization</a></div>
+    <div class="pub-authors"><span class="self">Konstantinos Chatzilygeroudis</span>, Antoine Cully, Vassilis Vassiliades, Jean-Baptiste Mouret</div>
+    <div class="pub-venue">Black Box Optimization, Machine Learning and No-Free Lunch Theorems &middot; 2021</div>
+    
+    
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 18</div>
+  <div class="pub-body">
+    <div class="pub-title">Machine Learning Basics</div>
+    <div class="pub-authors"><span class="self">Konstantinos Chatzilygeroudis</span>, Ioannis Hatzilygeroudis, Isidoros Perikos</div>
+    <div class="pub-venue">Intelligent Computing for Interactive System Design: Statistics, Digital Signal Processing and Machine Learning in practice &middot; 2021</div>
+    
+    
+  </div>
+</div>
+  </div>
+  <h2 class="page-title">Peer-Reviewed Conference Papers</h2>
+  <div class="pub-list">
+<div class="pub-card">
+  <div class="pub-thumb">fig. 19</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://arxiv.org/abs/2510.18348" target="_blank" rel="noopener">PGTT: Phase-Guided Terrain Traversal for Perceptive Legged Locomotion</a></div>
+    <div class="pub-authors">Alexandros Ntagkas, Chairi Kiourt, <span class="self">Konstantinos Chatzilygeroudis</span></div>
+    <div class="pub-venue">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2026) &middot; 2026</div>
+    
+    
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 20</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://doi.org/10.1145/3795101.3805360" target="_blank" rel="noopener">Constrained Optimization using an Evolutionary–Augmented Lagrangian approach</a></div>
+    <div class="pub-authors">Lampros Printzios, <span class="self">Konstantinos Chatzilygeroudis</span></div>
+    <div class="pub-venue">Proceedings of the Genetic and Evolutionary Computation Conference Companion (GECCO 2026) &middot; pp. 417–420 &middot; 2026</div>
+    
+    
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 21</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://arxiv.org/abs/2509.17274" target="_blank" rel="noopener">A benchmark on learning and optimization with 3D orientations</a></div>
+    <div class="pub-authors">Alexandros Ntagkas, Constantinos Tsakonas, Chairi Kiourt, <span class="self">Konstantinos Chatzilygeroudis</span></div>
+    <div class="pub-venue">13th International Conference on Robot Intelligence Technology and Applications (RiTA 2025) &middot; 2025</div>
+    
+    
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 22</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://doi.org/10.1109/Humanoids65713.2025.11203211" target="_blank" rel="noopener">AHMP: Agile Humanoid Motion Planning with Contact Sequence Discovery</a></div>
+    <div class="pub-authors">Ioannis Tsikelis, Evangelos Tsiatsianas, Chairi Kiourt, Serena Ivaldi, <span class="self">Konstantinos Chatzilygeroudis</span>, Enrico Mingo Hoffman</div>
+    <div class="pub-venue">2025 IEEE-RAS 24th International Conference on Humanoid Robots (Humanoids) &middot; pp. 33–40 &middot; 2025</div>
+    
+    
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 23</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://doi.org/10.1109/HUMANOIDS65713.2025.11203204" target="_blank" rel="noopener">A Comparative Study of Floating-Base Space Parameterizations for Agile Whole-Body Motion Planning</a></div>
+    <div class="pub-authors">Evangelos Tsiatsianas, Chairi Kiourt, <span class="self">Konstantinos Chatzilygeroudis</span></div>
+    <div class="pub-venue">2025 IEEE-RAS 24th International Conference on Humanoid Robots (Humanoids) &middot; pp. 1187–1194 &middot; 2025</div>
+    
+    
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 24</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://doi.org/10.23919/ECC65951.2025.11187158" target="_blank" rel="noopener">On the Adaptive Performance Control of Robot Manipulators</a></div>
+    <div class="pub-authors">Panagiotis S. Trakas, Alexandros D. Ntagkas, <span class="self">Konstantinos I. Chatzilygeroudis</span>, Charalampos P. Bechlioulis</div>
+    <div class="pub-venue">2025 European Control Conference (ECC) &middot; pp. 3238–3243 &middot; 2025</div>
+    
+    <div class="pub-links"><a class="link-pill" href="https://www.youtube.com/watch?v=Mv-cQfQ25PI" target="_blank" rel="noopener">Video</a></div>
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 25</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://ieeexplore.ieee.org/document/10977687" target="_blank" rel="noopener">Integrating Trajectory Optimization in Quality-Diversity for Kinodynamic Motion Planning</a></div>
+    <div class="pub-authors">Konstantinos A. Asimakopoulos, <span class="self">Konstantinos I. Chatzilygeroudis</span></div>
+    <div class="pub-venue">2025 11th International Conference on Automation, Robotics, and Applications (ICARA) &middot; pp. 388–393 &middot; 2025</div>
+    
+    
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 26</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://nosalro.github.io/cregopt/" target="_blank" rel="noopener">Gait Optimization for Legged Systems Through Mixed Distribution Cross-Entropy Optimization</a></div>
+    <div class="pub-authors">Ioannis Tsikelis, <span class="self">Konstantinos Chatzilygeroudis</span></div>
+    <div class="pub-venue">IEEE-RAS International Conference on Humanoid Robots (Humanoids) &middot; 2024</div>
+    
+    <div class="pub-links"><a class="link-pill" href="https://www.youtube.com/watch?v=N0bk9KOIHdI&amp;ab_channel=NOSALRO" target="_blank" rel="noopener">Video</a></div>
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 27</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://costashatz.github.io/files/LION18.pdf" target="_blank" rel="noopener">Effective Kinodynamic Planning and Exploration through Quality Diversity and Trajectory Optimization</a></div>
+    <div class="pub-authors">Konstantinos A. Asimakopoulos, Aristeidis A. Androutsopoulos, Michael N. Vrahatis, <span class="self">Konstantinos I. Chatzilygeroudis</span></div>
+    <div class="pub-venue">The 18th Learning and Intelligent Optimization Conference (LION) &middot; 2024</div>
+    
+    
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 28</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://costashatz.github.io/files/IISA2023-EvoLoco.pdf" target="_blank" rel="noopener">Evolving Dynamic Locomotion Policies in Minutes</a></div>
+    <div class="pub-authors"><span class="self">Konstantinos Chatzilygeroudis</span>, Constantinos Tsakonas, Michael Vrahatis</div>
+    <div class="pub-venue">The Fourteenth International Conference on Information, Intelligence, Systems and Applications (IISA 2023) &middot; 2023</div>
+    
+    <div class="pub-links"><a class="link-pill" href="https://www.youtube.com/watch?v=VdyUlAAWMzQ" target="_blank" rel="noopener">Video</a></div>
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 29</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://costashatz.github.io/files/IISA2023-AGRL.pdf" target="_blank" rel="noopener">Effective Skill Learning via Autonomous Goal Representation Learning</a></div>
+    <div class="pub-authors">Constantinos Tsakonas, <span class="self">Konstantinos Chatzilygeroudis</span></div>
+    <div class="pub-venue">The Fourteenth International Conference on Information, Intelligence, Systems and Applications (IISA 2023) &middot; 2023</div>
+    
+    <div class="pub-links"><a class="link-pill" href="https://www.youtube.com/watch?v=x-j5mid6jxM" target="_blank" rel="noopener">Video</a></div>
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 30</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://lion17.org/" target="_blank" rel="noopener">Fast and Robust Constrained Optimization via Evolutionary and Quadratic Programming</a></div>
+    <div class="pub-authors"><span class="self">Konstantinos Chatzilygeroudis</span>, Michael Vrahatis</div>
+    <div class="pub-venue">The 17th Learning and Intelligent Optimization Conference (LION) &middot; 2023</div>
+    
+    
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 31</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://arxiv.org/abs/2203.10033" target="_blank" rel="noopener">Skill-based Multi-objective Reinforcement Learning of Industrial Robot Tasks with Planning and Knowledge Integration</a></div>
+    <div class="pub-authors">Matthias Mayr, Faseeh Ahmad, <span class="self">Konstantinos Chatzilygeroudis</span>, Luigi Nardi, Volker Krueger</div>
+    <div class="pub-venue">IEEE International Conference on Robotics and Biomimetics (ROBIO) &middot; 2022</div>
+    
+    <div class="pub-links"><a class="link-pill" href="./files/ROBIO2022.mp4" target="_blank" rel="noopener">Video</a></div>
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 32</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://arxiv.org/abs/2208.01605" target="_blank" rel="noopener">Learning Skill-based Industrial Robot Tasks with User Priors</a></div>
+    <div class="pub-authors">Matthias Mayr, Carl Hvarfner, <span class="self">Konstantinos Chatzilygeroudis</span>, Luigi Nardi, Volker Krueger</div>
+    <div class="pub-venue">IEEE International Conference on Automation Science and Engineering (CASE) &middot; 2022</div>
+    
+    
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 33</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://arxiv.org/abs/2204.05726" target="_blank" rel="noopener">Hierarchical Quality-Diversity for Online Damage Recovery</a></div>
+    <div class="pub-authors">Maxime Allard, Simón C. Smith, <span class="self">Konstantinos Chatzilygeroudis</span>, Antoine Cully</div>
+    <div class="pub-venue">The Genetic and Evolutionary Computation Conference (GECCO) &middot; 2022</div>
+    
+    
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 34</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://link.springer.com/chapter/10.1007/978-3-031-04870-8_16" target="_blank" rel="noopener">A Brief Survey of Sim2Real Methods for Robot Learning</a></div>
+    <div class="pub-authors">Konstantinos Dimitropoulos, Ioannis Hatzilygeroudis, <span class="self">Konstantinos Chatzilygeroudis</span></div>
+    <div class="pub-venue">31st International Conference on Robotics in Alpe-Adria-Danube Region (RAAD) &middot; 2022</div>
+    
+    
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 35</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://arxiv.org/abs/2109.13050" target="_blank" rel="noopener">Learning of Parameters in Behavior Trees for Movement Skills</a></div>
+    <div class="pub-authors">Matthias Mayr, <span class="self">Konstantinos Chatzilygeroudis</span>, Faseeh Ahmad, Luigi Nardi, Volker Krueger</div>
+    <div class="pub-venue">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) &middot; 2021</div>
+    
+    <div class="pub-links"><a class="link-pill" href="./files/IROS2021.mp4" target="_blank" rel="noopener">Video</a></div>
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 36</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://link.springer.com/chapter/10.1007/978-3-030-92121-7_6" target="_blank" rel="noopener">Feature Selection in single-cell RNA-seq data via a Genetic Algorithm</a></div>
+    <div class="pub-authors"><span class="self">Konstantinos Chatzilygeroudis</span>, Aristidis Vrahatis, Sotiris Tasoulis, Micheal Vrahatis</div>
+    <div class="pub-venue">The 15th Learning and Intelligent Optimization Conference (LION) &middot; 2021</div>
+    
+    
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 37</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="http://costashatz.github.io/files/ICDL2020.pdf" target="_blank" rel="noopener">From human action understanding to robot action execution: how the physical properties of handled objects modulate non-verbal cues</a></div>
+    <div class="pub-authors">Nuno Ferreira Duarte, <span class="self">Konstantinos Chatzilygeroudis</span>, José Santos-Victor, Aude Billard</div>
+    <div class="pub-venue">International Conference on Development and Learning and Epigenetic Robotics (ICDL-EpiRob) &middot; 2020</div>
+    
+    <div class="pub-links"><a class="link-pill" href="./files/ICDL2020.mp4" target="_blank" rel="noopener">Video</a></div>
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 38</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="./files/ICHR19_0047_FI.pdf" target="_blank" rel="noopener">On Force Synergies in Human Grasping Behavior</a></div>
+    <div class="pub-authors">Julia Starke, <span class="self">Konstantinos Chatzilygeroudis</span>, Aude Billard, Tamim Asfour</div>
+    <div class="pub-venue">International Conference on Humanoid Robots &middot; 2019</div>
+    
+    
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 39</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://arxiv.org/abs/1806.09351" target="_blank" rel="noopener">Multi-objective Model-based Policy Search for Data-efficient Learning with Sparse Rewards</a></div>
+    <div class="pub-authors">Rituraj Kaushik, <span class="self">Konstantinos Chatzilygeroudis</span>, Jean-Baptiste Mouret</div>
+    <div class="pub-venue">Conference on Robot Learning (CoRL) &middot; 2018</div>
+    
+    <div class="pub-links"><a class="link-pill" href="https://github.com/resibots/kaushik_2018_multi-dex" target="_blank" rel="noopener">Code</a><a class="link-pill" href="https://www.youtube.com/watch?v=XOBWq7mkYho" target="_blank" rel="noopener">Video</a></div>
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 40</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://arxiv.org/abs/1709.06917" target="_blank" rel="noopener">Using Parameterized Black-Box Priors to Scale Up Model-Based Policy Search for Robotics</a></div>
+    <div class="pub-authors"><span class="self">Konstantinos Chatzilygeroudis</span>, Jean-Baptiste Mouret</div>
+    <div class="pub-venue">International Conference on Robotics and Automation (ICRA) &middot; 2018</div>
+    
+    <div class="pub-links"><a class="link-pill" href="https://github.com/resibots/blackdrops" target="_blank" rel="noopener">Code</a><a class="link-pill" href="https://youtu.be/HFkZkhGGzTo" target="_blank" rel="noopener">Video</a></div>
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 41</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://arxiv.org/abs/1709.06919" target="_blank" rel="noopener">Bayesian Optimization with Automatic Prior Selection for Data-Efficient Direct Policy Search</a></div>
+    <div class="pub-authors">Rémi Pautrat, <span class="self">Konstantinos Chatzilygeroudis</span>, Jean-Baptiste Mouret</div>
+    <div class="pub-venue">International Conference on Robotics and Automation (ICRA) &middot; 2018</div>
+    <div class="pub-venue" style="margin-top:2px;">A short version of the paper was accepted at the non-archival track of the 1st Conference on Robot Learning (CoRL) 2017</div>
+    <div class="pub-links"><a class="link-pill" href="https://github.com/resibots/pautrat_2018_mlei" target="_blank" rel="noopener">Code</a><a class="link-pill" href="https://youtu.be/xo8mUIZTvNE" target="_blank" rel="noopener">Video</a></div>
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 42</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="http://www.cs.ox.ac.uk/people/shimon.whiteson/pubs/paulaaai18.pdf" target="_blank" rel="noopener">Alternating Optimisation and Quadrature for Robust Control</a></div>
+    <div class="pub-authors">Supratik Paul, <span class="self">Konstantinos Chatzilygeroudis</span>, Kamil Ciosek, Jean-Baptiste Mouret, Michael A. Osborne, Shimon Whiteson</div>
+    <div class="pub-venue">Thirty-Second AAAI Conference on Artificial Intelligence (AAAI) &middot; 2018</div>
+    
+    
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 43</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://arxiv.org/abs/1703.07261" target="_blank" rel="noopener">Black-Box Data-efficient Policy Search for Robotics</a></div>
+    <div class="pub-authors"><span class="self">Konstantinos Chatzilygeroudis</span>, Roberto Rama, Rituraj Kaushik, Dorian Goepp, Vassilis Vassiliades, Jean-Baptiste Mouret</div>
+    <div class="pub-venue">International Conference on Intelligent Robots and Systems (IROS) &middot; 2017</div>
+    
+    <div class="pub-links"><a class="link-pill" href="https://github.com/resibots/blackdrops" target="_blank" rel="noopener">Code</a><a class="link-pill" href="https://www.youtube.com/watch?v=kTEyYiIFGPM" target="_blank" rel="noopener">Video</a></div>
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 44</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://scholar.google.gr/citations?view_op=view_citation&amp;hl=en&amp;user=tnf6B-EAAAAJ&amp;citation_for_view=tnf6B-EAAAAJ:u5HHmVD_uO8C" target="_blank" rel="noopener">Human robot collaboration for folding fabrics based on force/RGB-D feedback</a></div>
+    <div class="pub-authors">Panagiotis Koustoumpardis, <span class="self">Konstantinos Chatzilygeroudis</span>, Aris Synodinos, Nikos Aspragathos</div>
+    <div class="pub-venue">24th International Conference on Robotics in Alpe-Adria-Danube Region (RAAD) &middot; 2015</div>
+    
+    
+  </div>
+</div>
+  </div>
+  <h2 class="page-title">Peer-Reviewed Workshop Papers</h2>
+  <div class="pub-list">
+<div class="pub-card">
+  <div class="pub-thumb">fig. 45</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://drive.google.com/file/d/1gmezFkO-uWBKz1BnScXC4_m0mss-BgwV/view" target="_blank" rel="noopener">Hybrid Augmented Lagrangian Method for Constrained Optimization</a></div>
+    <div class="pub-authors">Lampros Printzios, <span class="self">Konstantinos Chatzilygeroudis</span></div>
+    <div class="pub-venue">RoboARCH: Robotics Acceleration with Computing Hardware and Systems Workshop at IEEE International Conference on Robotics and Automation (ICRA 2025) &middot; 2025</div>
+    
+    
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 46</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://arxiv.org/abs/2305.12886" target="_blank" rel="noopener">End-to-End Stable Imitation Learning via Autonomous Neural Dynamic Policies</a></div>
+    <div class="pub-authors">Dionis Totsila*, <span class="self">Konstantinos Chatzilygeroudis</span>*, Denis Hadjivelichkov, Valerio Modugno, Ioannis Hatzilygeroudis, Dimitrios Kanoulas</div>
+    <div class="pub-venue">Life-Long Learning with Human Help (L3H2) Workshop at IEEE International Conference on Robotics and Automation (ICRA 2023) &middot; 2023</div>
+    
+    
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 47</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://arxiv.org/abs/2212.03570" target="_blank" rel="noopener">Combining Planning, Reasoning and Reinforcement Learning to solve Industrial Robot Tasks</a></div>
+    <div class="pub-authors">Matthias Mayr, Faseeh Ahmad, <span class="self">Konstantinos Chatzilygeroudis</span>, Luigi Nardi, Volker Krueger</div>
+    <div class="pub-venue">2nd Workshop on Trends and Advances in Machine Learning and Automated Reasoning for Intelligent Robots and Systems, at IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) &middot; 2022</div>
+    
+    
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 48</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://portal.research.lu.se/en/publications/how-to-set-up-amp-learn-new-robot-tasks-with-explainable-behavior" target="_blank" rel="noopener">How to Set Up & Learn New Robot Tasks with Explainable Behaviors?</a></div>
+    <div class="pub-authors">Matthias Mayr, Faseeh Ahmad, <span class="self">Konstantinos Chatzilygeroudis</span>, Luigi Nardi, Volker Krueger</div>
+    <div class="pub-venue">European Robotics Forum &middot; 2022</div>
+    
+    
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 49</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://hal.inria.fr/hal-01518764/" target="_blank" rel="noopener">20 Years of Reality Gap: a few Thoughts about Simulators in Evolutionary Robotics</a></div>
+    <div class="pub-authors">Jean-Baptiste Mouret, <span class="self">Konstantinos Chatzilygeroudis</span></div>
+    <div class="pub-venue">Proceedings of the International Workshop "Simulation in Evolutionary Robotics" at the Genetic and Evolutionary Computation Conference (GECCO) &middot; 2017</div>
+    
+    
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 50</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://hal.inria.fr/hal-01518802/" target="_blank" rel="noopener">Comparing multimodal optimization and illumination</a></div>
+    <div class="pub-authors">Vassilis Vassiliades, <span class="self">Konstantinos Chatzilygeroudis</span>, Jean-Baptiste Mouret</div>
+    <div class="pub-venue">Genetic and Evolutionary Computation Conference (GECCO) (Poster-only papers) &middot; 2017</div>
+    
+    
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 51</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://hal.inria.fr/hal-01518814/" target="_blank" rel="noopener">A comparison of illumination algorithms in unbounded spaces</a></div>
+    <div class="pub-authors">Vassilis Vassiliades, <span class="self">Konstantinos Chatzilygeroudis</span>, Jean-Baptiste Mouret</div>
+    <div class="pub-venue">Proceedings of the International Workshop "Measuring and Promoting Diversity in Evolutionary Algorithms" at the Genetic and Evolutionary Computation Conference (GECCO) &middot; 2017</div>
+    
+    
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 52</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://arxiv.org/abs/1611.09419" target="_blank" rel="noopener">Safety-Aware Robot Damage Recovery Using Constrained Bayesian Optimization and Simulated Priors</a></div>
+    <div class="pub-authors">Vaios Papaspyros, <span class="self">Konstantinos Chatzilygeroudis</span>, Vassilis Vassiliades, Jean-Baptiste Mouret</div>
+    <div class="pub-venue">BayesOpt '16: Proceedings of the International Workshop "Bayesian Optimization: Black-box Optimization and Beyond" at NIPS &middot; 2016</div>
+    
+    
+  </div>
+</div><div class="pub-card">
+  <div class="pub-thumb">fig. 53</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="https://arxiv.org/abs/1610.01407" target="_blank" rel="noopener">Towards semi-episodic learning for robot damage recovery</a></div>
+    <div class="pub-authors"><span class="self">Konstantinos Chatzilygeroudis</span>, Antoine Cully, Jean-Baptiste Mouret</div>
+    <div class="pub-venue">AILTA '16: Proceedings of the International Workshop "AI for Long-term Autonomy" at ICRA &middot; 2016</div>
+    
+    
+  </div>
+</div>
+  </div>
 
-  <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-  <script src="assets/js/template.js"></script>
-  <script src="assets/js/bibtex_js.js"></script>
+</div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>&copy; 2015&ndash;2026 Konstantinos Chatzilygeroudis &middot; Patras, Greece</span>
+    <span class="footer-links">
+      <a href="mailto:costashatz@upatras.gr">Email</a>
+      <a href="https://scholar.google.com/citations?user=tnf6B-EAAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar</a>
+      <a href="https://github.com/costashatz" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/konstantinoschatzilygeroudis" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://orcid.org/0000-0003-3585-1027" target="_blank" rel="noopener">ORCID</a>
+    </span>
+  </div>
+</footer>
+
 </body>
-
 </html>
