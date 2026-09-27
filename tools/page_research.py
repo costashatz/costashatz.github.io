@@ -1,0 +1,55 @@
+# -*- coding: utf-8 -*-
+import sys, os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from build_site import shell, write
+
+body = '''
+<div class="container">
+
+  <div class="hero" style="padding-top:48px;">
+    <div>
+      <h1>Research</h1>
+      <p class="tagline" style="max-width:700px;">My work sits at the intersection of optimization, control and machine learning for robotics. I am interested in methods that let a robot exploit the structure of a problem and prior knowledge, learn from limited data, produce safe and efficient behaviors, and adapt when the model, the environment, or the robot itself changes.</p>
+    </div>
+  </div>
+
+  <div class="section prose">
+
+    <h3 id="quality-diversity">Evolutionary algorithms &amp; Quality-Diversity</h3>
+    <p>Evolutionary algorithms are useful when the search space is large, non-linear, or offers no reliable gradients. In robotics, however, a single solution with the best objective value is often not enough. A robot that explores, moves through an unknown environment, or has been damaged needs alternative behaviors, so that it can pick one that still works in its current situation. This is the motivation behind Quality-Diversity (QD) methods: they build a repertoire of solutions that combine high performance with meaningful behavioral diversity.</p>
+    <p>My work on <a href="https://arxiv.org/abs/1610.05729" target="_blank" rel="noopener">CVT-MAP-Elites</a> looked at scaling MAP-Elites-style methods to high-dimensional behavior spaces. More recently, <a href="https://ieeexplore.ieee.org/document/11244136" target="_blank" rel="noopener">VQ-Elites</a> learns the structure of the behavior space directly from data, removing the need to hand-design behavior descriptors. The same idea of hierarchical, reusable structure underlies <a href="https://dl.acm.org/doi/10.1145/3596912" target="_blank" rel="noopener">Hierarchical Trial &amp; Error</a>, aimed at damage recovery on physical robots, and the <a href="https://link.springer.com/article/10.1007/s10472-023-09912-8" target="_blank" rel="noopener">EvoDSM</a> framework for optimizing doubly-stochastic matrices with swarm and evolutionary algorithms. Today, QD is also central to the autonomous, open-ended skill discovery work in the <a href="https://nosalro.github.io/" target="_blank" rel="noopener">NOSALRO</a> project, where it is combined with simulators, variational autoencoders, and reinforcement learning.</p>
+
+    <h3 id="optimization">Optimization, optimal control &amp; numerical methods</h3>
+    <p>In optimal control and trajectory generation, a method's value depends on whether it can solve the problem within the available time budget. I care about exploiting the algebraic and computational structure of these problems &mdash; sparsity of the linear systems, derivatives, constraints, and the geometry of the state &mdash; so that trajectory optimization and Model Predictive Control (MPC) can run in real time.</p>
+    <p>Along these lines, we are developing <a href="https://github.com/upatras-lar/ssqp" target="_blank" rel="noopener">SSQP</a>, a structure-exploiting Sequential Quadratic Programming solver for nonlinear optimal control problems, with native support for manifold-valued states such as floating-base orientations. In <a href="https://doi.org/10.1109/Humanoids65713.2025.11203211" target="_blank" rel="noopener">AHMP</a>, contact-sequence discovery via a Mixed-Distribution Cross-Entropy Method is combined with whole-body trajectory optimization in the tangent space of SE(3). Our <a href="https://doi.org/10.1109/HUMANOIDS65713.2025.11203204" target="_blank" rel="noopener">comparative study of floating-base parameterizations</a> looks at how the choice between Euler angles, quaternions, and tangent-space representations affects convergence and motion quality, and the <a href="https://arxiv.org/abs/2509.17274" target="_blank" rel="noopener">3D-orientations benchmark</a> extends this question to learning and optimization more broadly. On the constrained-optimization side, <a href="https://lion17.org/" target="_blank" rel="noopener">UPSO-QP</a> and its successor, the <a href="https://arxiv.org/abs/2607.16876" target="_blank" rel="noopener">Hybrid Augmented Lagrangian (HyAL)</a> method, embed evolutionary search inside an Augmented Lagrangian loop to combine gradient-free robustness with fast, precise convergence.</p>
+
+    <h3 id="data-efficient-learning">Data-efficient robot learning</h3>
+    <p>Learning on real robots is constrained by time, hardware wear, safety, and the cost of failed trials. I am interested in methods that learn robot skills efficiently &mdash; combining simulators, dynamics models, prior knowledge, and suitable policy representations. This direction is summarized in my survey on <a href="https://arxiv.org/abs/1807.02303" target="_blank" rel="noopener">policy search algorithms for learning robot controllers in a handful of trials</a>.</p>
+    <p><a href="https://arxiv.org/abs/1703.07261" target="_blank" rel="noopener">Black-DROPS</a> uses black-box optimizers for model-based policy search, while <a href="https://arxiv.org/abs/1709.06917" target="_blank" rel="noopener">parameterized black-box priors</a> scale this up to high-dimensional robots without requiring the prior to be exact. Choosing among several available priors is studied in <a href="https://arxiv.org/abs/1709.06919" target="_blank" rel="noopener">MLEI</a>, and <a href="https://jmlr.org/papers/volume21/18-216/18-216.pdf" target="_blank" rel="noopener">robust reinforcement learning with ALOQ</a> addresses robust learning when simulation and reality differ.</p>
+
+    <h3 id="adaptation">Adaptation, robustness &amp; safe behavior</h3>
+    <p>A robot operating outside the lab has to cope with a changing environment, unfamiliar situations, and sensor or actuator damage. <a href="https://arxiv.org/abs/1610.04213" target="_blank" rel="noopener">Reset-free Trial-and-Error</a> studies how a robot's locomotion abilities can be restored after mechanical damage, without human intervention and without resetting the robot after every episode &mdash; a direction closely tied to the use of Quality-Diversity repertoires, which offer alternative behaviors when the original solution is no longer feasible.</p>
+    <p>Safety, in turn, should not be an afterthought. I am interested in combining constraints, probabilistic models, and controllers that estimate uncertainty and adjust their behavior accordingly. <a href="https://ieeexplore.ieee.org/document/10102575" target="_blank" rel="noopener">Self-correcting QP control</a> is one example of this, while our <a href="https://github.com/epfl-lasa/sahr_benchmark" target="_blank" rel="noopener">bimanual manipulation</a> and <a href="https://github.com/CORSMAL/Benchmark" target="_blank" rel="noopener">human-to-robot handover</a> benchmarks support reproducible evaluation of such methods.</p>
+
+    <h3 id="representations">Machine learning, RL &amp; behavior representations</h3>
+    <p>I am interested in representations that make learning more efficient, interpretable, and stable. <a href="https://www.frontiersin.org/articles/10.3389/frobt.2022.974537/full" target="_blank" rel="noopener">Behavior Policy Learning</a> combines solution sketches, model-based controllers, and simulation to learn multi-stage tasks, while our work on <a href="https://arxiv.org/abs/2109.13050" target="_blank" rel="noopener">Behavior Trees for movement skills</a> looks at a structured, reusable policy representation.</p>
+    <p>A second thread combines neural models with dynamical systems and controllers. <a href="https://ieeexplore.ieee.org/document/10819655" target="_blank" rel="noopener">Autonomous Neural Dynamic Policies</a> pair the expressiveness of neural networks with stability guarantees, and in <a href="https://arxiv.org/abs/2510.18348" target="_blank" rel="noopener">PGTT</a> terrain perception and gait structure are built into the training of a perceptive legged-locomotion RL controller, without constraining the action space through oscillators or inverse kinematics. The <a href="https://lar.upatras.gr/projects/ibrics.html" target="_blank" rel="noopener">IBRICS</a> project studies vision and machine learning for imitating human behavior in robotic systems, and this direction also covers imitation learning, diffusion models, normalizing flows, and Bayesian inference for perception, planning, and control.</p>
+
+    <h3 id="software">Simulation, software &amp; reproducible robotics</h3>
+    <p>Simulation and open-source software are essential for fast iteration and reproducible research. <a href="https://joss.theoj.org/papers/10.21105/joss.06771" target="_blank" rel="noopener">RobotDART</a>, built on the DART physics engine, provides an efficient simulator for robotics and machine-learning researchers, and <a href="http://joss.theoj.org/papers/10.21105/joss.00545" target="_blank" rel="noopener">Limbo</a> supports Gaussian Processes and data-efficient optimization. <a href="https://github.com/upatras-lar/ssqp" target="_blank" rel="noopener">SSQP</a> extends this philosophy to optimal control, aiming for tools usable both in research experiments and in real-time applications.</p>
+    <p>Overall, I am interested in bridging evolutionary search, mathematical optimization, and machine learning: exploiting structure and prior knowledge to reduce the amount of data required, using safe and robust controllers to transfer solutions from simulation to the real world, and building robots that do not simply execute one fixed policy, but can explore, learn, and adapt.</p>
+
+  </div>
+
+  <div class="section">
+    <div class="section-label">Full publication list</div>
+    <p class="lede">For the complete, up-to-date list of papers, book chapters and preprints, see the <a href="publications.html">Publications</a> page.</p>
+  </div>
+
+</div>
+'''
+
+write('research.html', shell(
+    "Research — Konstantinos Chatzilygeroudis",
+    "Research overview: evolutionary algorithms and Quality-Diversity, optimization and optimal control, data-efficient robot learning, adaptation and safety, and simulation software.",
+    "research.html", body))

@@ -1,0 +1,1973 @@
+[
+ {
+  "label": "Peer-Reviewed Journal Papers",
+  "items": [
+   {
+    "key": "tsakonas2025vqelites",
+    "title": "Vector Quantized-Elites: Unsupervised and Problem-Agnostic Quality-Diversity Optimization",
+    "authors": [
+     {
+      "name": "Constantinos Tsakonas",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     }
+    ],
+    "venue": "IEEE Transactions on Evolutionary Computation",
+    "year": "2025",
+    "volume": "30",
+    "number": "4",
+    "pages": "1669--1683",
+    "doi": "10.1109/TEVC.2025.3631786",
+    "url": "https://ieeexplore.ieee.org/document/11244136",
+    "note": "",
+    "badge": "IEEE Trans. Evol. Comput.",
+    "code": "",
+    "video": ""
+   },
+   {
+    "key": "trinh2025hybrid",
+    "title": "A Novel Hybrid Modeling Framework for Polymer Reaction Engineering with Application to Real-Time Process Monitoring",
+    "authors": [
+     {
+      "name": "Cindy Trinh",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Maria Prokopidou",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     },
+     {
+      "name": "Dimitrios Meimaroglou",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "Industrial \\& Engineering Chemistry Research",
+    "year": "2025",
+    "volume": "64",
+    "number": "46",
+    "pages": "22304--22320",
+    "doi": "10.1021/acs.iecr.5c02499",
+    "url": "https://pubs.acs.org/doi/10.1021/acs.iecr.5c02499",
+    "note": "",
+    "badge": "Ind. Eng. Chem. Res.",
+    "code": "",
+    "video": ""
+   },
+   {
+    "key": "totsila2025sensorimotor",
+    "title": "Sensorimotor Learning with Stability Guarantees via Autonomous Neural Dynamic Policies",
+    "authors": [
+     {
+      "name": "Dionis Totsila",
+      "self": false,
+      "equal": true
+     },
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": true
+     },
+     {
+      "name": "Valerio Modugno",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Denis Hadjivelichkov",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Dimitrios Kanoulas",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "IEEE Robotics and Automation Letters (RA-L)",
+    "year": "2025",
+    "volume": "10",
+    "number": "2",
+    "pages": "1760--1767",
+    "doi": "10.1109/LRA.2024.3524878",
+    "url": "https://ieeexplore.ieee.org/document/10819655",
+    "note": "",
+    "badge": "RA-L",
+    "code": "",
+    "video": ""
+   },
+   {
+    "key": "syriopoulos2025dsm",
+    "title": "Optimizing Doubly Stochastic Matrices for Average Consensus through Swarm and Evolutionary Algorithms",
+    "authors": [
+     {
+      "name": "Panos Syriopoulos",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     },
+     {
+      "name": "Nektarios Kalampalikis",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Michael Vrahatis",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "Annals of Mathematics and Artificial Intelligence",
+    "year": "2025",
+    "volume": "93",
+    "number": "",
+    "pages": "151--171",
+    "doi": "10.1007/s10472-023-09912-8",
+    "url": "https://link.springer.com/article/10.1007/s10472-023-09912-8",
+    "note": "",
+    "badge": "Annals of Math. &amp; AI",
+    "code": "",
+    "video": ""
+   },
+   {
+    "key": "chatzilygeroudis2024robotdart",
+    "title": "RobotDART: a versatile robot simulator for robotics and machine learning researchers",
+    "authors": [
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     },
+     {
+      "name": "Dionis Totsila",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Jean-Baptiste Mouret",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "Journal of Open Source Software (JOSS)",
+    "year": "2024",
+    "volume": "9",
+    "number": "102",
+    "pages": "6771",
+    "doi": "10.21105/joss.06771",
+    "url": "https://joss.theoj.org/papers/10.21105/joss.06771",
+    "note": "",
+    "badge": "JOSS",
+    "code": "https://nosalro.github.io/robot_dart",
+    "video": ""
+   },
+   {
+    "key": "allard2023damage",
+    "title": "Online Damage Recovery for Physical Robots with Hierarchical Quality-Diversity",
+    "authors": [
+     {
+      "name": "Maxime Allard",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Simón C. Smith",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     },
+     {
+      "name": "Bryan Lim",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Antoine Cully",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "ACM Transactions on Evolutionary Learning and Optimization",
+    "year": "2023",
+    "volume": "3",
+    "number": "2",
+    "pages": "6",
+    "doi": "10.1145/3596912",
+    "url": "https://dl.acm.org/doi/10.1145/3596912",
+    "note": "",
+    "badge": "ACM TELO",
+    "code": "",
+    "video": ""
+   },
+   {
+    "key": "khadivar2023selfcorrecting",
+    "title": "Self-Correcting Quadratic Programming-Based Robot Control",
+    "authors": [
+     {
+      "name": "Farshad Khadivar",
+      "self": false,
+      "equal": true
+     },
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": true
+     },
+     {
+      "name": "Aude Billard",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "IEEE Transactions on Systems, Man, and Cybernetics: Systems",
+    "year": "2023",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "10.1109/TSMC.2023.3262954",
+    "url": "https://ieeexplore.ieee.org/document/10102575",
+    "note": "",
+    "badge": "IEEE Trans. SMC: Systems",
+    "code": "",
+    "video": "https://www.youtube.com/watch?v=cA-_SKoO_9c&ab_channel=KonstantinosChatzilygeroudis"
+   },
+   {
+    "key": "tsinganos2022behavior",
+    "title": "Behavior Policy Learning: Learning Multi-Stage Tasks via Solution Sketches and Model-Based Controllers",
+    "authors": [
+     {
+      "name": "Konstantinos Tsinganos",
+      "self": false,
+      "equal": true
+     },
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": true
+     },
+     {
+      "name": "Denis Hadjivelichkov",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Theodoros Komninos",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Evangelos Dermatas",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Dimitrios Kanoulas",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "Frontiers in Robotics and AI",
+    "year": "2022",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://www.frontiersin.org/articles/10.3389/frobt.2022.974537/full",
+    "note": "",
+    "badge": "Frontiers in Robotics and AI",
+    "code": "",
+    "video": "https://www.youtube.com/watch?v=5ueUBvq65O4"
+   },
+   {
+    "key": "paul2020robustrl",
+    "title": "Robust Reinforcement Learning with Bayesian Optimisation and Quadrature",
+    "authors": [
+     {
+      "name": "Supratik Paul",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     },
+     {
+      "name": "Kamil Ciosek",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Jean-Baptiste Mouret",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Osborne Michael",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Shimon Whiteson",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "Journal of Machine Learning Research (JMLR), Special Issue on Bayesian Optimization",
+    "year": "2020",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://jmlr.org/papers/volume21/18-216/18-216.pdf",
+    "note": "",
+    "badge": "JMLR",
+    "code": "",
+    "video": "https://www.youtube.com/watch?v=R8Ss-dhDCmo&feature=youtu.be&ab_channel=Jean-BaptisteMouret"
+   },
+   {
+    "key": "chatzilygeroudis2019benchmark",
+    "title": "Benchmark for Bimanual Robotic Manipulation of Semi-deformable Objects",
+    "authors": [
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     },
+     {
+      "name": "Bernardo Fichera",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Ilaria Lauzana",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Fanjun Bu",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Kunpeng Yao",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Farshad Khadivar",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Aude Billard",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "IEEE Robotics and Automation Letters (RA-L): Special Issue on Benchmarking Protocols for Robotic Manipulation",
+    "year": "2020",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://www.epfl.ch/labs/lasa/sahr/benchmark/",
+    "note": "",
+    "badge": "RA-L",
+    "code": "https://github.com/epfl-lasa/sahr_benchmark",
+    "video": ""
+   },
+   {
+    "key": "sanchez2019benchmark",
+    "title": "Benchmark for Human-to-Robot Handovers of Unseen Containers with Unknown Filling",
+    "authors": [
+     {
+      "name": "Ricardo Sanchez-Matilla",
+      "self": false,
+      "equal": true
+     },
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": true
+     },
+     {
+      "name": "Apostolos Modas",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Nuno Ferreira Duarte",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Alessio Xompero",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Pascal Frossard",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Aude Billard",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Andrea Cavallaro",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "IEEE Robotics and Automation Letters (RA-L): Special Issue on Benchmarking Protocols for Robotic Manipulation",
+    "year": "2020",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "http://corsmal.eecs.qmul.ac.uk/benchmark.html",
+    "note": "",
+    "badge": "RA-L",
+    "code": "https://github.com/CORSMAL/Benchmark",
+    "video": ""
+   },
+   {
+    "key": "chatzilygeroudis2018survey",
+    "title": "A survey on policy search algorithms for learning robot controllers in a handful of trials",
+    "authors": [
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     },
+     {
+      "name": "Vassilis Vassiliades",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Freek Stulp",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Sylvain Calinon",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Jean-Baptiste Mouret",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "IEEE Transactions on Robotics (T-RO)",
+    "year": "2019",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/1807.02303",
+    "note": "",
+    "badge": "IEEE Trans. Robotics",
+    "code": "",
+    "video": ""
+   },
+   {
+    "key": "chatzilygeroudis2018resetfree",
+    "title": "Reset-free Trial-and-Error Learning for Robot Damage Recovery",
+    "authors": [
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     },
+     {
+      "name": "Vassilis Vassiliades",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Jean-Baptiste Mouret",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "Robotics and Autonomous Systems",
+    "year": "2018",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/1610.04213",
+    "note": "",
+    "badge": "Robotics &amp; Auton. Systems",
+    "code": "https://github.com/resibots/chatzilygeroudis_2018_rte",
+    "video": "https://youtu.be/IqtyHFrb3BU"
+   },
+   {
+    "key": "cully2018limbo",
+    "title": "Limbo: A Flexible High-performance Library for Gaussian Processes modeling and Data-Efficient Optimization",
+    "authors": [
+     {
+      "name": "Antoine Cully",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     },
+     {
+      "name": "Federico Allocati",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Jean-Baptiste Mouret",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "Journal of Open Source Software (JOSS)",
+    "year": "2018",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "http://joss.theoj.org/papers/10.21105/joss.00545",
+    "note": "",
+    "badge": "JOSS",
+    "code": "https://github.com/resibots/limbo",
+    "video": ""
+   },
+   {
+    "key": "vassiliades2017scaling",
+    "title": "Using Centroidal Voronoi Tessellations to Scale Up the Multi-dimensional Archive of Phenotypic Elites Algorithm",
+    "authors": [
+     {
+      "name": "Vassilis Vassiliades",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     },
+     {
+      "name": "Jean-Baptiste Mouret",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "IEEE Transactions on Evolutionary Computation",
+    "year": "2017",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/1610.05729",
+    "note": "",
+    "badge": "IEEE Trans. Evol. Comput.",
+    "code": "https://github.com/resibots/vassiliades_2017_cvt_map_elites",
+    "video": ""
+   }
+  ]
+ },
+ {
+  "label": "Magazine Articles",
+  "items": [
+   {
+    "key": "chatzilygeroudis2025summer",
+    "title": "The 2025 Summer School on Optimization for Robotics",
+    "authors": [
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     },
+     {
+      "name": "Shivesh Kumar",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Brian Plancher",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Zachary Manchester",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Enrico Mingo Hoffman",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Patrick Wensing",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "IEEE Robotics and Automation Magazine",
+    "year": "2025",
+    "volume": "32",
+    "number": "4",
+    "pages": "121--123",
+    "doi": "10.1109/MRA.2025.3617606",
+    "url": "https://ieeexplore.ieee.org/document/11297905",
+    "note": "",
+    "badge": "IEEE Robotics &amp; Automation Mag.",
+    "code": "",
+    "video": ""
+   }
+  ]
+ },
+ {
+  "label": "Peer-Reviewed Book Chapters",
+  "items": [
+   {
+    "key": "chatzilygeroudis2020qd",
+    "title": "Quality-Diversity Optimization: a novel branch of stochastic optimization",
+    "authors": [
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     },
+     {
+      "name": "Antoine Cully",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Vassilis Vassiliades",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Jean-Baptiste Mouret",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "Black Box Optimization, Machine Learning and No-Free Lunch Theorems",
+    "year": "2021",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2012.04322",
+    "note": "",
+    "badge": "Springer, SOIA series",
+    "code": "",
+    "video": ""
+   },
+   {
+    "key": "chatzilygeroudis2020ml",
+    "title": "Machine Learning Basics",
+    "authors": [
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     },
+     {
+      "name": "Ioannis Hatzilygeroudis",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Isidoros Perikos",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "Intelligent Computing for Interactive System Design: Statistics, Digital Signal Processing and Machine Learning in practice",
+    "year": "2021",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "",
+    "note": "",
+    "badge": "ACM Book Chapter",
+    "code": "",
+    "video": ""
+   }
+  ]
+ },
+ {
+  "label": "Peer-Reviewed Conference Papers",
+  "items": [
+   {
+    "key": "ntagkas2026pgtt",
+    "title": "PGTT: Phase-Guided Terrain Traversal for Perceptive Legged Locomotion",
+    "authors": [
+     {
+      "name": "Alexandros Ntagkas",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Chairi Kiourt",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     }
+    ],
+    "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2026)",
+    "year": "2026",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2510.18348",
+    "note": "",
+    "badge": "IROS",
+    "code": "",
+    "video": ""
+   },
+   {
+    "key": "printzios2026constrained",
+    "title": "Constrained Optimization using an Evolutionary--Augmented Lagrangian approach",
+    "authors": [
+     {
+      "name": "Lampros Printzios",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     }
+    ],
+    "venue": "Proceedings of the Genetic and Evolutionary Computation Conference Companion (GECCO 2026)",
+    "year": "2026",
+    "volume": "",
+    "number": "",
+    "pages": "417--420",
+    "doi": "10.1145/3795101.3805360",
+    "url": "https://doi.org/10.1145/3795101.3805360",
+    "note": "",
+    "badge": "GECCO",
+    "code": "",
+    "video": ""
+   },
+   {
+    "key": "ntagkas2025orientations",
+    "title": "A benchmark on learning and optimization with 3D orientations",
+    "authors": [
+     {
+      "name": "Alexandros Ntagkas",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Constantinos Tsakonas",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Chairi Kiourt",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     }
+    ],
+    "venue": "13th International Conference on Robot Intelligence Technology and Applications (RiTA 2025)",
+    "year": "2025",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2509.17274",
+    "note": "",
+    "badge": "RiTA",
+    "code": "",
+    "video": ""
+   },
+   {
+    "key": "tsikelis2025ahmp",
+    "title": "AHMP: Agile Humanoid Motion Planning with Contact Sequence Discovery",
+    "authors": [
+     {
+      "name": "Ioannis Tsikelis",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Evangelos Tsiatsianas",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Chairi Kiourt",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Serena Ivaldi",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     },
+     {
+      "name": "Enrico Mingo Hoffman",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "2025 IEEE-RAS 24th International Conference on Humanoid Robots (Humanoids)",
+    "year": "2025",
+    "volume": "",
+    "number": "",
+    "pages": "33--40",
+    "doi": "10.1109/Humanoids65713.2025.11203211",
+    "url": "https://doi.org/10.1109/Humanoids65713.2025.11203211",
+    "note": "",
+    "badge": "Humanoids",
+    "code": "",
+    "video": ""
+   },
+   {
+    "key": "tsiatsianas2025comparative",
+    "title": "A Comparative Study of Floating-Base Space Parameterizations for Agile Whole-Body Motion Planning",
+    "authors": [
+     {
+      "name": "Evangelos Tsiatsianas",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Chairi Kiourt",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     }
+    ],
+    "venue": "2025 IEEE-RAS 24th International Conference on Humanoid Robots (Humanoids)",
+    "year": "2025",
+    "volume": "",
+    "number": "",
+    "pages": "1187--1194",
+    "doi": "10.1109/HUMANOIDS65713.2025.11203204",
+    "url": "https://doi.org/10.1109/HUMANOIDS65713.2025.11203204",
+    "note": "",
+    "badge": "Humanoids",
+    "code": "",
+    "video": ""
+   },
+   {
+    "key": "trakas2025adaptive",
+    "title": "On the Adaptive Performance Control of Robot Manipulators",
+    "authors": [
+     {
+      "name": "Panagiotis S. Trakas",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Alexandros D. Ntagkas",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Konstantinos I. Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     },
+     {
+      "name": "Charalampos P. Bechlioulis",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "2025 European Control Conference (ECC)",
+    "year": "2025",
+    "volume": "",
+    "number": "",
+    "pages": "3238--3243",
+    "doi": "10.23919/ECC65951.2025.11187158",
+    "url": "https://doi.org/10.23919/ECC65951.2025.11187158",
+    "note": "",
+    "badge": "ECC",
+    "code": "",
+    "video": "https://www.youtube.com/watch?v=Mv-cQfQ25PI"
+   },
+   {
+    "key": "asimakopoulos2025icara",
+    "title": "Integrating Trajectory Optimization in Quality-Diversity for Kinodynamic Motion Planning",
+    "authors": [
+     {
+      "name": "Konstantinos A. Asimakopoulos",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Konstantinos I. Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     }
+    ],
+    "venue": "2025 11th International Conference on Automation, Robotics, and Applications (ICARA)",
+    "year": "2025",
+    "volume": "",
+    "number": "",
+    "pages": "388--393",
+    "doi": "",
+    "url": "https://ieeexplore.ieee.org/document/10977687",
+    "note": "",
+    "badge": "ICARA",
+    "code": "",
+    "video": ""
+   },
+   {
+    "key": "tsikelis2024gait",
+    "title": "Gait Optimization for Legged Systems Through Mixed Distribution Cross-Entropy Optimization",
+    "authors": [
+     {
+      "name": "Ioannis Tsikelis",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     }
+    ],
+    "venue": "IEEE-RAS International Conference on Humanoid Robots (Humanoids)",
+    "year": "2024",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://nosalro.github.io/cregopt/",
+    "note": "",
+    "badge": "Humanoids",
+    "code": "",
+    "video": "https://www.youtube.com/watch?v=N0bk9KOIHdI&ab_channel=NOSALRO"
+   },
+   {
+    "key": "asimakopoulos2024lion",
+    "title": "Effective Kinodynamic Planning and Exploration through Quality Diversity and Trajectory Optimization",
+    "authors": [
+     {
+      "name": "Konstantinos A. Asimakopoulos",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Aristeidis A. Androutsopoulos",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Michael N. Vrahatis",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Konstantinos I. Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     }
+    ],
+    "venue": "The 18th Learning and Intelligent Optimization Conference (LION)",
+    "year": "2024",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://costashatz.github.io/files/LION18.pdf",
+    "note": "",
+    "badge": "LION",
+    "code": "",
+    "video": ""
+   },
+   {
+    "key": "evolving2023locomotion",
+    "title": "Evolving Dynamic Locomotion Policies in Minutes",
+    "authors": [
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     },
+     {
+      "name": "Constantinos Tsakonas",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Michael Vrahatis",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "The Fourteenth International Conference on Information, Intelligence, Systems and Applications (IISA 2023)",
+    "year": "2023",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://costashatz.github.io/files/IISA2023-EvoLoco.pdf",
+    "note": "",
+    "badge": "IISA",
+    "code": "",
+    "video": "https://www.youtube.com/watch?v=VdyUlAAWMzQ"
+   },
+   {
+    "key": "tsakonas2023agrl",
+    "title": "Effective Skill Learning via Autonomous Goal Representation Learning",
+    "authors": [
+     {
+      "name": "Constantinos Tsakonas",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     }
+    ],
+    "venue": "The Fourteenth International Conference on Information, Intelligence, Systems and Applications (IISA 2023)",
+    "year": "2023",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://costashatz.github.io/files/IISA2023-AGRL.pdf",
+    "note": "",
+    "badge": "IISA",
+    "code": "",
+    "video": "https://www.youtube.com/watch?v=x-j5mid6jxM"
+   },
+   {
+    "key": "chatzilygeroudis2023lion",
+    "title": "Fast and Robust Constrained Optimization via Evolutionary and Quadratic Programming",
+    "authors": [
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     },
+     {
+      "name": "Michael Vrahatis",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "The 17th Learning and Intelligent Optimization Conference (LION)",
+    "year": "2023",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://lion17.org/",
+    "note": "",
+    "badge": "LION",
+    "code": "",
+    "video": ""
+   },
+   {
+    "key": "mayr2022skill",
+    "title": "Skill-based Multi-objective Reinforcement Learning of Industrial Robot Tasks with Planning and Knowledge Integration",
+    "authors": [
+     {
+      "name": "Matthias Mayr",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Faseeh Ahmad",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     },
+     {
+      "name": "Luigi Nardi",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Volker Krueger",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "IEEE International Conference on Robotics and Biomimetics (ROBIO)",
+    "year": "2022",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2203.10033",
+    "note": "",
+    "badge": "ROBIO",
+    "code": "",
+    "video": "./files/ROBIO2022.mp4"
+   },
+   {
+    "key": "mayr2022learning",
+    "title": "Learning Skill-based Industrial Robot Tasks with User Priors",
+    "authors": [
+     {
+      "name": "Matthias Mayr",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Carl Hvarfner",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     },
+     {
+      "name": "Luigi Nardi",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Volker Krueger",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "IEEE International Conference on Automation Science and Engineering (CASE)",
+    "year": "2022",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2208.01605",
+    "note": "",
+    "badge": "CASE",
+    "code": "",
+    "video": ""
+   },
+   {
+    "key": "allard2022gecco",
+    "title": "Hierarchical Quality-Diversity for Online Damage Recovery",
+    "authors": [
+     {
+      "name": "Maxime Allard",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Simón C. Smith",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     },
+     {
+      "name": "Antoine Cully",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "The Genetic and Evolutionary Computation Conference (GECCO)",
+    "year": "2022",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2204.05726",
+    "note": "",
+    "badge": "GECCO",
+    "code": "",
+    "video": ""
+   },
+   {
+    "key": "dimitropoulos2022raad",
+    "title": "A Brief Survey of Sim2Real Methods for Robot Learning",
+    "authors": [
+     {
+      "name": "Konstantinos Dimitropoulos",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Ioannis Hatzilygeroudis",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     }
+    ],
+    "venue": "31st International Conference on Robotics in Alpe-Adria-Danube Region (RAAD)",
+    "year": "2022",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-04870-8_16",
+    "note": "",
+    "badge": "RAAD",
+    "code": "",
+    "video": ""
+   },
+   {
+    "key": "mayr2021learning",
+    "title": "Learning of Parameters in Behavior Trees for Movement Skills",
+    "authors": [
+     {
+      "name": "Matthias Mayr",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     },
+     {
+      "name": "Faseeh Ahmad",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Luigi Nardi",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Volker Krueger",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "{IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}",
+    "year": "2021",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2109.13050",
+    "note": "",
+    "badge": "IROS",
+    "code": "",
+    "video": "./files/IROS2021.mp4"
+   },
+   {
+    "key": "chatzilygeroudis2021feature",
+    "title": "Feature Selection in single-cell RNA-seq data via a Genetic Algorithm",
+    "authors": [
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     },
+     {
+      "name": "Aristidis Vrahatis",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Sotiris Tasoulis",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Micheal Vrahatis",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "{The 15th Learning and Intelligent Optimization Conference (LION)}",
+    "year": "2021",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-030-92121-7_6",
+    "note": "",
+    "badge": "LION",
+    "code": "",
+    "video": ""
+   },
+   {
+    "key": "duarte2020human",
+    "title": "From human action understanding to robot action execution: how the physical properties of handled objects modulate non-verbal cues",
+    "authors": [
+     {
+      "name": "Nuno Ferreira Duarte",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     },
+     {
+      "name": "José Santos-Victor",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Aude Billard",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "{International Conference on Development and Learning and Epigenetic Robotics (ICDL-EpiRob)}",
+    "year": "2020",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "http://costashatz.github.io/files/ICDL2020.pdf",
+    "note": "",
+    "badge": "ICDL-EpiRob",
+    "code": "",
+    "video": "./files/ICDL2020.mp4"
+   },
+   {
+    "key": "starke2019GraspForces",
+    "title": "On Force Synergies in Human Grasping Behavior",
+    "authors": [
+     {
+      "name": "Julia Starke",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     },
+     {
+      "name": "Aude Billard",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Tamim Asfour",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "International Conference on Humanoid Robots",
+    "year": "2019",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "./files/ICHR19_0047_FI.pdf",
+    "note": "",
+    "badge": "Humanoids",
+    "code": "",
+    "video": ""
+   },
+   {
+    "key": "kaushik2018multi",
+    "title": "Multi-objective Model-based Policy Search for Data-efficient Learning with Sparse Rewards",
+    "authors": [
+     {
+      "name": "Rituraj Kaushik",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     },
+     {
+      "name": "Jean-Baptiste Mouret",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "Conference on Robot Learning (CoRL)",
+    "year": "2018",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/1806.09351",
+    "note": "",
+    "badge": "CoRL",
+    "code": "https://github.com/resibots/kaushik_2018_multi-dex",
+    "video": "https://www.youtube.com/watch?v=XOBWq7mkYho"
+   },
+   {
+    "key": "chatzilygeroudis2018using",
+    "title": "Using Parameterized Black-Box Priors to Scale Up Model-Based Policy Search for Robotics",
+    "authors": [
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     },
+     {
+      "name": "Jean-Baptiste Mouret",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "International Conference on Robotics and Automation (ICRA)",
+    "year": "2018",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/1709.06917",
+    "note": "",
+    "badge": "ICRA",
+    "code": "https://github.com/resibots/blackdrops",
+    "video": "https://youtu.be/HFkZkhGGzTo"
+   },
+   {
+    "key": "pautrat2018bayesian",
+    "title": "Bayesian Optimization with Automatic Prior Selection for Data-Efficient Direct Policy Search",
+    "authors": [
+     {
+      "name": "Rémi Pautrat",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     },
+     {
+      "name": "Jean-Baptiste Mouret",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "International Conference on Robotics and Automation (ICRA)",
+    "year": "2018",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/1709.06919",
+    "note": "A short version of the paper was accepted at the non-archival track of the 1st Conference on Robot Learning (CoRL) 2017",
+    "badge": "ICRA",
+    "code": "https://github.com/resibots/pautrat_2018_mlei",
+    "video": "https://youtu.be/xo8mUIZTvNE"
+   },
+   {
+    "key": "paul2018aloq",
+    "title": "Alternating Optimisation and Quadrature for Robust Control",
+    "authors": [
+     {
+      "name": "Supratik Paul",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     },
+     {
+      "name": "Kamil Ciosek",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Jean-Baptiste Mouret",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Michael A. Osborne",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Shimon Whiteson",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "Thirty-Second AAAI Conference on Artificial Intelligence (AAAI)",
+    "year": "2018",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "http://www.cs.ox.ac.uk/people/shimon.whiteson/pubs/paulaaai18.pdf",
+    "note": "",
+    "badge": "AAAI",
+    "code": "",
+    "video": ""
+   },
+   {
+    "key": "chatzilygeroudis2017black",
+    "title": "Black-Box Data-efficient Policy Search for Robotics",
+    "authors": [
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     },
+     {
+      "name": "Roberto Rama",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Rituraj Kaushik",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Dorian Goepp",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Vassilis Vassiliades",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Jean-Baptiste Mouret",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "International Conference on Intelligent Robots and Systems (IROS)",
+    "year": "2017",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/1703.07261",
+    "note": "",
+    "badge": "IROS",
+    "code": "https://github.com/resibots/blackdrops",
+    "video": "https://www.youtube.com/watch?v=kTEyYiIFGPM"
+   },
+   {
+    "key": "koustoumpardis2015human",
+    "title": "Human robot collaboration for folding fabrics based on force/RGB-D feedback",
+    "authors": [
+     {
+      "name": "Panagiotis Koustoumpardis",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     },
+     {
+      "name": "Aris Synodinos",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Nikos Aspragathos",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "24th International Conference on Robotics in Alpe-Adria-Danube Region (RAAD)",
+    "year": "2015",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://scholar.google.gr/citations?view_op=view_citation&hl=en&user=tnf6B-EAAAAJ&citation_for_view=tnf6B-EAAAAJ:u5HHmVD_uO8C",
+    "note": "",
+    "badge": "RAAD",
+    "code": "",
+    "video": ""
+   }
+  ]
+ },
+ {
+  "label": "Peer-Reviewed Workshop Papers",
+  "items": [
+   {
+    "key": "printzios2025hybrid",
+    "title": "Hybrid Augmented Lagrangian Method for Constrained Optimization",
+    "authors": [
+     {
+      "name": "Lampros Printzios",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     }
+    ],
+    "venue": "RoboARCH: Robotics Acceleration with Computing Hardware and Systems Workshop at IEEE International Conference on Robotics and Automation (ICRA 2025)",
+    "year": "2025",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://drive.google.com/file/d/1gmezFkO-uWBKz1BnScXC4_m0mss-BgwV/view",
+    "note": "",
+    "badge": "RoboARCH @ ICRA",
+    "code": "",
+    "video": ""
+   },
+   {
+    "key": "totsila2023andp",
+    "title": "End-to-End Stable Imitation Learning via Autonomous Neural Dynamic Policies",
+    "authors": [
+     {
+      "name": "Dionis Totsila",
+      "self": false,
+      "equal": true
+     },
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": true
+     },
+     {
+      "name": "Denis Hadjivelichkov",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Valerio Modugno",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Ioannis Hatzilygeroudis",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Dimitrios Kanoulas",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "Life-Long Learning with Human Help (L3H2) Workshop at IEEE International Conference on Robotics and Automation (ICRA 2023)",
+    "year": "2023",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2305.12886",
+    "note": "",
+    "badge": "L3H2 @ ICRA",
+    "code": "",
+    "video": ""
+   },
+   {
+    "key": "mayr2022combining",
+    "title": "Combining Planning, Reasoning and Reinforcement Learning to solve Industrial Robot Tasks",
+    "authors": [
+     {
+      "name": "Matthias Mayr",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Faseeh Ahmad",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     },
+     {
+      "name": "Luigi Nardi",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Volker Krueger",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "2nd Workshop on Trends and Advances in Machine Learning and Automated Reasoning for Intelligent Robots and Systems, at IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+    "year": "2022",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2212.03570",
+    "note": "",
+    "badge": "Workshop @ IROS",
+    "code": "",
+    "video": ""
+   },
+   {
+    "key": "mayr2022set",
+    "title": "How to Set Up \\& Learn New Robot Tasks with Explainable Behaviors?",
+    "authors": [
+     {
+      "name": "Matthias Mayr",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Faseeh Ahmad",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     },
+     {
+      "name": "Luigi Nardi",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Volker Krueger",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "European Robotics Forum",
+    "year": "2022",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://portal.research.lu.se/en/publications/how-to-set-up-amp-learn-new-robot-tasks-with-explainable-behavior",
+    "note": "",
+    "badge": "European Robotics Forum",
+    "code": "",
+    "video": ""
+   },
+   {
+    "key": "mouret201720",
+    "title": "20 Years of Reality Gap: a few Thoughts about Simulators in Evolutionary Robotics",
+    "authors": [
+     {
+      "name": "Jean-Baptiste Mouret",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     }
+    ],
+    "venue": "Proceedings of the International Workshop \"Simulation in Evolutionary Robotics\" at the Genetic and Evolutionary Computation Conference (GECCO)",
+    "year": "2017",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://hal.inria.fr/hal-01518764/",
+    "note": "",
+    "badge": "Workshop @ GECCO",
+    "code": "",
+    "video": ""
+   },
+   {
+    "key": "vassiliades2017comparing",
+    "title": "Comparing multimodal optimization and illumination",
+    "authors": [
+     {
+      "name": "Vassilis Vassiliades",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     },
+     {
+      "name": "Jean-Baptiste Mouret",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "Genetic and Evolutionary Computation Conference (GECCO) (Poster-only papers)",
+    "year": "2017",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://hal.inria.fr/hal-01518802/",
+    "note": "",
+    "badge": "GECCO (Poster)",
+    "code": "",
+    "video": ""
+   },
+   {
+    "key": "vassiliades2017comparison",
+    "title": "A comparison of illumination algorithms in unbounded spaces",
+    "authors": [
+     {
+      "name": "Vassilis Vassiliades",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     },
+     {
+      "name": "Jean-Baptiste Mouret",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "Proceedings of the International Workshop \"Measuring and Promoting Diversity in Evolutionary Algorithms\" at the Genetic and Evolutionary Computation Conference (GECCO)",
+    "year": "2017",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://hal.inria.fr/hal-01518814/",
+    "note": "",
+    "badge": "Workshop @ GECCO",
+    "code": "",
+    "video": ""
+   },
+   {
+    "key": "papaspyros2016safety",
+    "title": "Safety-Aware Robot Damage Recovery Using Constrained Bayesian Optimization and Simulated Priors",
+    "authors": [
+     {
+      "name": "Vaios Papaspyros",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     },
+     {
+      "name": "Vassilis Vassiliades",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Jean-Baptiste Mouret",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "BayesOpt '16: Proceedings of the International Workshop \"Bayesian Optimization: Black-box Optimization and Beyond\" at NIPS",
+    "year": "2016",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/1611.09419",
+    "note": "",
+    "badge": "BayesOpt @ NeurIPS",
+    "code": "",
+    "video": ""
+   },
+   {
+    "key": "chatzilygeroudis2016semi",
+    "title": "Towards semi-episodic learning for robot damage recovery",
+    "authors": [
+     {
+      "name": "Konstantinos Chatzilygeroudis",
+      "self": true,
+      "equal": false
+     },
+     {
+      "name": "Antoine Cully",
+      "self": false,
+      "equal": false
+     },
+     {
+      "name": "Jean-Baptiste Mouret",
+      "self": false,
+      "equal": false
+     }
+    ],
+    "venue": "AILTA '16: Proceedings of the International Workshop \"AI for Long-term Autonomy\" at ICRA",
+    "year": "2016",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/1610.01407",
+    "note": "",
+    "badge": "AILTA @ ICRA",
+    "code": "",
+    "video": ""
+   }
+  ]
+ }
+]
