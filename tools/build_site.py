@@ -52,6 +52,7 @@ def shell(title, description, active, body, extra_head=""):
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<script>(function(){{try{{if(localStorage.getItem('theme')==='dark'){{document.documentElement.setAttribute('data-theme','dark');}}}}catch(e){{}}}})();</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="description" content="{description}">
 <title>{title}</title>
@@ -60,6 +61,7 @@ def shell(title, description, active, body, extra_head=""):
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap">
 <link rel="stylesheet" href="assets/css/main.css">
+<script src="assets/js/theme.js" defer></script>
 {extra_head}</head>
 <body>
 
@@ -69,9 +71,15 @@ def shell(title, description, active, body, extra_head=""):
       <span class="brand-mark">KC</span>
       <span class="brand-name">Konstantinos Chatzilygeroudis</span>
     </a>
-    <nav class="nav-links">
+    <div style="display:flex; align-items:center; gap:14px;">
+      <nav class="nav-links">
 {nav_html(active)}
-    </nav>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+    </div>
   </div>
 </header>
 
